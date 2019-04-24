@@ -1,0 +1,32 @@
+//apply from: '../gradle/dependencies.gradle'
+
+apply plugin: 'war'
+apply plugin: 'com.google.cloud.tools.appengine' /// this will include all the task by the appengine like appengineRun, appenigenDeploy
+group 'com.authserver.commons'
+version '1.0'
+
+buildscript {
+    repositories {
+
+        jcenter()  //A pre-configured repository that looks for dependencies in Bintray’s JCenter.
+        mavenCentral()
+        //  A pre-configured repository that looks for dependencies in Maven Central.
+    }
+    dependencies {
+        classpath 'com.google.cloud.tools:appengine-gradle-plugin:+'
+
+    }
+}
+
+dependencies {
+    providedCompile libs.servletApi
+    compile libs.gae
+    compile libs.resteasy
+    compile libs.resteasy_jackson_provider
+    compile 'org.freemarker:freemarker:2.3.23'
+    // https://mvnrepository.com/artifact/org.bitbucket.b_c/jose4j
+    compile group: 'org.bitbucket.b_c', name: 'jose4j', version: '0.4.1'
+
+
+}
+

@@ -1,0 +1,5 @@
+rootProject.name = 'AuthServer'
+
+include 'Commons'
+include 'Default'
+
