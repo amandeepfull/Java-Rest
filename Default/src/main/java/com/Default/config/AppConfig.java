@@ -26,6 +26,7 @@ public class AppConfig extends Application {
 
     }
 
+
     private void registringOfEntities() {
 
         /// registring the entities
@@ -57,8 +58,8 @@ public class AppConfig extends Application {
 
 
         // filters
-
         singletons.add(new ApiKeyFilter());
+
         //exception mappers
         singletons.add(new IllegalArgExceptionMapper());
         singletons.add(new ResourceNotFoundExceptionMapper());

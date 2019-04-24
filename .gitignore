@@ -34,6 +34,8 @@ gradle-app.setting
 # .idea/sqlDataSources.xml
 # .idea/dynamic.xml
 # .idea/uiDesigner.xml
+# .idea/workspace.xml
+# .idea/gradle.xml
 
 # Gradle:
 # .idea/gradle.xml
@@ -162,8 +164,5 @@ jspm_packages
 .node_repl_history
 
 
-#Gulp Distribution folders
-AWDeveloper/src/main/webapp/resources/dist/*
-AWDeveloper/src/main/webapp/WEB-INF/pages/dist/*
-!/.idea/runConfigurations/
+
 */out/*
