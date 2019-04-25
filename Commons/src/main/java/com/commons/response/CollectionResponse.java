@@ -4,10 +4,7 @@ import lombok.Data;
 
 import java.util.Collection;
 
-/**
- * AnywhereWorks
- * Created by Ramesh on 9/15/16.
- */
+
 @Data
 public class CollectionResponse<T> {
 

@@ -3,9 +3,7 @@ package com.commons.utils;
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 
-/**
- * AnywhereWorks Created by Ramesh on 2/11/16.
- */
+
 public final class HashUtil {
 
     public static String md5Hash(String src) {
