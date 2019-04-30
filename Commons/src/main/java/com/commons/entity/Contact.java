@@ -18,7 +18,5 @@ public class Contact extends AbstractBaseEntity {
 
     private String password;
 
-    @Index
-    private String clientId;
 
 }

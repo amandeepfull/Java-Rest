@@ -17,4 +17,7 @@ public class TokenRequest {
 
     @JsonProperty("redirect_uri")
     private String redirectUri;
+
+    @JsonProperty("refresh_token")
+    private String refreshToken;
 }

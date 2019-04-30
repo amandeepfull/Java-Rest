@@ -14,8 +14,18 @@ public class ContactDaoImpl extends OfyService implements ContactDao {
 
     public Contact createContact(Contact contact) {
 
+        validate(contact);
         contact.setId(UUID.randomUUID().toString());
         return saveContact(contact);
+
+    }
+
+    private void validate(Contact contact) {
+
+        Preconditions.checkArgument(contact == null, "Invalid contact to save");
+        Preconditions.checkArgument(ObjUtil.isBlank(contact.getEmail()),"Email cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isBlank(contact.getPassword()),"Invalid password cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isBlank(contact.getFirstName()),"First Name cannot be null/empty");
 
     }
 

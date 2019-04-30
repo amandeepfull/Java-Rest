@@ -35,7 +35,8 @@ ext {
     config = [
             gae: [
                     port: [
-                            default: 3327,
+                            default: 3340,
+                            api : 3328,
                             commons: 3334
                     ],
                     defaultJvmFlags: [

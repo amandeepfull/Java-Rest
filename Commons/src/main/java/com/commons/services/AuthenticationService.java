@@ -1,5 +1,6 @@
 package com.commons.services;
 
+import com.commons.Dao.TokenDao;
 import com.commons.DaoImplServices.AppDaoImpl;
 import com.commons.DaoImplServices.ContactDaoImpl;
 import com.commons.DaoImplServices.TokenDaoImpl;
@@ -7,8 +8,12 @@ import com.commons.Enum.ReservedClaims;
 import com.commons.constants.CommonConstants;
 import com.commons.entity.App;
 import com.commons.entity.Contact;
+import com.commons.http.HttpMethod;
+import com.commons.http.HttpRequest;
+import com.commons.http.UrlFetcher;
 import com.commons.objectify.OfyService;
 import com.commons.entity.Token;
+import com.commons.requests.TokenRequest;
 import com.commons.utils.AppUtils;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
@@ -17,7 +22,10 @@ import org.jose4j.jwt.JwtClaims;
 import org.jose4j.jwt.MalformedClaimException;
 
 import javax.ws.rs.ForbiddenException;
+import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;
+import java.lang.invoke.MethodType;
+import java.lang.reflect.Method;
 
 @Slf4j
 public class AuthenticationService extends OfyService {
@@ -54,15 +62,33 @@ public class AuthenticationService extends OfyService {
             throw new ForbiddenException("auth code expired/invalid");
 
         App app = AppDaoImpl.getInstance().getById(clientId);
-        Preconditions.checkArgument(app == null || !app.getSecret().equals(clientSecret), "Invalid client Id/secret");
+        Preconditions.checkArgument(app == null || !app.getClientSecret().equals(clientSecret), "Invalid client Id/secret");
         Preconditions.checkArgument(!app.getRedirectUri().equals(redirectUri), "pass only configured redirect uri");
     }
 
-    public Token getTokenByRefreshToken(String refreshToken) {
+    public Token updateToken(String refreshToken, String clientId, String clientSecret) {
+
+        validateUpdateToken(refreshToken, clientId, clientSecret);
+
+        return TokenDaoImpl.getInstance().updateTokenForRefreshToken(refreshToken);
+    }
+
+    private void validateUpdateToken(String refreshToken, String clientId, String clientSecret) {
 
         Preconditions.checkArgument(ObjUtil.isBlank(refreshToken), "refresh token cannot be null/empty");
 
-        return TokenDaoImpl.getInstance().updateTokenForRefreshToken(refreshToken);
+        Token token = TokenDaoImpl.getInstance().getByRefreshToken(refreshToken);
+
+        if(token == null)
+            throw new NotFoundException("refresh token not found");
+
+        App app = AppDaoImpl.getInstance().getById(token.getIssuedTo());
+
+        if(app == null)
+            throw new NotFoundException("client not found");
+
+        Preconditions.checkArgument(!app.getId().equals(clientId) || !app.getClientSecret().equals(clientSecret), "Invalid clientId/secret to update access token with refresh token");
+
     }
 
     private static class AuthenticationServiceInitializer {
@@ -75,7 +101,7 @@ public class AuthenticationService extends OfyService {
 
         Preconditions.checkArgument(ObjUtil.isBlank(redirectUri), "Invalid redirect url");
 
-        App app = AppDaoImpl.getInstance().getById(clientId);
+        App app = AppDaoImpl.getInstance().getByClientId(clientId);
 
         Preconditions.checkArgument(app == null, "Invalid app");
         Preconditions.checkArgument(!app.getRedirectUri().equals(redirectUri), "Redirect URI is not matching with configured");
@@ -89,9 +115,9 @@ public class AuthenticationService extends OfyService {
 
         String authCode = JWTService.getInstance().createToken(clientId, loginUser.getId(), CommonConstants.AUTH_CODE_EXPIRE_MIN);
 
-        MCacheService.getInstance().put(authCode, true);
+        MCacheService.getInstance().put(authCode, true, 60);
 
-        return AppUtils.getRedirectUriResponse(redirectUri + "?auth=" + authCode + "&state=" + state);
+        return AppUtils.getRedirectUriResponse(redirectUri+"?auth_code="+authCode+"&state="+state);
     }
 
     public static AuthenticationService getInstance() {

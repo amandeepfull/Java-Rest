@@ -8,4 +8,6 @@ public interface TokenDao {
     Token createToken(String clientId, String userId);
 
     Token updateTokenForRefreshToken(String refreshToken);
+
+    Token getByRefreshToken(String refreshToken);
 }

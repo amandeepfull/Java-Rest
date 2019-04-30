@@ -7,11 +7,18 @@ import com.commons.objectify.OfyService;
 import com.commons.utils.HashUtil;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
+import com.commons.utils.RandomUtil;
 
 import java.util.UUID;
 
 public class AppDaoImpl extends OfyService implements AppDao {
 
+
+    @Override
+    public App getByClientId(String clientId) {
+        Preconditions.checkArgument(ObjUtil.isBlank(clientId), "clienId cannot be null/empty");
+        return OfyService.ofy().load().type(App.class).filter("clientId", clientId).first().now();
+    }
 
     private static class AppRegistrationServiceInitializer{
         private static final AppDaoImpl appRegService = new AppDaoImpl();
@@ -27,21 +34,19 @@ public class AppDaoImpl extends OfyService implements AppDao {
         validateApp(app);
         Preconditions.checkArgument(app == null, "Invalid app request body to save");
 
-        app.setId(UUID.randomUUID().toString());
+        app.setClientId(UUID.randomUUID().toString());
 
         if(app.getType() != AppType.MOBILE)
-        app.setSecret(generateSecret(app.getId()));
+        app.setClientSecret(UUID.randomUUID().toString());
 
+        app.setId(app.getName().toLowerCase().replace(" ","")+"_"+RandomUtil.generateRandomString(8));
         return save(app) != null ? app : null;
     }
+
 
     public App getById(String appId){
         Preconditions.checkArgument(ObjUtil.isBlank(appId), "Invalid appId");
         return get(App.class, appId);
-    }
-
-    private String generateSecret(String appId) {
-        return HashUtil.md5Hash(appId+ "-client-secret-");
     }
 
     private void validateApp(App app) {

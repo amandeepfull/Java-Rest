@@ -1,15 +1,11 @@
 package com.commons.DaoImplServices;
 
 import com.commons.Dao.TokenDao;
-import com.commons.Enum.EntityErrorCode;
 import com.commons.Enum.TokenType;
 import com.commons.constants.CommonConstants;
-import com.commons.entity.Contact;
 import com.commons.entity.Token;
-import com.commons.exception.EntityException;
 import com.commons.objectify.OfyService;
 import com.commons.services.JWTService;
-import com.commons.utils.HashUtil;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
 import com.commons.utils.RandomUtil;
@@ -46,14 +42,12 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
     public Token updateTokenForRefreshToken(String refreshToken) {
 
 
-       Token token =  getTokenByRefreshToken(refreshToken);
+       Token token =  getByRefreshToken(refreshToken);
         if(token == null)
             throw new NotFoundException("refresh token not found");
 
-        String userId = token.getUserId();
-        Contact contact = ContactDaoImpl.getInstance().getById(userId);
 
-        String acccessToken = JWTService.getInstance().createToken(contact.getClientId(), userId, CommonConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
+        String acccessToken = JWTService.getInstance().createToken(token.getIssuedTo(), token.getUserId(), CommonConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
 
         if(ObjUtil.isBlank(acccessToken))
             return null;
@@ -62,12 +56,13 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
         return save(token) != null ? token : null;
     }
 
-    private Token getTokenByRefreshToken(String refreshToken) {
-        Preconditions.checkArgument(ObjUtil.isBlank(refreshToken), "Invalid refresh token");
 
-        return  OfyService.ofy().load().type(Token.class).filter("refreshToken", refreshToken).first().now();
-
+    @Override
+    public Token getByRefreshToken(String refreshToken) {
+        Preconditions.checkArgument(ObjUtil.isBlank(refreshToken), "Refresh token cannot be null/empty");
+        return OfyService.ofy().load().type(Token.class).filter("refreshToken", refreshToken).first().now();
     }
+
 
     private static class TokenDaoImplInitializer {
         private static final TokenDaoImpl tokenDaoImpl = new TokenDaoImpl();

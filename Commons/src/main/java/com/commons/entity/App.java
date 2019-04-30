@@ -22,8 +22,11 @@ public class App extends AbstractBaseEntity {
     @Unindex
     private String website;
 
+    @Index
+    private String clientId;
+
     @Unindex
-    private String secret;
+    private String clientSecret;
 
     @Index
     private String redirectUri;

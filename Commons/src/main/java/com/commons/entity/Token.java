@@ -6,6 +6,7 @@ import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Index;
 import com.googlecode.objectify.annotation.Unindex;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
 @Data
 @Entity
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper=false)
 public class Token  extends AbstractBaseEntity {
 
 
