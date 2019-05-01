@@ -2,11 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry  : './Default/src/main/webapp/WEB-INF/react/client.js',
+    entry  : './Default/src/main/webapp/react/client.js',
     output : {
-        path : path.join(__dirname,'/Default/src/main/webapp/WEB-INF/react'),
-        filename : 'client.min.js'
+        path : path.join(__dirname,'/Default/src/main/webapp/js'),
+        filename : 'client.min.js',
     },
+    mode: 'development',
+    watch: true,
     module : {
         rules : [
             {

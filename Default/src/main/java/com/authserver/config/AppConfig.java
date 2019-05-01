@@ -1,5 +1,6 @@
 package com.authserver.config;
 
+import com.authserver.endpoints.app.MainEndpoint;
 import com.authserver.endpoints.auth.AuthEndpoint;
 import com.authserver.endpoints.auth.ServiceEndpoint;
 import com.commons.config.JacksonObjectResolver;
@@ -42,6 +43,7 @@ public class AppConfig extends Application {
         // registring com.endpoints
         classes.add(ServiceEndpoint.class);
         classes.add(AuthEndpoint.class);
+        classes.add(MainEndpoint.class);
 
         // json com.config
         classes.add(JacksonObjectResolver.class);

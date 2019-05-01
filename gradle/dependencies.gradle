@@ -15,17 +15,17 @@ ext {
 
     //used libraries
     libs = [
-            servletApi  : "javax.servlet:servlet-api:$libVersions.servletApi",
-            junit       : "junit:junit:$libVersions.junit",
-            jackson     : ["com.fasterxml.jackson.core:jackson-annotations:$libVersions.jackson",
-                           "com.fasterxml.jackson.core:jackson-databind:$libVersions.jackson"
+            servletApi               : "javax.servlet:servlet-api:$libVersions.servletApi",
+            junit                    : "junit:junit:$libVersions.junit",
+            jackson                  : ["com.fasterxml.jackson.core:jackson-annotations:$libVersions.jackson",
+                                        "com.fasterxml.jackson.core:jackson-databind:$libVersions.jackson"
             ],
-            objectify   : "com.googlecode.objectify:objectify:$libVersions.objectify",
-            slf4jLog4j12: "org.slf4j:slf4j-log4j12:$libVersions.slf4jLog4j12",
-            resteasy    : "org.jboss.resteasy:resteasy-jaxrs:$libVersions.resteasy",
+            objectify                : "com.googlecode.objectify:objectify:$libVersions.objectify",
+            slf4jLog4j12             : "org.slf4j:slf4j-log4j12:$libVersions.slf4jLog4j12",
+            resteasy                 : "org.jboss.resteasy:resteasy-jaxrs:$libVersions.resteasy",
             resteasy_jackson_provider: "org.jboss.resteasy:resteasy-jackson2-provider:$libVersions.resteasy",
-            lombok      : "org.projectlombok:lombok:$libVersions.lombok",
-            gae         : [
+            lombok                   : "org.projectlombok:lombok:$libVersions.lombok",
+            gae                      : [
                     'com.google.appengine:appengine-api-1.0-sdk:+'
             ]
     ]
@@ -34,10 +34,10 @@ ext {
 
     config = [
             gae: [
-                    port: [
-                            default: 3340,
-                            api : 3328,
-                            commons: 3334
+                    port           : [
+                            default: 8889,
+                            api    : 8882,
+                            commons: 8883
                     ],
                     defaultJvmFlags: [
                             '-Dappengine.fullscan.seconds=3',

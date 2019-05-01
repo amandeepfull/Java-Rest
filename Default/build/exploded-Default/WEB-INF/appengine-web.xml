@@ -12,4 +12,12 @@
     </system-properties>
 
     <runtime>java8</runtime>
+
+
+    <static-files>
+        <include path="/**">
+        </include>
+        
+    </static-files>
+
 </appengine-web-app>
