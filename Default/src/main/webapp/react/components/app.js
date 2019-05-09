@@ -1,14 +1,21 @@
 import React from 'react'
-import SideBar from '../components/side-bar';
+import LeftSideBar from './left-side-bar';
+import RightSideBar from './right-side-bar';
 
 export default class App extends React.Component {
 
 
+
   render() {
     return (
-      
-        <div id="app"> My app is so sdfsdfsdfsdfdssdfdsfsdfsdsfdsssfldjflsssdfsdfsdamandeep singh</div>
+    <React.Fragment>  
+     <h1> OauthCater.</h1>
+     <div id="app">
      
+     <LeftSideBar/>
+     <RightSideBar/>
+     </div>
+     </React.Fragment>
     )
   }
 }

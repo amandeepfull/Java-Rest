@@ -9,6 +9,7 @@ import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
 import com.commons.utils.RandomUtil;
 
+import javax.ws.rs.NotFoundException;
 import java.util.UUID;
 
 public class AppDaoImpl extends OfyService implements AppDao {
@@ -18,6 +19,18 @@ public class AppDaoImpl extends OfyService implements AppDao {
     public App getByClientId(String clientId) {
         Preconditions.checkArgument(ObjUtil.isBlank(clientId), "clienId cannot be null/empty");
         return OfyService.ofy().load().type(App.class).filter("clientId", clientId).first().now();
+    }
+
+    public App updateApp(String appId, App updateApp) {
+
+        App app = getById(appId);
+
+        if(app == null)
+            throw new NotFoundException("app not found");
+
+       app =  app.merge(updateApp);
+
+       return save(app) != null ? app : null;
     }
 
     private static class AppRegistrationServiceInitializer{
@@ -39,7 +52,7 @@ public class AppDaoImpl extends OfyService implements AppDao {
         if(app.getType() != AppType.MOBILE)
         app.setClientSecret(UUID.randomUUID().toString());
 
-        app.setId(app.getName().toLowerCase().replace(" ","")+"_"+RandomUtil.generateRandomString(8));
+        app.setId((app.getName().replace(" ","")+"_"+RandomUtil.generateRandomString(8)).toLowerCase());
         return save(app) != null ? app : null;
     }
 
@@ -52,10 +65,9 @@ public class AppDaoImpl extends OfyService implements AppDao {
     private void validateApp(App app) {
 
         Preconditions.checkArgument(app == null, "Invalid app to save");
-        Preconditions.checkArgument(ObjUtil.isBlank(app.getHost()), "host cannot be null/empty");
         Preconditions.checkArgument(ObjUtil.isBlank(app.getName()), "app name cannot be null/empty");
-        Preconditions.checkArgument(ObjUtil.isBlank(app.getRedirectUri()), "redirect uri cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isNullOrEmpty(app.getRedirectUri()), "redirect uri cannot be null/empty");
         Preconditions.checkArgument(app.getType() == null, "Invalid app type, it can be, "+AppType.MOBILE+"/"+AppType.WEB+"/"+AppType.WEB_MOB);
-
+       // Preconditions.checkArgument(ObjUtil.isNullOrEmpty(app.getScopes()), "scopes cannot be null/empty");
     }
 }

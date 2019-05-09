@@ -58,12 +58,14 @@ public class AuthenticationService extends OfyService {
     private void validateAuthCodeClaims(JwtClaims claims, String clientId, String clientSecret, String redirectUri) throws MalformedClaimException {
 
 
+        System.out.println("claims : "+claims.toString());
+        System.out.println("clienId : "+clientId);
         if (claims == null || !claims.getSubject().equals(clientId))
             throw new ForbiddenException("auth code expired/invalid");
 
-        App app = AppDaoImpl.getInstance().getById(clientId);
+        App app = AppDaoImpl.getInstance().getByClientId(clientId);
         Preconditions.checkArgument(app == null || !app.getClientSecret().equals(clientSecret), "Invalid client Id/secret");
-        Preconditions.checkArgument(!app.getRedirectUri().equals(redirectUri), "pass only configured redirect uri");
+        Preconditions.checkArgument(!app.getRedirectUri().contains(redirectUri), "pass only configured redirect uri");
     }
 
     public Token updateToken(String refreshToken, String clientId, String clientSecret) {
@@ -104,7 +106,7 @@ public class AuthenticationService extends OfyService {
         App app = AppDaoImpl.getInstance().getByClientId(clientId);
 
         Preconditions.checkArgument(app == null, "Invalid app");
-        Preconditions.checkArgument(!app.getRedirectUri().equals(redirectUri), "Redirect URI is not matching with configured");
+        Preconditions.checkArgument(!app.getRedirectUri().contains(redirectUri), "Redirect URI is not matching with configured");
 
         Preconditions.checkArgument(contact == null, "Invalid credentials payload");
 
@@ -117,6 +119,11 @@ public class AuthenticationService extends OfyService {
 
         MCacheService.getInstance().put(authCode, true, 60);
 
+        System.out.println("Contact : "+ObjUtil.getJson(contact));
+
+        String url = redirectUri+"?auth_code="+authCode+"&state="+state;
+
+        System.out.println("redirected to : "+url);
         return AppUtils.getRedirectUriResponse(redirectUri+"?auth_code="+authCode+"&state="+state);
     }
 
@@ -124,8 +131,5 @@ public class AuthenticationService extends OfyService {
         return AuthenticationServiceInitializer.authenticationService;
     }
 
-    public Contact signup(Contact contact) {
 
-        return ContactDaoImpl.getInstance().createContact(contact);
-    }
 }

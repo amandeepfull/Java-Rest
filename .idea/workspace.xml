@@ -2,32 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/pages/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/filters/AuthApiRespFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auth/src/main/webapp/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auth/src/main/webapp/pages/html/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/Enum/AppMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/GaeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commons/src/test/java/com/commons/utils/UtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/pages/html/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/AppDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/AppDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/TokenDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/TokenDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl$AppRegistrationServiceInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl$AppRegistrationServiceInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl$ContactDaoImplInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl$ContactDaoImplInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl$TokenDaoImplInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl$TokenDaoImplInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/constants/CommonConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/constants/CommonConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/requests/TokenRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/requests/TokenRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/CollectionResponse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/CollectionResponse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/CollectionResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/CollectionResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/TokenResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/TokenResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService$AuthenticationServiceInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService$AuthenticationServiceInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/FreeMarkerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/FreeMarkerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService$JWTServiceInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService$JWTServiceInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/LoginSessionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/LoginSessionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/AppUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/AppUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/HashUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/HashUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/ApiKeyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/ApiKeyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/CommonApiResponseFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/CommonApiResponseFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/FreeMarkerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/FreeMarkerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/AppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/AppUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/appengine-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/appengine-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/js/ajax.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/pages/dev/html/tmpl/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/appengine-api-1.0-sdk-1.9.73.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/app/MainEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/app/MainEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/appengine-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/appengine-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/pages/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/react/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/react/client.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/react/components/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/react/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/react/components/side-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/side-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/react/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/appengine-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/appengine-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/classes/com/Default/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/classes/com/Default/endpoints/auth/AuthEndpoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/classes/com/Default/endpoints/auth/ServiceEndpoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/classes/source-context.json" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/classes/source-context.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/js/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/lib/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/lib/Commons-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/pages/dev/html/tmpl/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/staged-app/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/app/MainEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/auth/AuthEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/auth/ServiceEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/ServiceEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/pages/html/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/pages/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/side-bar.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react/client.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
@@ -43,6 +101,7 @@
     <ignored path="$PROJECT_DIR$/authserver/.gradle/" />
     <ignored path="$PROJECT_DIR$/authserver/build/" />
     <ignored path="$PROJECT_DIR$/authserver/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +120,9 @@
         <task path="$PROJECT_DIR$/Default">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/Api">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -77,59 +139,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/index.jsp">
+      <file leaf-file-name="MainEndpoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="228">
+              <caret line="109" column="49" selection-start-line="109" selection-start-column="42" selection-end-line="109" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/signin.html">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+            <state relative-caret-position="247">
+              <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/build/exploded-Default/pages/index.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/react/client.js">
+      <file leaf-file-name="CommonApiResponseFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/CommonApiResponseFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="240">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="60">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+            <state relative-caret-position="207">
+              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-173">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterDispatcher.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.19.Final/77af30c519843e9839c4d096bcb652157ea9c9ea/resteasy-jaxrs-3.0.19.Final-sources.jar!/org/jboss/resteasy/plugins/server/servlet/FilterDispatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServletContainerDispatcher.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.19.Final/77af30c519843e9839c4d096bcb652157ea9c9ea/resteasy-jaxrs-3.0.19.Final-sources.jar!/org/jboss/resteasy/plugins/server/servlet/ServletContainerDispatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="URLClassLoader.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="380" selection-start-line="380" selection-end-line="380" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -137,6 +240,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -146,6 +251,11 @@
       <find>rames</find>
       <find>getClien</find>
       <find>33</find>
+      <find>/signin</find>
+      <find>toString</find>
+      <find>localho</find>
+      <find>37fac671-e709-4cd4-af95-f39e558d809b</find>
+      <find>break\;\n            default\:\n                 OAUTH_CATER_CLIENT_ID \=\&quot;c5538619\-1bf5\-4177\-9981\-ce6563c0175a\&quot;\;\n                OAUTH_CATER_CLIENT_SECRET \=\&quot;cc217adb\-7c95\-4616\-a7d1\-78e5611b5bd7\&quot;\;\n                OAUTH_CATER_AUTH_CALLBACK     \=\&quot;http\:\/\/localhost\:8890\/auth\/callback\&quot;\;\n                break\;</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -186,6 +296,10 @@
               <ExternalProjectPojo>
                 <option name="name" value=":Api" />
                 <option name="path" value="$PROJECT_DIR$/Api" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":Auth" />
+                <option name="path" value="$PROJECT_DIR$/Auth" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":Commons" />
@@ -655,6 +769,230 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Auth">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':Auth'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':Auth'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Stop a locally running App Engine standard environment application" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineStop" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Validates the Cloud SDK" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="checkCloudSdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':Auth'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deploy Dos configuration" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineDeployDos" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':Auth'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Stage an App Engine standard environment application for deployment" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineStage" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Explode a war into a directory" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="explodeWar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Show current App Engine plugin configuration" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineShowConfiguration" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':Auth'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Login and set the Cloud SDK common configuration user" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineCloudSdkLogin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':Auth'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deploy an App Engine application and all of its config files" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineDeployAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deploy Queue configuration" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineDeployQueue" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run an App Engine standard environment application locally" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="reloadApp" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="war" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':Auth'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Download the Cloud SDK" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="downloadCloudSdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run an App Engine standard environment application locally in the background" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineStart" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':Auth'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deploy an App Engine application" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineDeploy" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deploy Cron configuration" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineDeployCron" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deploy Dispatch configuration" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineDeployDispatch" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deploy Index configuration" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="appengineDeployIndex" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':Auth'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Auth" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Commons">
           <value>
             <list>
@@ -1079,288 +1417,19 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/auth">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':auth'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':auth'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':auth'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':auth'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':auth'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':auth'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':auth'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':auth'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':auth'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/auth" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/authserver">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':authserver'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':authserver'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':authserver'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':authserver'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':authserver'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':authserver'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':authserver'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':authserver'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':authserver'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/authserver" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="10890109331000" />
+        <entry key="$PROJECT_DIR$" value="12448267022000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/Api/build.gradle" value="2649514405" />
+        <entry key="$PROJECT_DIR$/Auth/build.gradle" value="438542169" />
         <entry key="$PROJECT_DIR$/Commons/build.gradle" value="289654198" />
         <entry key="$PROJECT_DIR$/Default/build.gradle" value="407094671" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2622415584" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1114575256" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="1031807644" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2595993003" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1382,8 +1451,8 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.0-rc6/3493c878020e412d6db25285d27c235986f722dc/appengine-gradle-plugin-2.0.0-rc6-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.0-rc6/393b0427fe210471ee397e0b4ce60086794f0d7a/appengine-gradle-plugin-2.0.0-rc6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.1/400f352984dde4229b98f638719230dd14189a64/appengine-gradle-plugin-2.0.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.1/71fc187f0f18e6810870f7263c821173d743ede4/appengine-gradle-plugin-2.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-plugins-core/0.7.5/a0f656833ea0163bc7877e5db00a8299d941e0f7/appengine-plugins-core-0.7.5-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-plugins-core/0.7.5/fc71e215d177e367e3b62de6f085375008c98af4/appengine-plugins-core-0.7.5.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.0-jre/d6484e2ee11ad928ccf61cf3e4ce9cedc2eead7e/guava-27.0-jre-sources.jar" />
@@ -1415,13 +1484,51 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
+                  <entry key="$PROJECT_DIR$/Auth">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.1/400f352984dde4229b98f638719230dd14189a64/appengine-gradle-plugin-2.0.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.1/71fc187f0f18e6810870f7263c821173d743ede4/appengine-gradle-plugin-2.0.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-plugins-core/0.7.5/a0f656833ea0163bc7877e5db00a8299d941e0f7/appengine-plugins-core-0.7.5-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-plugins-core/0.7.5/fc71e215d177e367e3b62de6f085375008c98af4/appengine-plugins-core-0.7.5.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.0-jre/d6484e2ee11ad928ccf61cf3e4ce9cedc2eead7e/guava-27.0-jre-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.0-jre/c6ad87d2575af8ac8ec38e28e75aefa882cc3a1f/guava-27.0-jre.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.21/1baf1df46ea31a7bf1667eccf8f417c034e5dcc6/snakeyaml-1.21-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.21/18775fdda48574784f40b47bf478ab0593f92e4d/snakeyaml-1.21.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/c5b4c491aecb72e7c32a78da0b5c6b9cda8dee0f/gson-2.8.5-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/f645ed69d595b24d4cf8b3fbb64cc505bede8829/gson-2.8.5.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/ef782abad0d3f1d30644c4023a6bbc6fe371e23a/javax.json-1.0.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/3178f73569fd7a1e5ffc464e680f7a8cc784b85a/javax.json-1.0.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/a25b942b99fde2cc2913ab39ad34abc0df4f5eb9/commons-compress-1.18-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.18/1191f9f2bc0c47a8cce69193feb1ff0a8bcb37d5/commons-compress-1.18.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0/1e90402881010c96ea5e4b7e6f56acb283e78db3/failureaccess-1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0/50bacb0bdbbeeda25142aff57e2214c402e1193c/failureaccess-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.5.2/ebb8ebccd42218434674f3e1d9022c13df1c19f8/checker-qual-2.5.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.5.2/cea74543d5904a30861a61b4643a5f2bb372efc4/checker-qual-2.5.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/a8cd7823aa1dcd2fd6677c0c5988fdde9d1fb0a3/error_prone_annotations-2.2.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/88e3c593e9b3586e1c6177f89267da6fc6986f0c/error_prone_annotations-2.2.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/dcd31de68a90e41e336f6b7afce0d39285c433d7/j2objc-annotations-1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/976d8d30bebc251db406f2bdb3eb01962b5685b3/j2objc-annotations-1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.17/8fb5b5ad9c9723951b9fccaba5bb657fa6064868/animal-sniffer-annotations-1.17-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.17/f97ce6decaea32b36101e37979f8b647f00681fb/animal-sniffer-annotations-1.17.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/Auth" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
                   <entry key="$PROJECT_DIR$/Commons">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.0-rc6/3493c878020e412d6db25285d27c235986f722dc/appengine-gradle-plugin-2.0.0-rc6-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.0-rc6/393b0427fe210471ee397e0b4ce60086794f0d7a/appengine-gradle-plugin-2.0.0-rc6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.1/400f352984dde4229b98f638719230dd14189a64/appengine-gradle-plugin-2.0.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.1/71fc187f0f18e6810870f7263c821173d743ede4/appengine-gradle-plugin-2.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-plugins-core/0.7.5/a0f656833ea0163bc7877e5db00a8299d941e0f7/appengine-plugins-core-0.7.5-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-plugins-core/0.7.5/fc71e215d177e367e3b62de6f085375008c98af4/appengine-plugins-core-0.7.5.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.0-jre/d6484e2ee11ad928ccf61cf3e4ce9cedc2eead7e/guava-27.0-jre-sources.jar" />
@@ -1458,8 +1565,8 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.0-rc6/3493c878020e412d6db25285d27c235986f722dc/appengine-gradle-plugin-2.0.0-rc6-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.0-rc6/393b0427fe210471ee397e0b4ce60086794f0d7a/appengine-gradle-plugin-2.0.0-rc6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.1/400f352984dde4229b98f638719230dd14189a64/appengine-gradle-plugin-2.0.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-gradle-plugin/2.0.1/71fc187f0f18e6810870f7263c821173d743ede4/appengine-gradle-plugin-2.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-plugins-core/0.7.5/a0f656833ea0163bc7877e5db00a8299d941e0f7/appengine-plugins-core-0.7.5-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.tools/appengine-plugins-core/0.7.5/fc71e215d177e367e3b62de6f085375008c98af4/appengine-plugins-core-0.7.5.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.0-jre/d6484e2ee11ad928ccf61cf3e4ce9cedc2eead7e/guava-27.0-jre-sources.jar" />
@@ -1668,57 +1775,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/response/CollectionResponse.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/HashUtil.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/requests/TokenRequest.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/Dao/TokenDao.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/Default/endpoints/auth/AuthEndpoint.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/objectify/OfyService.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/Default/endpoints/auth/ServiceEndpoint.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/Default/endpoints/apis/AppEndpoint.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Token.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/Default/endpoints/apis/ContactEndpoint.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/auth/ServiceEndpoint.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/auth/AuthEndpoint.java" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/AppConfig.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/appengine-web.xml" />
-        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/Api/build.gradle" />
-        <option value="$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Contact.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/signin.html" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/http/UrlFetcher.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/http/MediaType.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/http/HttpResponse.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/http/HttpRequest.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/http/HttpMethod.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/auth/AuthEndpoint.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/new_signin.html" />
-        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login.html" />
-        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/css/style.css" />
-        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/index.html" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/ServiceEndpoint.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/auth/ServiceEndpoint.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/react/index.jsp" />
         <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/appengine-web.xml" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/AppUtils.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/app/MainEndpoint.java" />
-        <option value="$PROJECT_DIR$/gradle/dependencies.gradle" />
         <option value="$PROJECT_DIR$/Default/src/main/webapp/pages/index.jsp" />
         <option value="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" />
         <option value="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/sdk/AuthService.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/sdk/AuthLoginService.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/jsp/dashboard.jsp" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/FreeMarkerService.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/GaeUtils.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/GaeUtil.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/objectify/OfyService.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/Enum/AppMode.java" />
+        <option value="$PROJECT_DIR$/Commons/src/test/java/com/commons/utils/UtilsTest.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Contact.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/auth/ServiceEndpoint.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/pages/html/login.html" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/app/MainEndpoint.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/gradle/dependencies.gradle" />
+        <option value="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml" />
+        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/AppConfig.java" />
+        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/filters/CommonApiResponseFilter.java" />
+        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/Auth/build.gradle" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java" />
+        <option value="$PROJECT_DIR$/Auth/src/main/webapp/pages/html/login.html" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/ApiKeyFilter.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/AppUtils.java" />
+        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/filters/AuthApiRespFilter.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/MainEndpoint.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/CommonApiResponseFilter.java" />
+        <option value="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -1734,8 +1841,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1746,101 +1851,52 @@
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="exploded-Default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="exploded-Default" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -1848,11 +1904,22 @@
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
@@ -1860,46 +1927,222 @@
               <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: javax.servlet:servlet-api:2.5" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: javax.servlet:servlet-api:2.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="servlet-api-2.5.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: javax.servlet:servlet-api:2.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="servlet-api-2.5.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: javax.servlet:servlet-api:2.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="servlet-api-2.5.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.resteasy:resteasy-jaxrs:3.0.19.Final" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.resteasy:resteasy-jaxrs:3.0.19.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="resteasy-jaxrs-3.0.19.Final.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.resteasy:resteasy-jaxrs:3.0.19.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="resteasy-jaxrs-3.0.19.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="resteasy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.resteasy:resteasy-jaxrs:3.0.19.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="resteasy-jaxrs-3.0.19.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="resteasy" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.resteasy:resteasy-jaxrs:3.0.19.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="resteasy-jaxrs-3.0.19.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="resteasy" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.resteasy:resteasy-jaxrs:3.0.19.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="resteasy-jaxrs-3.0.19.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="resteasy" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.0.Final" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.0.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.0.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="rs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.0.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="rs" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="dep&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar:///Users/amandeep/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.0_spec/1.0.0.Final/101888af9161148c401b9534229aee30961e2789/jboss-jaxrs-api_2.0_spec-1.0.0.Final-sources.jar!/javax/ws/rs/core/Response.java&#10;depe&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;dasj&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/dashboard.jsp&#10;logi&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/html/login.html&#10;ind&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/index.jsp&#10;dep&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.authserver.api" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.commons.utils" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Default/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Commons/src/main/java/com/commons" />
-      <recent name="$PROJECT_DIR$/Api/src/main" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.authserver.api" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/html" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/html" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp" />
       <recent name="$PROJECT_DIR$/Default/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/react" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/css" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.authserver.api" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.authserver.filters" />
+      <recent name="com.authserver" />
+      <recent name="com.authserver.api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Auth/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/Auth/src/main/webapp/pages/html" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/Default/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Commons/src/main/java/com/commons" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1914,14 +2157,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Auth server default run">
+  <component name="RunManager" selected="Gradle.default run">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.commons.utils.Utils" />
+      <module name="Commons_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.commons.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Auth server api deploy" type="GradleRunConfiguration" factoryName="Gradle">
+    <configuration name=" api deploy" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Api" />
@@ -1938,7 +2192,58 @@
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
     </configuration>
-    <configuration name="Auth server default deploy" type="GradleRunConfiguration" factoryName="Gradle">
+    <configuration name="api run" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="appengineRun" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="auth deploy" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Auth" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="appengineDeploy" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="auth run" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Auth" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="appengineRun" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration name="default deploy" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Default" />
@@ -1955,7 +2260,7 @@
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
     </configuration>
-    <configuration name="Auth server default run" type="GradleRunConfiguration" factoryName="Gradle">
+    <configuration name="default run" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Default" />
@@ -1972,22 +2277,28 @@
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
     </configuration>
-    <configuration name="Auther server api run" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Api" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="appengineRun" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
+    <configuration name="UtilsTest.testGetHost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Commons_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.commons.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.commons.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.commons.utils.UtilsTest" />
+      <option name="METHOD_NAME" value="testGetHost" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -2069,11 +2380,21 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Gradle.Auth server default run" />
-      <item itemvalue="Gradle.Auth server default deploy" />
-      <item itemvalue="Gradle.Auther server api run" />
-      <item itemvalue="Gradle.Auth server api deploy" />
+      <item itemvalue="Gradle.default run" />
+      <item itemvalue="Gradle.default deploy" />
+      <item itemvalue="Gradle.api run" />
+      <item itemvalue="Gradle. api deploy" />
+      <item itemvalue="Gradle.auth run" />
+      <item itemvalue="Gradle.auth deploy" />
+      <item itemvalue="Application.Utils" />
+      <item itemvalue="JUnit.UtilsTest.testGetHost" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UtilsTest.testGetHost" />
+        <item itemvalue="Application.Utils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -2088,6 +2409,26 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UtilsTest_testGetHost - 2019.05.07 at 17h 37m 07s.xml">
+      <configuration name="UtilsTest.testGetHost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilsTest_testGetHost - 2019.05.07 at 17h 39m 39s.xml">
+      <configuration name="UtilsTest.testGetHost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilsTest_testGetHost - 2019.05.07 at 17h 40m 15s.xml">
+      <configuration name="UtilsTest.testGetHost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilsTest_testGetHost - 2019.05.07 at 17h 43m 25s.xml">
+      <configuration name="UtilsTest.testGetHost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilsTest_testGetHost - 2019.05.07 at 17h 44m 12s.xml">
+      <configuration name="UtilsTest.testGetHost" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilsTest_testGetHost - 2019.05.07 at 17h 44m 21s.xml">
+      <configuration name="UtilsTest.testGetHost" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1322" height="795" extended-state="0" />
     <editor active="true" />
@@ -2097,17 +2438,16 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.47421202" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.3295129" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41690543" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" visible="true" weight="0.3667622" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3982808" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295129" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" visible="true" weight="0.512894" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4296875" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3295129" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
-      <window_info anchor="right" id="Gradle" order="3" visible="true" weight="0.2578125" />
+      <window_info anchor="right" id="Gradle" order="3" visible="true" weight="0.10703125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -2116,283 +2456,194 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49921876" weight="0.3295129" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java</url>
+          <line>36</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/Enum/AppMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/objectify/OfyService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="-347">
+          <caret line="136" column="29" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/mapper/EntityExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="848" column="45" selection-start-line="848" selection-start-column="45" selection-end-line="848" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="261" column="18" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/test/java/com/commons/utils/UtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appengine-generated/local_db.bin">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/build.gradle">
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state relative-caret-position="75">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/js/ajax.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/http/HttpMethod.java">
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/GaeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="300">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/http/MediaType.java">
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/http/HttpResponse.java">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/html/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="-1">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/http/HttpRequest.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServletRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="121">
+          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/http/UrlFetcher.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.0_spec/1.0.0.Final/101888af9161148c401b9534229aee30961e2789/jboss-jaxrs-api_2.0_spec-1.0.0.Final-sources.jar!/javax/ws/rs/core/NewCookie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state relative-caret-position="780">
+          <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/new_signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/css/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/css/util.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/fonts/iconic/css/material-design-iconic-font.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/fonts/iconic/css/material-design-iconic-font.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/fonts/iconic/fonts/Material-Design-Iconic-Font.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf">
-      <provider selected="true" editor-type-id="fontseditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/dev/html/tmpl/login/index.html">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="55" />
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-259" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/baseEndpoints/AbstractBaseEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/resources/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/resources/client.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/config/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="375">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/react/client.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.0_spec/1.0.0.Final/101888af9161148c401b9534229aee30961e2789/jboss-jaxrs-api_2.0_spec-1.0.0.Final-sources.jar!/javax/ws/rs/client/SyncInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/react/components/login.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/react/components/side-bar.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/dev/css/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/auth/AuthEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/auth/ServiceEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/FreeMarkerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/appengine-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/client.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/app/MainEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/AppUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/dependencies.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/build/exploded-Default/js/client.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/react/client.js">
+    <entry file="file://$PROJECT_DIR$/Api/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="45" />
+        <state relative-caret-position="-343" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/build/exploded-Default/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/signin.html">
+    <entry file="file://$PROJECT_DIR$/Commons/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/build/exploded-Default/pages/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/pages/index.jsp">
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -2406,17 +2657,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/dependencies.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="292">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js">
+    <entry file="file://$PROJECT_DIR$/Default/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+        <state relative-caret-position="250">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/pages/html/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServletResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="356" column="28" selection-start-line="356" selection-start-column="28" selection-end-line="356" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/ServiceEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.0_spec/1.0.0.Final/101888af9161148c401b9534229aee30961e2789/jboss-jaxrs-api_2.0_spec-1.0.0.Final-sources.jar!/javax/ws/rs/core/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1216" column="16" selection-start-line="1216" selection-start-column="16" selection-end-line="1216" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/AppUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+          <folding>
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="125" column="27" selection-start-line="125" selection-start-column="27" selection-end-line="125" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/filters/AuthApiRespFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/ApiKeyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/CommonApiResponseFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.19.Final/77af30c519843e9839c4d096bcb652157ea9c9ea/resteasy-jaxrs-3.0.19.Final-sources.jar!/org/jboss/resteasy/plugins/server/servlet/FilterDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.19.Final/77af30c519843e9839c4d096bcb652157ea9c9ea/resteasy-jaxrs-3.0.19.Final-sources.jar!/org/jboss/resteasy/plugins/server/servlet/ServletContainerDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="380" selection-start-line="380" selection-end-line="380" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/com/authserver/api/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="109" column="49" selection-start-line="109" selection-start-column="42" selection-end-line="109" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-173">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2472,7 +2899,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Api_main|Api</last-edited>
+          <last-edited>Auth_main|Auth</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

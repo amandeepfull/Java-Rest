@@ -1,10 +1,13 @@
 package com.commons.services;
 
+import com.commons.Enum.AppMode;
+import com.commons.constants.CommonConstants;
 import com.commons.entity.Contact;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.ws.rs.core.Cookie;
 import javax.ws.rs.core.NewCookie;
 
 
@@ -39,12 +42,15 @@ public class LoginSessionManager {
 
         session.setAttribute(SESSION_USER_ID, contact.getId());
         session.setAttribute(SESSION_USER_CONTACT, contact);
+        session.setMaxInactiveInterval(2 * 60 * 60);
 
-        NewCookie sessionCookie = new NewCookie("JSESSIONID", session.getId(), "/", null, null, 2 * 60 * 60, false);
+        Cookie sessionCookie = new NewCookie("JSESSIONID", session.getId(), "/", null, null, 2 * 60 * 60, CommonConstants.APP_MODE == AppMode.LIVE);
         servletResp.setHeader("Set-Cookie", sessionCookie.toString() + ";HttpOnly");
+
 
         return session;
     }
+
 }
 
 

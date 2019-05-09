@@ -23,26 +23,40 @@ webpack_mode = ((done) => {
 // Enables watch mode on CSS, JSP & JS
 watch_mode = ((done) => {
 
- 
+ watch(paths.root + 'css/*.css', css);
   watch(paths.root + 'js/*.js', js);
-  watch(paths.root + 'pages/*.jsp', jsp);
+  watch(paths.root + 'pages/jsp/*.jsp', jsp);
+  watch(paths.root + 'pages/html/*.html', html);
   done();
 });
 
 // Exports JS changes into build folder
 js = ((done) => {
-
-  console.log(paths.root);
   src(paths.root + 'js/*.js')
     .pipe(dest(paths.buildRoot + 'js'));
   done();
 });
 
-// Exports JSP changes into build folder
-jsp = (() => {
-  return src(paths.root + 'pages/*.jsp')
-    .pipe(dest(paths.buildRoot + 'pages'))
+html = ((done) => {
+  src(paths.root + 'pages/html/*.html')
+    .pipe(dest(paths.buildRoot + 'pages/html'));
+  done();
 });
 
-exports.default = series(js, jsp, watch_mode, webpack_mode);
+
+
+css = ((done) => {
+
+  src(paths.root + 'css/*.css')
+    .pipe(dest(paths.buildRoot + 'css'));
+  done();
+});
+
+// Exports JSP changes into build folder
+jsp = (() => {
+  return src(paths.root + 'pages/jsp/*.jsp')
+    .pipe(dest(paths.buildRoot + 'pages/jsp'))
+});
+
+exports.default = series(html,css, js, jsp, watch_mode, webpack_mode);
 
