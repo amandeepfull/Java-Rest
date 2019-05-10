@@ -17,15 +17,22 @@ import com.commons.requests.TokenRequest;
 import com.commons.utils.AppUtils;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
+import com.commons.utils.Utils;
 import lombok.extern.slf4j.Slf4j;
 import org.jose4j.jwt.JwtClaims;
 import org.jose4j.jwt.MalformedClaimException;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.ForbiddenException;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;
+import java.io.IOException;
 import java.lang.invoke.MethodType;
 import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 @Slf4j
 public class AuthenticationService extends OfyService {
@@ -98,7 +105,7 @@ public class AuthenticationService extends OfyService {
 
     }
 
-    public Response login(String redirectUri, String clientId, String state, Contact contact) {
+    public Response login(String redirectUri, String clientId, String state, Contact contact, HttpServletRequest servletRequest, HttpServletResponse servletResponse) throws ServletException, IOException {
 
 
         Preconditions.checkArgument(ObjUtil.isBlank(redirectUri), "Invalid redirect url");
@@ -124,7 +131,15 @@ public class AuthenticationService extends OfyService {
         String url = redirectUri+"?auth_code="+authCode+"&state="+state;
 
         System.out.println("redirected to : "+url);
-        return AppUtils.getRedirectUriResponse(redirectUri+"?auth_code="+authCode+"&state="+state);
+
+        Map<String, String> params = new HashMap<>();
+        params.put("auth_code", authCode);
+        params.put("state", state);
+        params.put("redirect_uri",redirectUri);
+
+        FreeMarkerService.writeHtmlResponse(servletResponse, 200, AppUtils.getHtmlPath("redirect"), params);
+        return null;
+
     }
 
     public static AuthenticationService getInstance() {

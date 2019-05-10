@@ -44,7 +44,7 @@ public class LoginSessionManager {
         session.setAttribute(SESSION_USER_CONTACT, contact);
         session.setMaxInactiveInterval(2 * 60 * 60);
 
-        Cookie sessionCookie = new NewCookie("JSESSIONID", session.getId(), "/", null, null, 2 * 60 * 60, CommonConstants.APP_MODE == AppMode.LIVE);
+        Cookie sessionCookie = new NewCookie("JSESSIONID", session.getId(), "/", null, null, 2 * 60 * 60, false);
         servletResp.setHeader("Set-Cookie", sessionCookie.toString() + ";HttpOnly");
 
 

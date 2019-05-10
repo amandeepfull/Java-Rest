@@ -55,9 +55,8 @@ console.log(e);
 function getInfo(){
 if(request.readyState==4){
 var val=request.responseText;
-document.getElementById('resp').innerHTML=val;
+document.getElementById('main-app').innerHTML=val;
 
-window.location.href = host+"/"+service;
 }
 }
 
@@ -65,22 +64,21 @@ window.location.href = host+"/"+service;
     <!-- endbuild -->
 </head>
 <body>
-<main>
 
-    
+    <div id="main-app">
         <h1>OauthCater.</h1>
         <div id="signin-view">
             <h2>Login</h2>
 
-            <h3 id="resp"></h3>
+            <h3 id="login-form"></h3>
             email <input type="text" id="login" class="form-control"><br>
             password <input type="password" id="password" class="form-control"><br>
 
             <button class="btn btn-primary" value="login" onclick="login()" id="login-button" data-redirect_uri="${redirect_uri!''}" data-clientId="${client_id!''}" data-state="${state!''}" data-host="${host!''}" data-service="${service!''}">Login</button>
         </div>
-    
+    </div>
     <!-- dfPanel -->
-</main>
+
 <!-- main -->
 </body>
 </html>

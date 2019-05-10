@@ -16,15 +16,21 @@ public class AuthApiRespFilter implements ContainerResponseFilter {
     @Override
     public void filter(ContainerRequestContext reqContext, ContainerResponseContext respContext) throws IOException {
 
-        respContext.getHeaders().add("X-Frame-Options", "SAMEORIGIN");
-        respContext.getHeaders().add("X-Content-Type-Options", "nosniff");
-        respContext.getHeaders().add("X-XSS-Protection", "1; mode=block");
+//        respContext.getHeaders().add("X-Frame-Options", "SAMEORIGIN");
+//        respContext.getHeaders().add("X-Content-Type-Options", "nosniff");
+//        respContext.getHeaders().add("X-XSS-Protection", "1; mode=block");
+//
+//        // force https only
+//        respContext.getHeaders().add("Strict-Transport-Security", "max-age=31536000");
+//
+//        respContext.getHeaders().add("Cache-Control", "private, no-cache, max-age=0, must-revalidate");
+//        respContext.getHeaders().add("Pragma", "no-cache");
 
-        // force https only
-        respContext.getHeaders().add("Strict-Transport-Security", "max-age=31536000");
+        respContext.getHeaders().add("Access-Control-Allow-Methods","POST,GET,OPTIONS,DELETE,PUT");
+        respContext.getHeaders().add("Access-Control-Max-Age","3600");
+        respContext.getHeaders().add("Access-Control-Allow-Headers","x-requested-with, Authorization,Content-Type");
+        respContext.getHeaders().add("Access-Control-Allow-Origin","*");
 
-        respContext.getHeaders().add("Cache-Control", "private, no-cache, max-age=0, must-revalidate");
-        respContext.getHeaders().add("Pragma", "no-cache");
-         }
+    }
 
 }

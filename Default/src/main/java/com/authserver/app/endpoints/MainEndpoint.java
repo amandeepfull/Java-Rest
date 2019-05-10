@@ -86,8 +86,9 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 
         System.out.println("triggered auth : ");
         String stateId = RandomUtil.generateRandomString();
-        MCacheService.getInstance().put(stateId, new Boolean(true), 180);
+        MCacheService.getInstance().put(stateId, new Boolean(true), 60 * 60);
 
+        System.out.println("stateId started : "+stateId);
         String host = Utils.getHost(servletRequest);
         String url = CommonConstants.OAUTH_CATER_URL+"/o/service/login?redirect_uri="+CommonConstants.OAUTH_CATER_AUTH_CALLBACK+"&client_id="+CommonConstants.OAUTH_CATER_CLIENT_ID+"&state=" + stateId+"&host="+host+"&service=dashboard";
 
@@ -99,12 +100,15 @@ public class MainEndpoint extends AbstractBaseEndpoint {
     @SuppressWarnings("unchecked")
     public Response handleOauthCallback(@QueryParam("auth_code") String authCode, @QueryParam("state") String state, @QueryParam("error") String error) throws IOException {
 
+
+        System.out.println("state : "+state);
+        System.out.println("auth code : "+authCode);
         Boolean isSameState = (Boolean) MCacheService.getInstance().get(state);
         if (isSameState == null) {
             return AppUtils.getRedirectUriResponse("/?error=invalid_request");
-        }
+       }
 
-
+        System.out.println("isSameState : "+isSameState);
         System.out.println("auth_code :" + authCode);
 
         Map<String, Object> payload = new HashMap<>();
@@ -145,7 +149,5 @@ public class MainEndpoint extends AbstractBaseEndpoint {
         return AppUtils.getRedirectUriResponse("/dashboard");
 
     }
-
-
 
 }
