@@ -132,13 +132,9 @@ public class AuthenticationService extends OfyService {
 
         System.out.println("redirected to : "+url);
 
-        Map<String, String> params = new HashMap<>();
-        params.put("auth_code", authCode);
-        params.put("state", state);
-        params.put("redirect_uri",redirectUri);
 
-        FreeMarkerService.writeHtmlResponse(servletResponse, 200, AppUtils.getHtmlPath("redirect"), params);
-        return null;
+        return AppUtils.getRedirectUriResponse("/o/sso/CheckCookie?auth_code="+authCode+"&state="+state+"&redirect_uri="+redirectUri);
+
 
     }
 

@@ -8,10 +8,10 @@
     
 
 </head>
-<body onload="load()">
+<body>
 
 
-Please wait...
+Loading, Please wait...
 <form method="GET" action="${redirect_uri!''}" id="form">
 
     <input type="hidden" name="auth_code" value="${auth_code!''}">
@@ -20,14 +20,6 @@ Please wait...
 
 
 <script>
-
-        function onloadEvent() {
-        debugger;
-               var form = document.getElementById("form");
-               form.submit();
-           }
-window.onload=onloadEvent;
-
 
 
        // <!--function load(){-->

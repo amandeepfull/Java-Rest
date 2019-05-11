@@ -6,6 +6,17 @@
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 
 
+
+    <servlet>
+        <servlet-name>redirect</servlet-name>
+        <jsp-file>/redirect.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redirect</servlet-name>
+        <url-pattern>/o/auth/redirect</url-pattern>
+    </servlet-mapping>
+
+
     <!-- Objectify Filter -->
     <filter>
         <filter-name>ObjectifyFilter</filter-name>

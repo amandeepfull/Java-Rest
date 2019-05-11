@@ -81,5 +81,4 @@ public class AuthEndpoint extends AbstractBaseEndpoint {
         return Response.ok(response).build();
     }
 
-
 }

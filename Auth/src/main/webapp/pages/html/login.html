@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../css/styles.css" />
     <script>
@@ -55,17 +55,28 @@ console.log(e);
 function getInfo(){
 if(request.readyState==4){
 var val=request.responseText;
-document.getElementById('main-app').innerHTML=val;
+
+if(isHTML(val)){
+   document.getElementsByTagName("html")[0].innerHTML = val;
+   document.getElementById("form").submit();
+}
+
 
 }
+}
+
+function isHTML(str) {
+  var doc = new DOMParser().parseFromString(str, "text/html");
+  return Array.from(doc.body.childNodes).some(node => node.nodeType === 1);
 }
 
     </script>
     <!-- endbuild -->
 </head>
-<body>
+<body onload="">
 
-    <div id="main-app">
+
+    <div id="auth-login-app">
         <h1>OauthCater.</h1>
         <div id="signin-view">
             <h2>Login</h2>
