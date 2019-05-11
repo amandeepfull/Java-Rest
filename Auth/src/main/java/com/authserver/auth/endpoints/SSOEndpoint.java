@@ -2,7 +2,9 @@ package com.authserver.auth.endpoints;
 
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.services.FreeMarkerService;
+import com.commons.services.MCacheService;
 import com.commons.utils.AppUtils;
+import com.commons.utils.HashUtil;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -16,7 +18,9 @@ public class SSOEndpoint extends AbstractBaseEndpoint {
 
     @GET
     @Path("/CheckCookie")
-    public Response checkCookie(@QueryParam("auth_code") String authCode, @QueryParam("state") String state, @QueryParam("redirect_uri") String redirectUri){
+    public Response checkCookie(@QueryParam("state") String state, @QueryParam("redirect_uri") String redirectUri){
+
+        String authCode = (String) MCacheService.getInstance().get(HashUtil.sha256(state + redirectUri));
 
         Map<String, String> params = new HashMap<>();
         params.put("auth_code", authCode);

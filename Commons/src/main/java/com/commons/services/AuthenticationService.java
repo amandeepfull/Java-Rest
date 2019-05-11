@@ -14,10 +14,7 @@ import com.commons.http.UrlFetcher;
 import com.commons.objectify.OfyService;
 import com.commons.entity.Token;
 import com.commons.requests.TokenRequest;
-import com.commons.utils.AppUtils;
-import com.commons.utils.ObjUtil;
-import com.commons.utils.Preconditions;
-import com.commons.utils.Utils;
+import com.commons.utils.*;
 import lombok.extern.slf4j.Slf4j;
 import org.jose4j.jwt.JwtClaims;
 import org.jose4j.jwt.MalformedClaimException;
@@ -132,8 +129,8 @@ public class AuthenticationService extends OfyService {
 
         System.out.println("redirected to : "+url);
 
-
-        return AppUtils.getRedirectUriResponse("/o/sso/CheckCookie?auth_code="+authCode+"&state="+state+"&redirect_uri="+redirectUri);
+        MCacheService.getInstance().put(HashUtil.sha256(state + redirectUri), authCode, 60);
+        return AppUtils.getRedirectUriResponse("/o/sso/CheckCookie?state="+state+"&redirect_uri="+redirectUri);
 
 
     }

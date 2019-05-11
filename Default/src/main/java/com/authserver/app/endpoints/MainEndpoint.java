@@ -90,7 +90,7 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 
         System.out.println("stateId started : "+stateId);
         String host = Utils.getHost(servletRequest);
-        String url = CommonConstants.OAUTH_CATER_URL+"/o/service/login?redirect_uri="+CommonConstants.OAUTH_CATER_AUTH_CALLBACK+"&client_id="+CommonConstants.OAUTH_CATER_CLIENT_ID+"&state=" + stateId+"&host="+host+"&service=dashboard";
+        String url = CommonConstants.OAUTH_CATER_AUTH_URL+"/o/service/login?redirect_uri="+CommonConstants.OAUTH_CATER_AUTH_CALLBACK+"&client_id="+CommonConstants.OAUTH_CATER_CLIENT_ID+"&state=" + stateId+"&service=dashboard";
 
         return AppUtils.getRedirectUriResponse(url);
     }
@@ -117,7 +117,7 @@ public class MainEndpoint extends AbstractBaseEndpoint {
         payload.put("client_secret", CommonConstants.OAUTH_CATER_CLIENT_SECRET);
         payload.put("redirect_uri", CommonConstants.OAUTH_CATER_AUTH_CALLBACK);
 
-        HttpRequest request = new HttpRequest(CommonConstants.OAUTH_CATER_URL+"/o/auth/token", HttpMethod.POST);
+        HttpRequest request = new HttpRequest(CommonConstants.OAUTH_CATER_AUTH_URL+"/o/auth/token", HttpMethod.POST);
         request.setContentType("application/json");
         request.setPayload(ObjUtil.getJson(payload));
         HttpResponse response = UrlFetcher.makeRequest(request);

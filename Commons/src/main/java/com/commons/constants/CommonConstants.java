@@ -16,11 +16,10 @@ public final class CommonConstants {
 
     public static final String OAUTH_CATER_API_URL = "https://api-dot-authserver-236711.appspot.com";
 
-    public static final String OAUTH_CATER_CLIENT_ID;
-    public static final String OAUTH_CATER_CLIENT_SECRET ;
-    public static final String  OAUTH_CATER_URL ;
-    public static final String OAUTH_CATER_AUTH_CALLBACK  ="http://localhost:8890/auth/callback";;
-
+    public static final String  OAUTH_CATER_CLIENT_ID ="bd8e9c07-d9ec-402e-95d1-5d175cf8b785";
+    public static final String  OAUTH_CATER_CLIENT_SECRET ="92f710bc-efb3-48bb-bd51-55b4024363a4";
+    public static final String  OAUTH_CATER_AUTH_URL = "https://auth-dot-authserver-236711.appspot.com";
+    public static final String OAUTH_CATER_AUTH_CALLBACK ;
     public static final AppMode APP_MODE ;
     static {
 
@@ -28,17 +27,15 @@ public final class CommonConstants {
 
 
         switch (APP_MODE){
-            case DEV:
+            case LIVE:
 
-                OAUTH_CATER_CLIENT_ID ="bd8e9c07-d9ec-402e-95d1-5d175cf8b785";
-                OAUTH_CATER_CLIENT_SECRET ="92f710bc-efb3-48bb-bd51-55b4024363a4";
-                OAUTH_CATER_URL = "https://auth-dot-authserver-236711.appspot.com";
+
+                OAUTH_CATER_AUTH_CALLBACK  ="https://authserver-236711.appspot.com/auth/callback";
                 break;
             default:
-                 OAUTH_CATER_CLIENT_ID ="c5538619-1bf5-4177-9981-ce6563c0175a";
-                OAUTH_CATER_CLIENT_SECRET ="cc217adb-7c95-4616-a7d1-78e5611b5bd7";
 
-                OAUTH_CATER_URL = "http://localhost:8890";
+                OAUTH_CATER_AUTH_CALLBACK  ="http://localhost:8890/auth/callback";;
+
                 break;
 
         }
