@@ -16,11 +16,11 @@ public class AppUtils {
     }
 
     public static String getHtmlPath(String fileName) {
-        return getPagesPath() + "/html/" + fileName + ".html";
+        return getPagesPath() + "html/" + fileName + ".html";
     }
 
    public static String getJspPagesPath(String fileName){
-        return getPagesPath() + fileName +".jsp";
+        return getPagesPath() +"jsp/"+ fileName +".jsp";
    }
 
     public static Response getRedirectUriResponse(String url) {

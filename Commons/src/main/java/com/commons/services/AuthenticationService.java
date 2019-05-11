@@ -14,18 +14,22 @@ import com.commons.http.UrlFetcher;
 import com.commons.objectify.OfyService;
 import com.commons.entity.Token;
 import com.commons.requests.TokenRequest;
-import com.commons.utils.AppUtils;
-import com.commons.utils.ObjUtil;
-import com.commons.utils.Preconditions;
+import com.commons.utils.*;
 import lombok.extern.slf4j.Slf4j;
 import org.jose4j.jwt.JwtClaims;
 import org.jose4j.jwt.MalformedClaimException;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.ForbiddenException;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;
+import java.io.IOException;
 import java.lang.invoke.MethodType;
 import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 @Slf4j
 public class AuthenticationService extends OfyService {
@@ -58,12 +62,14 @@ public class AuthenticationService extends OfyService {
     private void validateAuthCodeClaims(JwtClaims claims, String clientId, String clientSecret, String redirectUri) throws MalformedClaimException {
 
 
+        System.out.println("claims : "+claims.toString());
+        System.out.println("clienId : "+clientId);
         if (claims == null || !claims.getSubject().equals(clientId))
             throw new ForbiddenException("auth code expired/invalid");
 
-        App app = AppDaoImpl.getInstance().getById(clientId);
+        App app = AppDaoImpl.getInstance().getByClientId(clientId);
         Preconditions.checkArgument(app == null || !app.getClientSecret().equals(clientSecret), "Invalid client Id/secret");
-        Preconditions.checkArgument(!app.getRedirectUri().equals(redirectUri), "pass only configured redirect uri");
+        Preconditions.checkArgument(!app.getRedirectUri().contains(redirectUri), "pass only configured redirect uri");
     }
 
     public Token updateToken(String refreshToken, String clientId, String clientSecret) {
@@ -96,7 +102,7 @@ public class AuthenticationService extends OfyService {
 
     }
 
-    public Response login(String redirectUri, String clientId, String state, Contact contact) {
+    public Response login(String redirectUri, String clientId, String state, Contact contact, HttpServletRequest servletRequest, HttpServletResponse servletResponse) throws ServletException, IOException {
 
 
         Preconditions.checkArgument(ObjUtil.isBlank(redirectUri), "Invalid redirect url");
@@ -104,7 +110,7 @@ public class AuthenticationService extends OfyService {
         App app = AppDaoImpl.getInstance().getByClientId(clientId);
 
         Preconditions.checkArgument(app == null, "Invalid app");
-        Preconditions.checkArgument(!app.getRedirectUri().equals(redirectUri), "Redirect URI is not matching with configured");
+        Preconditions.checkArgument(!app.getRedirectUri().contains(redirectUri), "Redirect URI is not matching with configured");
 
         Preconditions.checkArgument(contact == null, "Invalid credentials payload");
 
@@ -117,15 +123,21 @@ public class AuthenticationService extends OfyService {
 
         MCacheService.getInstance().put(authCode, true, 60);
 
-        return AppUtils.getRedirectUriResponse(redirectUri+"?auth_code="+authCode+"&state="+state);
+        System.out.println("Contact : "+ObjUtil.getJson(contact));
+
+        String url = redirectUri+"?auth_code="+authCode+"&state="+state;
+
+        System.out.println("redirected to : "+url);
+
+        MCacheService.getInstance().put(HashUtil.sha256(state + redirectUri), authCode, 60);
+        return AppUtils.getRedirectUriResponse("/o/sso/CheckCookie?state="+state+"&redirect_uri="+redirectUri);
+
+
     }
 
     public static AuthenticationService getInstance() {
         return AuthenticationServiceInitializer.authenticationService;
     }
 
-    public Contact signup(Contact contact) {
 
-        return ContactDaoImpl.getInstance().createContact(contact);
-    }
 }

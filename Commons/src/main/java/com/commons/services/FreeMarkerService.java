@@ -21,13 +21,13 @@ public class FreeMarkerService {
 
     static {
         fmConfig = new Configuration(Configuration.VERSION_2_3_23);
-        fmConfig.setServletContextForTemplateLoading(ResteasyProviderFactory.getContextData(ServletContext.class), "WEB-INF/");
+        fmConfig.setServletContextForTemplateLoading(ResteasyProviderFactory.getContextData(ServletContext.class), "/");
         fmConfig.setDefaultEncoding("UTF-8");
         fmConfig.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
     }
 
     public static String pageTmplPath() {
-        return "pages/dev/html/tmpl";
+        return "pages/html";
     }
 
     public static Template getHtmlTemplate(String fileName) throws IOException {
@@ -36,6 +36,7 @@ public class FreeMarkerService {
     }
 
     public static Template getTemplate(String path) throws Exception {
+
         return fmConfig.getTemplate(path);
     }
 
@@ -63,8 +64,7 @@ public class FreeMarkerService {
         servletResponse.setHeader("Strict-Transport-Security", "max-age=31536000");
 
         try {
-            Template tmpl = FreeMarkerService.getHtmlTemplate(tmplFileName);
-
+            Template tmpl = FreeMarkerService.getTemplate(tmplFileName);
             System.out.println("template params : "+ObjUtil.getJson(tmplParams));
             tmpl.process(tmplParams, servletResponse.getWriter());
             return true;

@@ -27,6 +27,7 @@ public class ApiKeyFilter implements ContainerRequestFilter {
     @Override
     public void filter(ContainerRequestContext reqContext) throws IOException {
 
+
         String apiKey =  extractApiKey(reqContext.getHeaderString("Authorization"));
 
         if (ObjUtil.isBlank(apiKey) || !apiKey.equals(CommonConstants.AUTH_API_KEY)){

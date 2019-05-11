@@ -1,7 +1,7 @@
 package com.authserver.api.config;
 
-import com.authserver.api.endpoints.apis.AppEndpoint;
 import com.authserver.api.endpoints.apis.ContactEndpoint;
+import com.authserver.api.endpoints.apis.AppEndpoint;
 import com.commons.config.JacksonObjectResolver;
 import com.commons.entity.App;
 import com.commons.entity.Contact;
@@ -9,7 +9,6 @@ import com.commons.entity.Token;
 import com.commons.exception.mapper.*;
 import com.commons.filters.ApiKeyFilter;
 import com.commons.objectify.OfyService;
-import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.util.jackson.ObjectifyJacksonModule;
 import org.jboss.resteasy.plugins.interceptors.CorsFilter;
 

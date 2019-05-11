@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <script>
+
+       var request;
+       var host;
+       var service;
+function login()
+{
+
+var email=document.getElementById("login").value;
+var pass=document.getElementById("password").value;
+var loginButton = document.getElementById("login-button");
+var clientId = loginButton.getAttribute("data-clientId");
+var redirectUri = loginButton.getAttribute("data-redirect_uri");
+var state = loginButton.getAttribute("data-state");
+ service = loginButton.getAttribute("data-service");
+ host = loginButton.getAttribute("data-host");
+
+
+var json = {
+email : email,
+password : pass
+}
+
+
+var url="https://auth-dot-authserver-236711.appspot.com/o/auth/login?redirect_uri="+redirectUri+"&client_id="+clientId+"&state="+state;
+
+if(window.XMLHttpRequest){
+request=new XMLHttpRequest();
+}
+else if(window.ActiveXObject){
+request=new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+try
+{
+request.onreadystatechange = getInfo;
+request.open("POST",url,true);
+request.setRequestHeader("Content-type", "application/json");
+request.send(JSON.stringify(json));
+}
+catch(e)
+{
+console.log(e);
+}
+
+}
+
+function getInfo(){
+if(request.readyState==4){
+var val=request.responseText;
+
+if(isHTML(val)){
+   document.getElementsByTagName("html")[0].innerHTML = val;
+   document.getElementById("form").submit();
+}
+
+
+}
+}
+
+function isHTML(str) {
+  var doc = new DOMParser().parseFromString(str, "text/html");
+  return Array.from(doc.body.childNodes).some(node => node.nodeType === 1);
+}
+
+    </script>
+    <!-- endbuild -->
+</head>
+<body onload="">
+
+
+    <div id="auth-login-app">
+        <h1>OauthCater.</h1>
+        <div id="signin-view">
+            <h2>Login</h2>
+
+            <h3 id="login-form"></h3>
+            email <input type="text" id="login" class="form-control"><br>
+            password <input type="password" id="password" class="form-control"><br>
+
+            <button class="btn btn-primary" value="login" onclick="login()" id="login-button" data-redirect_uri="${redirect_uri!''}" data-clientId="${client_id!''}" data-state="${state!''}" data-host="${host!''}" data-service="${service!''}">Login</button>
+        </div>
+    </div>
+    <!-- dfPanel -->
+
+<!-- main -->
+</body>
+</html>

@@ -1,5 +1,8 @@
 package com.commons.constants;
 
+import com.commons.Enum.AppMode;
+import com.commons.utils.GaeUtil;
+
 public final class CommonConstants {
 
     public static final String JSON_CONTENTTYPE = "application/json; charset=utf-8";
@@ -10,5 +13,32 @@ public final class CommonConstants {
 
     public static final float USER_ACCESS_TOKEN_EXPIRY_MINS = 60 * 7;
     public static final float AUTH_CODE_EXPIRE_MIN = 1;
+
+    public static final String OAUTH_CATER_API_URL = "https://api-dot-authserver-236711.appspot.com";
+
+    public static final String  OAUTH_CATER_CLIENT_ID ="bd8e9c07-d9ec-402e-95d1-5d175cf8b785";
+    public static final String  OAUTH_CATER_CLIENT_SECRET ="92f710bc-efb3-48bb-bd51-55b4024363a4";
+    public static final String  OAUTH_CATER_AUTH_URL = "https://auth-dot-authserver-236711.appspot.com";
+    public static final String OAUTH_CATER_AUTH_CALLBACK ;
+    public static final AppMode APP_MODE ;
+    static {
+
+        APP_MODE = GaeUtil.getAppMode();
+
+
+        switch (APP_MODE){
+            case LIVE:
+
+
+                OAUTH_CATER_AUTH_CALLBACK  ="https://authserver-236711.appspot.com/auth/callback";
+                break;
+            default:
+
+                OAUTH_CATER_AUTH_CALLBACK  ="http://localhost:8890/auth/callback";;
+
+                break;
+
+        }
+    }
 }
 

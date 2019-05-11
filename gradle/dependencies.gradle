@@ -35,9 +35,9 @@ ext {
     config = [
             gae: [
                     port           : [
-                            default: 8889,
+                            default: 8890,
                             api    : 8882,
-                            commons: 8883
+                            auth : 8881
                     ],
                     defaultJvmFlags: [
                             '-Dappengine.fullscan.seconds=3',

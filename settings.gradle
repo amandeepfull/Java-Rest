@@ -3,5 +3,4 @@ rootProject.name = 'AuthServer'
 include 'Commons'
 include 'Default'
 include 'Api'
-
-
+include 'Auth'
