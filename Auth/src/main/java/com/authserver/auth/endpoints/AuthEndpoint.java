@@ -39,46 +39,5 @@ public class AuthEndpoint extends AbstractBaseEndpoint {
 
     }
 
-    @POST
-    @Path("/token")
-    public Response createToken(TokenRequest tokenRequest) throws EntityException, ForbiddenException, MalformedClaimException
-
-    {
-
-
-        ApiResponse response = new ApiResponse();
-
-        Preconditions.checkArgument(tokenRequest == null, "Invalid token request");
-
-        Token token =  AuthenticationService.getInstance().createToken(tokenRequest.getCode(), tokenRequest.getClientId(), tokenRequest.getClientSecret(), tokenRequest.getRedirectUri());
-
-        if(token == null)
-            throw new EntityException(EntityErrorCode.CREATE_FAILED, "failed to create token");
-
-        TokenResponse tokenResponse = new TokenResponse(token);
-        response.add("token", tokenResponse);
-        response.setOk(true);
-
-        return Response.ok(response).build();
-    }
-
-    @POST
-    @Path("/refresh/token")
-    public Response updateTokenByRefreshToken(TokenRequest tokenRequest) throws EntityException, ForbiddenException, MalformedClaimException
-
-    {
-        ApiResponse response = new ApiResponse();
-
-        Token token =  AuthenticationService.getInstance().updateToken(tokenRequest.getRefreshToken(), tokenRequest.getClientId(), tokenRequest.getClientSecret());
-
-        if(token == null)
-            throw new EntityException(EntityErrorCode.UPDATE_FAILED, "failed to update token by refresh token");
-
-        TokenResponse tokenResponse = new TokenResponse(token);
-        response.add("token", tokenResponse);
-        response.setOk(true);
-
-        return Response.ok(response).build();
-    }
 
 }

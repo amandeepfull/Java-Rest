@@ -10,6 +10,7 @@ import com.commons.utils.Preconditions;
 import com.commons.utils.RandomUtil;
 
 import javax.ws.rs.NotFoundException;
+import java.util.List;
 import java.util.UUID;
 
 public class AppDaoImpl extends OfyService implements AppDao {
@@ -33,6 +34,11 @@ public class AppDaoImpl extends OfyService implements AppDao {
        return save(app) != null ? app : null;
     }
 
+    public List<App> getUserApps(String userId) {
+
+        return OfyService.ofy().load().type(App.class).filter("createdBy", userId).list();
+    }
+
     private static class AppRegistrationServiceInitializer{
         private static final AppDaoImpl appRegService = new AppDaoImpl();
     }
@@ -42,7 +48,7 @@ public class AppDaoImpl extends OfyService implements AppDao {
     }
 
     @Override
-    public App saveApp(App app) {
+    public App create(App app) {
 
         validateApp(app);
         Preconditions.checkArgument(app == null, "Invalid app request body to save");
@@ -66,8 +72,11 @@ public class AppDaoImpl extends OfyService implements AppDao {
 
         Preconditions.checkArgument(app == null, "Invalid app to save");
         Preconditions.checkArgument(ObjUtil.isBlank(app.getName()), "app name cannot be null/empty");
-        Preconditions.checkArgument(ObjUtil.isNullOrEmpty(app.getRedirectUri()), "redirect uri cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isNullOrEmpty(app.getRedirectUris()), "redirect uri cannot be null/empty");
         Preconditions.checkArgument(app.getType() == null, "Invalid app type, it can be, "+AppType.MOBILE+"/"+AppType.WEB+"/"+AppType.WEB_MOB);
-       // Preconditions.checkArgument(ObjUtil.isNullOrEmpty(app.getScopes()), "scopes cannot be null/empty");
-    }
+        Preconditions.checkArgument(ObjUtil.isBlank(app.getCreatedBy()), "createdBy cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isNullOrEmpty(app.getScopes()),"scopes cannot be null/or empty");
+
+
+       }
 }

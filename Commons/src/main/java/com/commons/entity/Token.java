@@ -34,13 +34,16 @@ public class Token  extends AbstractBaseEntity {
     private List<String> scopes;
 
     @Index
-    private String userId;
+    private String userName;
 
     @Index
     private String issuedTo;
 
     @Index
     private TokenType tokenType;
+
+    @Unindex
+    private String privateKey;
 
 
 

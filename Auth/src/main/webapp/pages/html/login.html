@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="../../css/styles.css" />
     <script>
 
-       var request;
-       var host;
-       var service;
+ var request;
+
 function login()
 {
 
@@ -19,8 +18,6 @@ var loginButton = document.getElementById("login-button");
 var clientId = loginButton.getAttribute("data-clientId");
 var redirectUri = loginButton.getAttribute("data-redirect_uri");
 var state = loginButton.getAttribute("data-state");
- service = loginButton.getAttribute("data-service");
- host = loginButton.getAttribute("data-host");
 
 
 var json = {
@@ -85,7 +82,7 @@ function isHTML(str) {
             email <input type="text" id="login" class="form-control"><br>
             password <input type="password" id="password" class="form-control"><br>
 
-            <button class="btn btn-primary" value="login" onclick="login()" id="login-button" data-redirect_uri="${redirect_uri!''}" data-clientId="${client_id!''}" data-state="${state!''}" data-host="${host!''}" data-service="${service!''}">Login</button>
+            <button class="btn btn-primary" value="login" onclick="login()" id="login-button" data-redirect_uri="${redirect_uri!''}" data-clientId="${client_id!''}" data-state="${state!''}">Login</button>
         </div>
     </div>
     <!-- dfPanel -->

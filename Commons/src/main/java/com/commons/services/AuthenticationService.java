@@ -29,54 +29,67 @@ import java.io.IOException;
 import java.lang.invoke.MethodType;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Slf4j
 public class AuthenticationService extends OfyService {
 
 
-    public Token createToken(String authCode, String clientId, String clientSecret, String redirectUri) throws ForbiddenException, MalformedClaimException {
+    public Token createToken(String authCode, String clientId, String clientSecret, String redirectUri, List<String> scopes) throws ForbiddenException, MalformedClaimException {
 
 
         Preconditions.checkArgument(ObjUtil.isBlank(authCode), "auth code cannot be null/empty");
         Preconditions.checkArgument(ObjUtil.isBlank(clientId), "client Id cannot be null/empty");
 
-        if(MCacheService.getInstance().get(authCode) == null)
+        if (MCacheService.getInstance().get(authCode) == null)
             throw new ForbiddenException("auth code expired/invalid");
 
-        JwtClaims claims = JWTService.getInstance().decodeToken(authCode);
+        JwtClaims claims = JWTService.getInstance().decodeAuthToken(authCode);
 
-        validateAuthCodeClaims(claims, clientId, clientSecret, redirectUri);
+        validateFetchTokenRequest(claims, clientId, clientSecret, redirectUri, scopes);
 
-        Contact contact = ContactDaoImpl.getInstance().getById((String) claims.getClaimValue(ReservedClaims.USERID.toString()));
+        // todo needs to check through registered app configured endpoint
 
-        Token token = TokenDaoImpl.getInstance().createToken(clientId, contact.getId());
+        Contact contact = ContactDaoImpl.getInstance().getByEmail(claims.getSubject());
 
-        if(token != null)
-        MCacheService.getInstance().remove(authCode);
+        Token token = TokenDaoImpl.getInstance().createToken(clientId, contact.getEmail(), scopes);
+
+        if (token != null)
+            MCacheService.getInstance().remove(authCode);
 
         return token;
 
     }
 
-    private void validateAuthCodeClaims(JwtClaims claims, String clientId, String clientSecret, String redirectUri) throws MalformedClaimException {
+    private void validateFetchTokenRequest(JwtClaims claims, String clientId, String clientSecret, String redirectUri, List<String> scopes) throws MalformedClaimException {
 
+        if (claims == null)
+            throw new ForbiddenException("Invalid auth code claims");
 
-        System.out.println("claims : "+claims.toString());
-        System.out.println("clienId : "+clientId);
-        if (claims == null || !claims.getSubject().equals(clientId))
-            throw new ForbiddenException("auth code expired/invalid");
 
         App app = AppDaoImpl.getInstance().getByClientId(clientId);
-        Preconditions.checkArgument(app == null || !app.getClientSecret().equals(clientSecret), "Invalid client Id/secret");
-        Preconditions.checkArgument(!app.getRedirectUri().contains(redirectUri), "pass only configured redirect uri");
+
+        if (app == null)
+            throw new ForbiddenException("Invalid client");
+
+        if (!ObjUtil.isBlank(app.getClientSecret()) && !app.getClientSecret().equals(clientSecret))
+            throw new ForbiddenException("Invalid client secret");
+
+        Preconditions.checkArgument(!app.getRedirectUris().contains(redirectUri), "pass only configured redirect uri");
+        Preconditions.checkArgument(ObjUtil.isNullOrEmpty(scopes), "scopes cannot be null/empty");
+
+        for (String scope : scopes) {
+            Preconditions.checkArgument(!app.getScopes().contains(scope), "Invalid scope ," + scope + " please pass configured scopes");
+        }
+
     }
 
     public Token updateToken(String refreshToken, String clientId, String clientSecret) {
 
         validateUpdateToken(refreshToken, clientId, clientSecret);
 
-        return TokenDaoImpl.getInstance().updateTokenForRefreshToken(refreshToken);
+        return TokenDaoImpl.getInstance().updateUserTokenForRefreshToken(refreshToken);
     }
 
     private void validateUpdateToken(String refreshToken, String clientId, String clientSecret) {
@@ -85,12 +98,12 @@ public class AuthenticationService extends OfyService {
 
         Token token = TokenDaoImpl.getInstance().getByRefreshToken(refreshToken);
 
-        if(token == null)
+        if (token == null)
             throw new NotFoundException("refresh token not found");
 
         App app = AppDaoImpl.getInstance().getById(token.getIssuedTo());
 
-        if(app == null)
+        if (app == null)
             throw new NotFoundException("client not found");
 
         Preconditions.checkArgument(!app.getId().equals(clientId) || !app.getClientSecret().equals(clientSecret), "Invalid clientId/secret to update access token with refresh token");
@@ -110,27 +123,28 @@ public class AuthenticationService extends OfyService {
         App app = AppDaoImpl.getInstance().getByClientId(clientId);
 
         Preconditions.checkArgument(app == null, "Invalid app");
-        Preconditions.checkArgument(!app.getRedirectUri().contains(redirectUri), "Redirect URI is not matching with configured");
+        Preconditions.checkArgument(!app.getRedirectUris().contains(redirectUri), "Redirect URI is not matching with configured");
 
         Preconditions.checkArgument(contact == null, "Invalid credentials payload");
 
+        /// todo needs to check with registered app configured contact check endpoint
         Contact loginUser = ContactDaoImpl.getInstance().getByEmail(contact.getEmail());
 
         Preconditions.checkArgument(loginUser == null || (!loginUser.getPassword().equals(contact.getPassword())), "Invalid credentials");
 
 
-        String authCode = JWTService.getInstance().createToken(clientId, loginUser.getId(), CommonConstants.AUTH_CODE_EXPIRE_MIN);
+        String authCode = JWTService.getInstance().createAuthToken(clientId, loginUser.getEmail(), CommonConstants.AUTH_CODE_EXPIRE_MIN);
 
         MCacheService.getInstance().put(authCode, true, 60);
 
-        System.out.println("Contact : "+ObjUtil.getJson(contact));
+        System.out.println("Contact : " + ObjUtil.getJson(contact));
 
-        String url = redirectUri+"?auth_code="+authCode+"&state="+state;
+        String url = redirectUri + "?auth_code=" + authCode + "&state=" + state;
 
-        System.out.println("redirected to : "+url);
+        System.out.println("redirected to : " + url);
 
         MCacheService.getInstance().put(HashUtil.sha256(state + redirectUri), authCode, 60);
-        return AppUtils.getRedirectUriResponse("/o/sso/CheckCookie?state="+state+"&redirect_uri="+redirectUri);
+        return AppUtils.getRedirectUriResponse("/o/sso/CheckCookie?state=" + state + "&redirect_uri=" + redirectUri);
 
 
     }
