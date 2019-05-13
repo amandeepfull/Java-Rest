@@ -3,6 +3,7 @@ package com.authserver.auth.config;
 import com.authserver.auth.endpoints.AuthEndpoint;
 import com.authserver.auth.endpoints.SSOEndpoint;
 import com.authserver.auth.endpoints.ServiceEndpoint;
+import com.authserver.auth.endpoints.TokenEndpoint;
 import com.authserver.auth.filters.AuthApiRespFilter;
 import com.commons.config.JacksonObjectResolver;
 import com.commons.entity.App;
@@ -44,7 +45,8 @@ public class AppConfig extends Application {
         classes.add(ServiceEndpoint.class);
         classes.add(AuthEndpoint.class);
         classes.add(SSOEndpoint.class);
-
+        classes.add(TokenEndpoint.class);
+        
         // json com.config
         classes.add(JacksonObjectResolver.class);
         classes.add(ObjectifyJacksonModule.class);

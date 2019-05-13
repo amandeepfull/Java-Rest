@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public enum ReservedClaims {
 
-    USERID("userId");
+     ISSUED_TO("issuedTo"), SCOPES("scopes");
 
     private String value;
 

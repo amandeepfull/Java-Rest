@@ -1,8 +1,13 @@
 package com.commons.services;
 
 
+import com.commons.DaoImplServices.TokenDaoImpl;
 import com.commons.Enum.ReservedClaims;
 import com.commons.constants.CommonConstants;
+import com.commons.entity.Token;
+import com.commons.utils.HashUtil;
+import com.commons.utils.ObjUtil;
+import com.commons.utils.Preconditions;
 import lombok.extern.slf4j.Slf4j;
 import org.jose4j.jwa.AlgorithmConstraints;
 import org.jose4j.jws.AlgorithmIdentifiers;
@@ -14,11 +19,19 @@ import org.jose4j.jwt.consumer.JwtConsumerBuilder;
 import org.jose4j.keys.HmacKey;
 import org.jose4j.lang.JoseException;
 
+import java.util.List;
+
 @Slf4j
 public class JWTService {
 
 
-    public String createToken(String clientId, String userId,  float mins) {
+    public Token createUserAccessToken(String clientId, String userName, List<String> scopes, float mins) {
+
+        Preconditions.checkArgument(ObjUtil.isBlank(clientId), "clientId cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isBlank(userName), "unique id for user cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isNullOrEmpty(scopes), "scopes cannot be null/empty");
+
+        Token token = new Token();
 
         try {
 
@@ -27,8 +40,53 @@ public class JWTService {
 
             claims.setIssuer(CommonConstants.AUTH_API_KEY);
             claims.setExpirationTimeMinutesInTheFuture(mins);
-            claims.setSubject(clientId);
-            claims.setClaim(ReservedClaims.USERID.toString(), userId);
+            claims.setSubject(userName);
+            claims.setClaim(ReservedClaims.ISSUED_TO.toString(), clientId);
+            claims.setClaim(ReservedClaims.SCOPES.toString(), scopes);
+
+            claims.setIssuedAtToNow();
+
+            // Generate the payload
+            final JsonWebSignature jws = new JsonWebSignature();
+            jws.setAlgorithmHeaderValue(AlgorithmIdentifiers.HMAC_SHA256);
+            jws.setHeader("typ", "JWT");
+
+            String claimJson = claims.toJson();
+            jws.setPayload(claimJson);
+
+            // Sign using the private key
+            String privateKey = HashUtil.sha256(claimJson + CommonConstants.SIGN_SECRET_KEY);
+            HmacKey key = new HmacKey(HashUtil.sha256(privateKey).getBytes());
+            jws.setKey(key);
+
+
+            token.setPrivateKey(privateKey);
+            token.setAccessToken(jws.getCompactSerialization());
+            return token;
+        } catch (JoseException e) {
+            log.error("exception while creating access token : ", e.getMessage(), e);
+            return null;
+        }
+    }
+
+
+
+    public String createAuthToken(String clientId, String userName, float mins) {
+
+
+        Preconditions.checkArgument(ObjUtil.isBlank(clientId), "clientId cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isBlank(userName), "unique id for user cannot be null/empty");
+
+        try {
+
+            final JwtClaims claims = new JwtClaims();
+
+
+            claims.setIssuer(CommonConstants.AUTH_API_KEY);
+            claims.setExpirationTimeMinutesInTheFuture(mins);
+            claims.setSubject(userName);
+            claims.setClaim(ReservedClaims.ISSUED_TO.toString(), clientId);
+
             claims.setIssuedAtToNow();
 
             // Generate the payload
@@ -37,29 +95,49 @@ public class JWTService {
             jws.setHeader("typ", "JWT");
 
             jws.setPayload(claims.toJson());
-            // Sign using the private key
+
             HmacKey key = new HmacKey(CommonConstants.SIGN_SECRET_KEY.getBytes());
             jws.setKey(key);
 
 
             return jws.getCompactSerialization();
         } catch (JoseException e) {
-            log.error("exception while creating access token : ",e.getMessage(), e);
+            log.error("exception while creating access token : ", e.getMessage(), e);
             return null;
         }
     }
 
-    private static class JWTServiceInitializer{
+    private static class JWTServiceInitializer {
         private static final JWTService jwtService = new JWTService();
     }
 
-    public static JWTService getInstance(){
+    public static JWTService getInstance() {
         return JWTServiceInitializer.jwtService;
     }
 
 
+    public JwtClaims decodeAccessToken(String token, String privateKey) {
 
-    public JwtClaims decodeToken(String token)  {
+
+        JwtConsumer jwtConsumer = new JwtConsumerBuilder()
+                .setRequireExpirationTime()
+                .setExpectedIssuer(CommonConstants.AUTH_API_KEY)
+                .setVerificationKey(new HmacKey(HashUtil.sha256(privateKey).getBytes()))
+                .setJwsAlgorithmConstraints(
+                        new AlgorithmConstraints(AlgorithmConstraints.ConstraintType.WHITELIST,
+                                AlgorithmIdentifiers.HMAC_SHA256))
+                .build();
+
+        try {
+            return jwtConsumer.processToClaims(token);
+
+        } catch (InvalidJwtException e) {
+            log.error("exception while getting claims from jwt:", e.getMessage(), e);
+            return null;
+        }
+    }
+
+    public JwtClaims decodeAuthToken(String token) {
 
         JwtConsumer jwtConsumer = new JwtConsumerBuilder()
                 .setRequireExpirationTime()
@@ -71,23 +149,12 @@ public class JWTService {
                 .build();
 
         try {
-           return jwtConsumer.processToClaims(token);
+            return jwtConsumer.processToClaims(token);
 
-        }catch (InvalidJwtException e){
-            log.error("exception while getting claims from jwt:",e.getMessage(), e);
+        } catch (InvalidJwtException e) {
+            log.error("exception while getting claims from jwt:", e.getMessage(), e);
             return null;
         }
     }
 
-//    public static void main(String arg[]){
-//
-//
-//        Contact contact = new Contact();
-//        contact.setId("love");
-//        contact.setClientId("nothing");
-//
-//       String authCode = new JWTService().createAuthCode( "sfdsfdsfdsf","clientId");
-//        System.out.println(authCode);
-//        System.out.println(new JWTService().decodeAuthCode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmZmJjY2EwZi01ZWI1LTQ1ODUtYTYwMC0yZjgzZGMyNDNhYjAiLCJleHAiOjE1NTYxMDQ0OTUsInN1YiI6IjJmZGZiNTAwLTJjY2EtNGI3NC1hZDRkLWVmMWQxODBkOTI2YSIsInVzZXJJZCI6IjcyMmUyNzdkLTNjZTUtNDQxNS04YjA0LTJiYjJiZDYyMTliYyIsImlhdCI6MTU1NjEwNDQzNX0.CZXZ6sIWyIqd3uSpO3FdKEygO1VSNCRFjrN40ZFK7VI"));
-//    }
 }

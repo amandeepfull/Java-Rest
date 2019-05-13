@@ -42,12 +42,12 @@ public class ContactDaoImpl extends OfyService implements ContactDao {
         return get(Contact.class, userId);
     }
 
-    public Contact getByIdFromRemote(String userId) {
+    public Contact getByUnameFromRemote(String uname) {
 
-        Preconditions.checkArgument(ObjUtil.isBlank(userId), "userId cannot be null/empty");
+        Preconditions.checkArgument(ObjUtil.isBlank(uname), "user unique pin cannot be null/empty");
 
         try {
-            HttpRequest request = new HttpRequest(CommonConstants.OAUTH_CATER_API_URL + "/api/v1/contact/" + userId, HttpMethod.GET);
+            HttpRequest request = new HttpRequest(CommonConstants.OAUTH_CATER_API_URL + "/api/v1/contact/uname/" + uname, HttpMethod.GET);
             //request.addHeader("Authorization", "ApiKey=" + CommonConstants.AUTH_API_KEY);
 
             HttpResponse response = UrlFetcher.makeRequest(request);

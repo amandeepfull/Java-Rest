@@ -3,6 +3,8 @@ package com.commons.requests;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class TokenRequest {
 
@@ -20,4 +22,7 @@ public class TokenRequest {
 
     @JsonProperty("refresh_token")
     private String refreshToken;
+
+    @JsonProperty("scopes")
+    private List<String> scopes;
 }

@@ -19,6 +19,8 @@ public final class CommonConstants {
     public static final String  OAUTH_CATER_CLIENT_ID ="bd8e9c07-d9ec-402e-95d1-5d175cf8b785";
     public static final String  OAUTH_CATER_CLIENT_SECRET ="92f710bc-efb3-48bb-bd51-55b4024363a4";
     public static final String  OAUTH_CATER_AUTH_URL = "https://auth-dot-authserver-236711.appspot.com";
+    public static final String OAUTH_CATER_APP_ID = "oauthcater_o9pfvoui";
+
     public static final String OAUTH_CATER_AUTH_CALLBACK ;
     public static final AppMode APP_MODE ;
     static {
@@ -40,5 +42,9 @@ public final class CommonConstants {
 
         }
     }
+
+
+
+
 }
 

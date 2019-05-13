@@ -25,12 +25,12 @@ public class ContactEndpoint extends AbstractBaseEndpoint {
     }
 
     @GET
-    @Path("/{contactId}")
-    public Response getContact (@PathParam("contactId") String contactId){
+    @Path("/uname/{uname}")
+    public Response getContact (@PathParam("uname") String uname){
 
         ApiResponse response = new ApiResponse();
 
-        Contact contact = ContactDaoImpl.getInstance().getById(contactId);
+        Contact contact = ContactDaoImpl.getInstance().getByEmail(uname);
 
         if(contact == null)
             throw new NotFoundException("contact not found");

@@ -31,16 +31,14 @@ public class ServiceEndpoint extends AbstractBaseEndpoint {
         App app = AppDaoImpl.getInstance().getByClientId(clientId);
 
         Preconditions.checkArgument(app == null, "Invalid app");
-        Preconditions.checkArgument(!app.getRedirectUri().contains(redirectUri), "pass only configured redirect uri");
+        Preconditions.checkArgument(!app.getRedirectUris().contains(redirectUri), "pass only configured redirect uri");
         Preconditions.checkArgument(ObjUtil.isBlank(state), "Invalid state");
-       // Preconditions.checkArgument(ObjUtil.isBlank(service) || !app.getService().equals(service), "Invalid service");
 
         Map<String, Object> params = new HashMap<>();
         params.put("redirect_uri", redirectUri);
         params.put("client_id", clientId);
         params.put("state",state);
-        params.put("host", host);
-        params.put("service",service);
+
 
         FreeMarkerService.writeHtmlResponse(servletResponse, 200, AppUtils.getHtmlPath("login"), params);
         return null;

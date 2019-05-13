@@ -16,6 +16,8 @@ import java.util.Set;
 @Entity
 public class App extends AbstractBaseEntity {
 
+
+
     @Index
     private String name;
 
@@ -32,7 +34,7 @@ public class App extends AbstractBaseEntity {
     private String clientSecret;
 
     @Unindex
-    private Set<String> redirectUri;
+    private Set<String> redirectUris;
 
     @Unindex
     private Set<String> scopes;
@@ -42,6 +44,9 @@ public class App extends AbstractBaseEntity {
 
     @Unindex
     private String service;
+
+    @Index
+    private String createdBy;
 
     @Unindex
     @Serialize
@@ -63,8 +68,8 @@ public class App extends AbstractBaseEntity {
         if(!ObjUtil.isBlank(updateApp.name))
             name = updateApp.name;
 
-        if(!ObjUtil.isNullOrEmpty(updateApp.redirectUri))
-            redirectUri.addAll(updateApp.redirectUri);
+        if(!ObjUtil.isNullOrEmpty(updateApp.redirectUris))
+            redirectUris.addAll(updateApp.redirectUris);
 
         return this;
     }

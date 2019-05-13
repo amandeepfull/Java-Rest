@@ -16,11 +16,14 @@ import java.util.Map;
 @Path("/o/sso")
 public class SSOEndpoint extends AbstractBaseEndpoint {
 
+    // todo single sign is pending
+
     @GET
     @Path("/CheckCookie")
     public Response checkCookie(@QueryParam("state") String state, @QueryParam("redirect_uri") String redirectUri){
 
         String authCode = (String) MCacheService.getInstance().get(HashUtil.sha256(state + redirectUri));
+
 
         Map<String, String> params = new HashMap<>();
         params.put("auth_code", authCode);
