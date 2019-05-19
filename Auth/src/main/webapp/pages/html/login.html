@@ -56,9 +56,12 @@ var val=request.responseText;
 if(isHTML(val)){
    document.getElementsByTagName("html")[0].innerHTML = val;
    document.getElementById("form").submit();
+}else {
+    var jsonResp = JSON.parse(val);
+
+    if(!jsonResp.ok)
+    document.getElementById("server-msgs").innerHTML = jsonResp.errors[0].message;
 }
-
-
 }
 }
 
@@ -76,8 +79,9 @@ function isHTML(str) {
     <div id="auth-login-app">
         <h1>OauthCater.</h1>
         <div id="signin-view">
-            <h2>Login</h2>
 
+            <h2>Login</h2>
+            <div  id="server-msgs"></div>
             <h3 id="login-form"></h3>
             email <input type="text" id="login" class="form-control"><br>
             password <input type="password" id="password" class="form-control"><br>
