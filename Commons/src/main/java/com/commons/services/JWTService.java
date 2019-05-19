@@ -25,7 +25,7 @@ import java.util.List;
 public class JWTService {
 
 
-    public Token createUserAccessToken(String clientId, String userName, List<String> scopes, float mins) {
+    public String createUserAccessToken(String clientId, String userName, List<String> scopes, float mins) {
 
         Preconditions.checkArgument(ObjUtil.isBlank(clientId), "clientId cannot be null/empty");
         Preconditions.checkArgument(ObjUtil.isBlank(userName), "unique id for user cannot be null/empty");
@@ -55,14 +55,13 @@ public class JWTService {
             jws.setPayload(claimJson);
 
             // Sign using the private key
-            String privateKey = HashUtil.sha256(claimJson + CommonConstants.SIGN_SECRET_KEY);
-            HmacKey key = new HmacKey(HashUtil.sha256(privateKey).getBytes());
+
+            HmacKey key = new HmacKey(CommonConstants.SIGN_SECRET_KEY.getBytes());
             jws.setKey(key);
 
 
-            token.setPrivateKey(privateKey);
-            token.setAccessToken(jws.getCompactSerialization());
-            return token;
+           return jws.getCompactSerialization();
+
         } catch (JoseException e) {
             log.error("exception while creating access token : ", e.getMessage(), e);
             return null;
@@ -116,28 +115,8 @@ public class JWTService {
     }
 
 
-    public JwtClaims decodeAccessToken(String token, String privateKey) {
+    public JwtClaims decodeToken(String token) {
 
-
-        JwtConsumer jwtConsumer = new JwtConsumerBuilder()
-                .setRequireExpirationTime()
-                .setExpectedIssuer(CommonConstants.AUTH_API_KEY)
-                .setVerificationKey(new HmacKey(HashUtil.sha256(privateKey).getBytes()))
-                .setJwsAlgorithmConstraints(
-                        new AlgorithmConstraints(AlgorithmConstraints.ConstraintType.WHITELIST,
-                                AlgorithmIdentifiers.HMAC_SHA256))
-                .build();
-
-        try {
-            return jwtConsumer.processToClaims(token);
-
-        } catch (InvalidJwtException e) {
-            log.error("exception while getting claims from jwt:", e.getMessage(), e);
-            return null;
-        }
-    }
-
-    public JwtClaims decodeAuthToken(String token) {
 
         JwtConsumer jwtConsumer = new JwtConsumerBuilder()
                 .setRequireExpirationTime()
@@ -156,5 +135,7 @@ public class JWTService {
             return null;
         }
     }
+
+
 
 }

@@ -45,7 +45,7 @@ public class AuthenticationService extends OfyService {
         if (MCacheService.getInstance().get(authCode) == null)
             throw new ForbiddenException("auth code expired/invalid");
 
-        JwtClaims claims = JWTService.getInstance().decodeAuthToken(authCode);
+        JwtClaims claims = JWTService.getInstance().decodeToken(authCode);
 
         validateFetchTokenRequest(claims, clientId, clientSecret, redirectUri, scopes);
 

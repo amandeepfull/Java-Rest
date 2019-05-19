@@ -156,7 +156,7 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 
         Token tok = TokenDaoImpl.getInstance().getByTokenFromRemote(accessToken);
         System.out.println("token : "+ObjUtil.getJson(tok));
-        JwtClaims claims = JWTService.getInstance().decodeAccessToken(accessToken, tok.getPrivateKey());
+        JwtClaims claims = JWTService.getInstance().decodeToken(accessToken);
 
 ////////// ........................................  SDK process .....................................
 

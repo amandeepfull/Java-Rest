@@ -11,6 +11,7 @@ import com.commons.http.HttpResponse;
 import com.commons.http.UrlFetcher;
 import com.commons.objectify.OfyService;
 import com.commons.services.JWTService;
+import com.commons.utils.HashUtil;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
 import com.commons.utils.RandomUtil;
@@ -31,11 +32,12 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
 
 
 
-        Token token = JWTService.getInstance().createUserAccessToken(clientId, userName, scopes, CommonConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
+       String accessToken = JWTService.getInstance().createUserAccessToken(clientId, userName, scopes, CommonConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
 
-        if(token == null || ObjUtil.isBlank(token.getAccessToken()) || ObjUtil.isBlank(token.getPrivateKey()))
+        if(accessToken == null )
             return null;
 
+        Token token = new Token();
         token.setId(RandomUtil.generateRandomString(24));
         token.setRefreshToken(RandomUtil.generateRandomString(32));
         token.setExpiresAt(System.currentTimeMillis() + oneDayMilli * 7);
@@ -44,7 +46,8 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
         token.setIssuedTo(clientId);
         token.setType("Bearer");
         token.setScopes(scopes);
-
+        token.setAccessToken(HashUtil.sha256(accessToken));
+        token.setNonHashedToken(accessToken);
         return save(token) != null ? token : null;
     }
 
@@ -57,14 +60,13 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
             throw new NotFoundException("refresh token not found");
 
 
-         Token updatedTokenWithKey = JWTService.getInstance().createUserAccessToken(token.getIssuedTo(), token.getUserName(), token.getScopes(), CommonConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
+         String accessToken = JWTService.getInstance().createUserAccessToken(token.getIssuedTo(), token.getUserName(), token.getScopes(), CommonConstants.USER_ACCESS_TOKEN_EXPIRY_MINS);
 
-        if(updatedTokenWithKey == null || ObjUtil.isBlank(updatedTokenWithKey.getAccessToken()) || ObjUtil.isBlank(updatedTokenWithKey.getPrivateKey()))
+        if(accessToken == null)
             return null;
 
-        token.setAccessToken(updatedTokenWithKey.getAccessToken());
-        token.setPrivateKey(updatedTokenWithKey.getPrivateKey());
-
+        token.setAccessToken(HashUtil.sha256(accessToken));
+        token.setNonHashedToken(accessToken);
         return save(token) != null ? token : null;
     }
 
@@ -78,7 +80,7 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
     @Override
     public Token getByToken(String token) {
         Preconditions.checkArgument(ObjUtil.isBlank(token), "access token cannot be null/empty");
-        return OfyService.ofy().load().type(Token.class).filter("accessToken", token).first().now();
+        return OfyService.ofy().load().type(Token.class).filter("accessToken", HashUtil.sha256(token)).first().now();
 
     }
 

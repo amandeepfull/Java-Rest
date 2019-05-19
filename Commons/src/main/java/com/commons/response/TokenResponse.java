@@ -26,7 +26,7 @@ public class TokenResponse {
     private List<String> scope;
 
     public TokenResponse(Token token) {
-        this.accessToken = token.getAccessToken();
+        this.accessToken = token.getNonHashedToken();
         this.refreshToken = token.getRefreshToken();
         this.type = token.getType();
         this.expiresAt = token.getExpiresAt();
