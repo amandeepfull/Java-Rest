@@ -1,8 +1,10 @@
 package com.commons.entity;
 
 import com.commons.Enum.TokenType;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.googlecode.objectify.annotation.Entity;
+import com.googlecode.objectify.annotation.Ignore;
 import com.googlecode.objectify.annotation.Index;
 import com.googlecode.objectify.annotation.Unindex;
 import lombok.Data;
@@ -42,10 +44,8 @@ public class Token  extends AbstractBaseEntity {
     @Index
     private TokenType tokenType;
 
-    @Unindex
-    private String privateKey;
-
-
-
+    @Ignore
+    @JsonIgnore
+    private String nonHashedToken;
 
 }

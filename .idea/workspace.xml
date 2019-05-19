@@ -2,45 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/TokenEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/Enum/OauthCaterScopes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/model/FileUploadInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/GCSService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/KeyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/SSOEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/SSOEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/ServiceEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/ServiceEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/webapp/pages/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/webapp/pages/html/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/AppDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/AppDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl$AppRegistrationServiceInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl$AppRegistrationServiceInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/TokenDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/TokenDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl$TokenDaoImplInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl$TokenDaoImplInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/constants/CommonConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/constants/CommonConstants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Contact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/filters/ApiKeyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/filters/ApiKeyFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/filters/CommonApiResponseFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/filters/CommonApiResponseFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/requests/TokenRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/requests/TokenRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService$AuthenticationServiceInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService$AuthenticationServiceInitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/LoginSessionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/LoginSessionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/Dao/AppDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/Dao/AppDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/Dao/TokenDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/Dao/TokenDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService$JWTServiceInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService$JWTServiceInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/Enum/ReservedClaims.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/Enum/ReservedClaims.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/requests/TokenRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/requests/TokenRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/response/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/response/TokenResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/JWTService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
@@ -78,6 +69,9 @@
         <task path="$PROJECT_DIR$/Api">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/Auth">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -97,14 +91,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainEndpoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
+      <file leaf-file-name="KeyService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/KeyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="151" column="59" lean-forward="true" selection-start-line="151" selection-start-column="59" selection-end-line="151" selection-end-column="59" />
+            <state relative-caret-position="1005">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthEndpoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenEndpoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/TokenEndpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/response/TokenResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -112,17 +136,8 @@
       <file leaf-file-name="AuthenticationService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Token.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="148">
+              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -130,17 +145,17 @@
       <file leaf-file-name="TokenDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="103" column="131" selection-start-line="103" selection-start-column="131" selection-end-line="103" selection-end-column="131" />
+            <state relative-caret-position="148">
+              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonConstants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java">
+      <file leaf-file-name="MainEndpoint.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="370">
+              <caret line="179" column="36" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,20 +163,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java">
+      <file leaf-file-name="CommonConstants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="72" column="26" lean-forward="true" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+            <state relative-caret-position="163">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,29 +178,17 @@
       <file leaf-file-name="JWTService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/JWTService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="337">
+              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthEndpoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java">
+      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="37" column="54" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TokenEndpoint.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/TokenEndpoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="61" column="87" selection-start-line="61" selection-start-column="87" selection-end-line="61" selection-end-column="87" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -1386,11 +1380,11 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="12448267022000" />
+        <entry key="$PROJECT_DIR$" value="12450168502000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/Api/build.gradle" value="2649514405" />
         <entry key="$PROJECT_DIR$/Auth/build.gradle" value="438542169" />
-        <entry key="$PROJECT_DIR$/Commons/build.gradle" value="289654198" />
+        <entry key="$PROJECT_DIR$/Commons/build.gradle" value="1901084237" />
         <entry key="$PROJECT_DIR$/Default/build.gradle" value="407094671" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2622415584" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1114575256" />
@@ -1740,12 +1734,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Commons/src/test/java/com/commons/utils/UtilsTest.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Contact.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/auth/ServiceEndpoint.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/webapp/pages/html/login.html" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/endpoints/app/MainEndpoint.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/gradle/dependencies.gradle" />
         <option value="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml" />
@@ -1777,7 +1765,6 @@
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/AppDaoImpl.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java" />
         <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/ServiceEndpoint.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/requests/TokenRequest.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/Enum/ReservedClaims.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" />
@@ -1785,12 +1772,19 @@
         <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/objectify/OfyService.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/Dao/TokenDao.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Token.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/JWTService.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java" />
         <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/TokenEndpoint.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Key.java" />
+        <option value="$PROJECT_DIR$/Commons/build.gradle" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/model/FileUploadInfo.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/GCSService.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/KeyService.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/JWTService.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Token.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/response/TokenResponse.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -2043,6 +2037,16 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="commons" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Commons" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
               <item name="objectify" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2167,18 +2171,168 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="operations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java&#10;depe&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;dasj&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/dashboard.jsp&#10;logi&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/html/login.html&#10;ind&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/index.jsp&#10;dep&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/security/Key.java&#10;depe&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle&#10;dasj&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/dashboard.jsp&#10;logi&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/html/login.html&#10;ind&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/Default/src/main/webapp/pages/jsp/index.jsp&#10;dep&#9;FILE&#9;file:///Users/amandeep/Downloads/AuthServer/AuthServer/gradle/dependencies.gradle" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -2193,7 +2347,19 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/html" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/html" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp" />
+      <recent name="$PROJECT_DIR$/Default/src/main/webapp" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.authserver.api" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.authserver.filters" />
+      <recent name="com.authserver" />
       <recent name="com.authserver.api" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -2203,17 +2369,8 @@
       <recent name="$PROJECT_DIR$/Default/src/main/resources" />
       <recent name="$PROJECT_DIR$/Commons/src/main/java/com/commons" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.authserver.filters" />
-      <recent name="com.authserver" />
-      <recent name="com.authserver.api" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/html" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/pages/html" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp" />
-      <recent name="$PROJECT_DIR$/Default/src/main/webapp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.commons.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2239,6 +2396,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.commons.constants.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="KeyService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.commons.services.KeyService" />
+      <module name="Commons_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.commons.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -2471,9 +2639,11 @@
       <item itemvalue="Application.Utils" />
       <item itemvalue="JUnit.UtilsTest.testGetHost" />
       <item itemvalue="Application.CommonConstants" />
+      <item itemvalue="Application.KeyService" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KeyService" />
         <item itemvalue="Application.CommonConstants" />
         <item itemvalue="JUnit.UtilsTest.testGetHost" />
         <item itemvalue="Application.Utils" />
@@ -2524,20 +2694,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1322" height="795" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295129" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49921876" weight="0.3295129" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.3982808" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.5415473" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.3409742" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295129" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" weight="0.3538682" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" weight="0.29083094" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.23125" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.234375" />
       <window_info anchor="right" id="Gradle" order="3" sideWeight="0.49856734" visible="true" weight="0.10703125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2553,7 +2725,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3295129" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49921876" weight="0.3295129" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2561,95 +2732,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/KeyService.java</url>
+          <line>55</line>
+          <properties class="com.commons.services.KeyService" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.19.Final/77af30c519843e9839c4d096bcb652157ea9c9ea/resteasy-jaxrs-3.0.19.Final-sources.jar!/org/jboss/resteasy/plugins/server/servlet/FilterDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-jaxrs/3.0.19.Final/77af30c519843e9839c4d096bcb652157ea9c9ea/resteasy-jaxrs-3.0.19.Final-sources.jar!/org/jboss/resteasy/plugins/server/servlet/ServletContainerDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4890">
-          <caret line="380" selection-start-line="380" selection-end-line="380" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/dependencies.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/filters/AuthApiRespFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.0_spec/1.0.0.Final/101888af9161148c401b9534229aee30961e2789/jboss-jaxrs-api_2.0_spec-1.0.0.Final-sources.jar!/javax/ws/rs/container/ContainerRequestContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2460">
-          <caret line="216" column="18" selection-start-line="216" selection-start-column="18" selection-end-line="216" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/filters/CommonApiResponseFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/mapper/OptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/RedirectEndpoint.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/ServletRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="548" column="29" selection-start-line="548" selection-start-column="29" selection-end-line="548" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -2732,29 +2832,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/SSOEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="240">
           <caret line="27" column="48" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/ServiceEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="405">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
@@ -2795,13 +2885,6 @@
             <element signature="e#369#370#0" expanded="true" />
             <element signature="e#425#426#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/response/TokenResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -2850,44 +2933,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="37" column="54" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/JWTService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="72" column="26" lean-forward="true" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="151" column="59" lean-forward="true" selection-start-line="151" selection-start-column="59" selection-end-line="151" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2898,34 +2947,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/AbstractBaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/security/PrivateKey.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/security/KeyPair.java" />
+    <entry file="file://$PROJECT_DIR$/Commons/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="103" column="131" selection-start-line="103" selection-start-column="131" selection-end-line="103" selection-end-column="131" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/model/FileUploadInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/security/Key.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/security/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/util/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+          <folding>
+            <element signature="e#3574#3575#0" expanded="true" />
+            <element signature="e#3613#3614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="70" column="46" lean-forward="true" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/GCSService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/KeyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/JWTService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/response/TokenResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/entity/Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/TokenEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="61" column="87" selection-start-line="61" selection-start-column="87" selection-end-line="61" selection-end-column="87" />
+        <state relative-caret-position="226">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="179" column="36" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

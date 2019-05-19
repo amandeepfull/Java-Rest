@@ -44,7 +44,9 @@ public final class CommonConstants {
     }
 
 
+    public static String gcsBucketName() {
 
-
+        return "authserver-236711.appspot.com";
+    }
 }
 
