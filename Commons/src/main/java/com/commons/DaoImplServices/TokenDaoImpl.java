@@ -93,8 +93,7 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
         try {
             HttpRequest request = new HttpRequest(CommonConstants.OAUTH_CATER_AUTH_URL + "/o/token/"+accessToken , HttpMethod.GET);
 
-            //request.addHeader("Authorization", "ApiKey=" + CommonConstants.AUTH_API_KEY);
-
+            request.addHeader("Authorization", "ApiKey="+CommonConstants.AUTH_API_KEY);
             HttpResponse response = UrlFetcher.makeRequest(request);
             if (!response.wasSuccessful()) {
                 log.error("error response : " + response.getResponseContent());

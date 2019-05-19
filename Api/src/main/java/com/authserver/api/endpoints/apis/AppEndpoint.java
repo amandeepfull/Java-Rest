@@ -16,7 +16,7 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
+@ApiKeyCheck
 @Path("v1/app")
 public class AppEndpoint extends AbstractBaseEndpoint {
 

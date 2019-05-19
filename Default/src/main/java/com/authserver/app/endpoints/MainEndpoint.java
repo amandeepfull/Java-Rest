@@ -51,11 +51,11 @@ public class MainEndpoint extends AbstractBaseEndpoint {
     @GET
     @Path("/dashboard")
     @Produces(MediaType.TEXT_HTML)
-    public Response getDashboard() throws IOException, ServletException {
+    public Response getDashboard(@QueryParam("error") String error) throws IOException, ServletException {
 
         System.out.println("session created : " +LoginSessionManager.hasLoginSession(getSession()));
         if (!LoginSessionManager.hasLoginSession(getSession())) {
-            return AppUtils.getRedirectUriResponse("/welcome");
+            return AppUtils.getRedirectUriResponse("/welcome?error="+error);
         }
 
 
@@ -138,6 +138,7 @@ public class MainEndpoint extends AbstractBaseEndpoint {
         payload.put("scopes", scopes);
 
         HttpRequest request = new HttpRequest(CommonConstants.OAUTH_CATER_AUTH_URL+"/o/token", HttpMethod.POST);
+        request.addHeader("Authorization", "ApiKey="+CommonConstants.AUTH_API_KEY);
         request.setContentType("application/json");
         request.setPayload(ObjUtil.getJson(payload));
         HttpResponse response = UrlFetcher.makeRequest(request);
@@ -151,11 +152,6 @@ public class MainEndpoint extends AbstractBaseEndpoint {
         String accessToken = (String) token.get("access_token");
 
 
-
-
-
-        Token tok = TokenDaoImpl.getInstance().getByTokenFromRemote(accessToken);
-        System.out.println("token : "+ObjUtil.getJson(tok));
         JwtClaims claims = JWTService.getInstance().decodeToken(accessToken);
 
 ////////// ........................................  SDK process .....................................

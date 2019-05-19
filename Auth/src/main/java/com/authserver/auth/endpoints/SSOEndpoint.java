@@ -1,5 +1,6 @@
 package com.authserver.auth.endpoints;
 
+import com.commons.annotations.ApiKeyCheck;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.services.FreeMarkerService;
 import com.commons.services.MCacheService;

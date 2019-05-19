@@ -4,6 +4,7 @@ import com.authserver.auth.endpoints.AuthEndpoint;
 import com.authserver.auth.endpoints.SSOEndpoint;
 import com.authserver.auth.endpoints.ServiceEndpoint;
 import com.authserver.auth.endpoints.TokenEndpoint;
+import com.authserver.auth.filters.ApiKeyFilter;
 import com.authserver.auth.filters.AuthApiRespFilter;
 import com.commons.config.JacksonObjectResolver;
 import com.commons.entity.App;
@@ -62,6 +63,7 @@ public class AppConfig extends Application {
 
         // filters
         singletons.add(new AuthApiRespFilter());
+        singletons.add(new ApiKeyFilter());
 
         //exception mappers
         singletons.add(new IllegalArgExceptionMapper());

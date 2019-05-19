@@ -1,4 +1,4 @@
-package com.commons.filters;
+package com.authserver.auth.filters;
 import com.commons.Enum.ApiErrorCode;
 import com.commons.annotations.ApiKeyCheck;
 import com.commons.constants.CommonConstants;

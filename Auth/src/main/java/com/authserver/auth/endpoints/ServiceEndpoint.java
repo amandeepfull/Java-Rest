@@ -2,6 +2,7 @@ package com.authserver.auth.endpoints;
 
 
 import com.commons.DaoImplServices.AppDaoImpl;
+import com.commons.annotations.ApiKeyCheck;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.entity.App;
 import com.commons.services.FreeMarkerService;
@@ -15,7 +16,6 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 import java.util.HashMap;
 import java.util.Map;
-
 
 @Path("/o/service")
 public class ServiceEndpoint extends AbstractBaseEndpoint {

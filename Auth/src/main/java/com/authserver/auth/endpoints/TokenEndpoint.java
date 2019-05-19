@@ -2,6 +2,7 @@ package com.authserver.auth.endpoints;
 
 import com.commons.DaoImplServices.TokenDaoImpl;
 import com.commons.Enum.EntityErrorCode;
+import com.commons.annotations.ApiKeyCheck;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.entity.Token;
 import com.commons.exception.EntityException;
@@ -15,6 +16,7 @@ import org.jose4j.jwt.MalformedClaimException;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
+
 
 @Path("/o/token")
 public class TokenEndpoint extends AbstractBaseEndpoint {

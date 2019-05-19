@@ -6,12 +6,10 @@ import com.commons.entity.App;
 import com.commons.entity.Contact;
 import com.commons.entity.Token;
 import com.commons.exception.mapper.*;
-import com.commons.filters.ApiKeyFilter;
 import com.commons.filters.CommonApiResponseFilter;
 import com.commons.objectify.OfyService;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.util.jackson.ObjectifyJacksonModule;
-import org.jboss.resteasy.plugins.interceptors.CorsFilter;
 
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -55,7 +53,7 @@ public class AppConfig extends Application {
 
 
         // filters
-        singletons.add(new ApiKeyFilter());
+
         singletons.add(new CommonApiResponseFilter());
 
         //exception mappers

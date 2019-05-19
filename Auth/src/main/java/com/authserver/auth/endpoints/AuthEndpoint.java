@@ -1,6 +1,7 @@
 package com.authserver.auth.endpoints;
 
 import com.commons.Enum.EntityErrorCode;
+import com.commons.annotations.ApiKeyCheck;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.entity.Contact;
 import com.commons.entity.Token;
@@ -25,7 +26,6 @@ import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
 
 @Path("/o/auth")
 public class AuthEndpoint extends AbstractBaseEndpoint {
