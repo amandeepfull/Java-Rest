@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/webapp/pages/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/webapp/pages/html/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
     <ignored path="$PROJECT_DIR$/Default/.gradle/" />
@@ -73,11 +71,8 @@
       <file leaf-file-name="MainEndpoint.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-596">
-              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1817">
+              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -1895,8 +1890,8 @@
         <option value="$PROJECT_DIR$/Auth/build.gradle" />
         <option value="$PROJECT_DIR$/Default/build.gradle" />
         <option value="$PROJECT_DIR$/Api/build.gradle" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" />
         <option value="$PROJECT_DIR$/Auth/src/main/webapp/pages/html/login.html" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" />
       </list>
     </option>
   </component>
@@ -2093,7 +2088,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.default deploy">
+  <component name="RunManager" selected="Gradle.auth deploy">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -2412,10 +2407,10 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.3982808" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.2191977" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" weight="0.60028654" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295129" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" weight="0.29083094" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" visible="true" weight="0.47994268" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.234375" />
@@ -2790,11 +2785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-596">
-          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1817">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
