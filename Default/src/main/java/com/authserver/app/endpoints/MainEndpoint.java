@@ -58,8 +58,8 @@ public class MainEndpoint extends AbstractBaseEndpoint {
         }
 
 
-        FreeMarkerService.writeHtmlResponse(servletResponse, 200, AppUtils.getJspPagesPath("dashboard"), null);
 
+        servletRequest.getRequestDispatcher(AppUtils.getJspPagesPath("dashboard")).forward(servletRequest, servletResponse);
         return null;
     }
 
@@ -160,6 +160,7 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 
 
         return AppUtils.getRedirectUriResponse("/dashboard");
+
 
     }
 

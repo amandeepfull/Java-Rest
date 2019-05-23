@@ -46,8 +46,9 @@ html = ((done) => {
 
 
 css = ((done) => {
-
+  console.log(paths.buildRoot)
   src(paths.root + 'css/*.css')
+
     .pipe(dest(paths.buildRoot + 'css'));
   done();
 });

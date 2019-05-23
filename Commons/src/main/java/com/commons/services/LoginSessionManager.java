@@ -3,6 +3,7 @@ package com.commons.services;
 import com.commons.Enum.AppMode;
 import com.commons.constants.CommonConstants;
 import com.commons.entity.Contact;
+import com.commons.utils.ObjUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -41,7 +42,7 @@ public class LoginSessionManager {
         HttpSession session = servletReq.getSession(true);
 
         session.setAttribute(SESSION_USER_ID, contact.getId());
-        session.setAttribute(SESSION_USER_CONTACT, contact);
+        session.setAttribute(SESSION_USER_CONTACT, ObjUtil.getJson(contact));
         session.setMaxInactiveInterval(2 * 60 * 60);
 
         Cookie sessionCookie = new NewCookie("JSESSIONID", session.getId(), "/", null, null, 2 * 60 * 60, false);

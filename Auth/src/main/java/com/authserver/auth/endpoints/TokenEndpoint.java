@@ -2,7 +2,6 @@ package com.authserver.auth.endpoints;
 
 import com.commons.DaoImplServices.TokenDaoImpl;
 import com.commons.Enum.EntityErrorCode;
-import com.commons.annotations.ApiKeyCheck;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.entity.Token;
 import com.commons.exception.EntityException;
