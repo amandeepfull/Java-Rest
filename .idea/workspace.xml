@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/images/giphy.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/images/load-spinner-small.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/images/untitled_180_3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/TokenEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/TokenEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/LoginSessionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/add_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/add_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-    </list>
+    <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
     <ignored path="$PROJECT_DIR$/Default/.gradle/" />
@@ -2074,15 +2057,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AuthServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2481,12 +2455,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.3982808" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.39111748" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" weight="0.39111748" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295129" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" weight="0.43982807" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" visible="true" weight="0.43982807" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.2484375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.2484375" />
       <window_info anchor="right" id="Gradle" order="3" sideWeight="0.49856734" visible="true" weight="0.10703125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

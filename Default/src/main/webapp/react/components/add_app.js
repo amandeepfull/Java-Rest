@@ -18,6 +18,8 @@ class AddApp extends React.Component {
     let loader = document.getElementById("loading");
     loader.style.display = "block";
 
+    document.getElementById("server-error-msg").innerHTML = "";
+
     let appName = document.getElementById("app_name").value.trim();
     let redirectUri = document.getElementById("app_redirect_uri").value.trim();
     let scopes = document.getElementById("app_scopes").value.trim();
