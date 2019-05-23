@@ -7,6 +7,11 @@ class AddApp extends React.Component {
 
   constructor(props){
     super(props);
+    this.state ={
+      clientId : "",
+      clientSecret : "",
+      appId : ""
+    }
     this.handleRegisterApp = this.handleRegisterApp.bind(this);
     this.ajax = new Ajax();
   }
@@ -46,12 +51,20 @@ class AddApp extends React.Component {
 
       loader.style.display = "none";
 
+      var app = resp.data.app;
+
       if(!resp.ok){
         document.getElementById("server-error-msg").innerHTML = "Error msg : "+resp.errors[0].message;
       }else{
           var popup = document.getElementById("myPopup");
           popup.classList.toggle("show");
         
+          this.setState({
+
+            clientId : "clientId : "+app.clientId,
+            clientSecret : "clientSecret : "+app.clientSecret,
+            appId : "appId : "+app.id
+          })
       }
 
 
@@ -75,7 +88,7 @@ class AddApp extends React.Component {
       <div id="loading"></div>
         <div class="popup" >
     <div class="popuptext" id="myPopup"><div id="app-credentials-popup">
-      <AppInfoPopupView/>
+      <AppInfoPopupView appId={this.state.appId} clientId={this.state.clientId} clientSecret={this.state.clientSecret}/>
          </div></div>
     </div>
         Name<input type="text" id="app_name" class="form-control"/><br/>

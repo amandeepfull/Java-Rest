@@ -18,18 +18,17 @@ handlick(){
       
 }
   render() {
-
-   
+ 
     return (
     
      <div id="app-info-popup-view">
      <h2>Registered App Credentials</h2>
 
-      appId<input type="text" id="app_Id" /><br/>
+     <input type="text" id="app_Id" value={this.props.appId} class="form-control-app-info-popup"/><br/>
         
-      clienId<input type="text" id="clien_Id" /><br/>
+       <input type="text" id="client_Id" value= {this.props.clientId}class="form-control-app-info-popup"/><br/>
       
-      client secret<input type="text" id="client_secret"/><br/>
+        <input type="text" id="client_secret" value={this.props.clientSecret} class="form-control-app-info-popup"/><br/>
       
       <button type="button" class="btn btn-primary" onClick={this.handlick}>Close</button>
      
