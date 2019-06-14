@@ -2,7 +2,6 @@ package com.commons.DaoImplServices;
 
 
 import com.commons.Dao.ContactDao;
-import com.commons.constants.CommonConstants;
 import com.commons.entity.Contact;
 import com.commons.http.HttpMethod;
 import com.commons.http.HttpRequest;
@@ -40,28 +39,7 @@ public class ContactDaoImpl extends OfyService implements ContactDao {
         return get(Contact.class, userId);
     }
 
-    public Contact getByUnameFromRemote(String uname) {
 
-        Preconditions.checkArgument(ObjUtil.isBlank(uname), "user unique pin cannot be null/empty");
-
-        try {
-            HttpRequest request = new HttpRequest(CommonConstants.OAUTH_CATER_API_URL + "/api/v1/contact/uname/" + uname, HttpMethod.GET);
-            //request.addHeader("Authorization", "ApiKey=" + CommonConstants.AUTH_API_KEY);
-
-            HttpResponse response = UrlFetcher.makeRequest(request);
-            if (!response.wasSuccessful()) {
-                System.out.println("error response : " + response.getResponseContent());
-                return null;
-            }
-
-            Map<String, Object> apiResponse = ObjUtil.getMapFromJson(response.getResponseContent());
-
-            return ObjUtil.safeConvertMap((Map<String, Object>) ((Map<String, Object>) apiResponse.get("data")).get("contact"), Contact.class);
-        } catch (Exception e) {
-            System.out.println("exception while fetching contact by Id from remote : "+ e.getMessage());
-            return null;
-        }
-    }
 
     private static class ContactDaoImplInitializer {
         private static final ContactDaoImpl contactDaoImpl = new ContactDaoImpl();

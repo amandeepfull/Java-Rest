@@ -1,6 +1,6 @@
 package com.authserver.app.endpoints;
 
-import com.commons.DaoImplServices.ContactDaoImpl;
+import com.authserver.app.services.UtilityServices;
 import com.commons.Enum.OauthCaterScopes;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.constants.CommonConstants;
@@ -35,7 +35,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-@Slf4j
 @Path("/")
 public class MainEndpoint extends AbstractBaseEndpoint {
 
@@ -145,8 +144,8 @@ public class MainEndpoint extends AbstractBaseEndpoint {
 ////////// ........................................  SDK process .....................................
 
 
-        // may be from our db or any contact management app, it is upto choice registered app
-        Contact contact = ContactDaoImpl.getInstance().getByUnameFromRemote(claims.getSubject());
+        // may be from our db or any contact management app, it is upto choice registe  red app
+        Contact contact = UtilityServices.getInstance().getContactByUname(claims.getSubject());
 
 
         if(contact == null)

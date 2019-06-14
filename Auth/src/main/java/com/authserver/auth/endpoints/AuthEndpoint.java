@@ -1,7 +1,8 @@
 package com.authserver.auth.endpoints;
 
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
-import com.commons.services.AuthenticationService;
+import com.commons.entity.Contact;
+import com.authserver.auth.services.AuthenticationService;
 
 import javax.servlet.ServletException;
 import javax.ws.rs.POST;

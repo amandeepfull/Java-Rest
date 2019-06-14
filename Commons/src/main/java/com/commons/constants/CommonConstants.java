@@ -9,17 +9,13 @@ public final class CommonConstants {
 
     public static final String AUTH_API_KEY = "ffbcca0f-5eb5-4585-a600-2f83dc243ab0";
 
-    public static final String SIGN_SECRET_KEY = "9a97b0bc-bbe5-4472-88ee-13f62a56ee5d.86b53da4-0390-4d10-b7c4-021b3f5514ba" ;
-
-    public static final float USER_ACCESS_TOKEN_EXPIRY_MINS = 60 * 7;
-    public static final float AUTH_CODE_EXPIRE_MIN = 1;
-
     public static final String OAUTH_CATER_API_URL = "https://api-dot-authserver-236711.appspot.com";
 
     public static final String  OAUTH_CATER_CLIENT_ID ="bd8e9c07-d9ec-402e-95d1-5d175cf8b785";
     public static final String  OAUTH_CATER_CLIENT_SECRET ="92f710bc-efb3-48bb-bd51-55b4024363a4";
     public static final String  OAUTH_CATER_AUTH_URL = "https://auth-dot-authserver-236711.appspot.com";
     public static final String OAUTH_CATER_APP_ID = "oauthcater_o9pfvoui";
+    public static final String SIGN_SECRET_KEY = "9a97b0bc-bbe5-4472-88ee-13f62a56ee5d.86b53da4-0390-4d10-b7c4-021b3f5514ba" ;
 
     public static final String OAUTH_CATER_AUTH_CALLBACK ;
     public static final AppMode APP_MODE ;
@@ -45,7 +41,6 @@ public final class CommonConstants {
 
 
     public static String gcsBucketName() {
-
         return "authserver-236711.appspot.com";
     }
 }

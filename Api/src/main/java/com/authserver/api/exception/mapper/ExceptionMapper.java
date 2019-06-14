@@ -1,13 +1,10 @@
 package com.authserver.api.exception.mapper;
 
-import com.authserver.api.exception.*;
-
-
-import com.authserver.api.exception.errorcode.ApiErrorCode;
-import com.authserver.api.exception.errorcode.EntityErrorCode;
-import com.authserver.api.exception.errorcode.ErrorCode;
-import com.authserver.api.model.ApiResponse;
-
+import com.commons.Enum.ApiErrorCode;
+import com.commons.Enum.EntityErrorCode;
+import com.commons.Enum.ErrorCode;
+import com.commons.exception.*;
+import com.commons.response.ApiResponse;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.springframework.http.HttpHeaders;

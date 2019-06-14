@@ -1,12 +1,12 @@
 package com.authserver.api.endpoints.apis;
 
 
-import com.authserver.api.exception.EntityException;
-import com.authserver.api.exception.UnauthorizedException;
-import com.authserver.api.exception.errorcode.EntityErrorCode;
-import com.authserver.api.model.ApiResponse;
+import com.commons.exception.EntityException;
+import com.commons.exception.UnauthorizedException;
 import com.commons.DaoImplServices.AppDaoImpl;
+import com.commons.Enum.EntityErrorCode;
 import com.commons.entity.App;
+import com.commons.response.ApiResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

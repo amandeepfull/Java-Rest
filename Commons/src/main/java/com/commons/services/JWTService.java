@@ -6,7 +6,6 @@ import com.commons.constants.CommonConstants;
 import com.commons.entity.Token;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
-import lombok.extern.slf4j.Slf4j;
 import org.jose4j.jwa.AlgorithmConstraints;
 import org.jose4j.jws.AlgorithmIdentifiers;
 import org.jose4j.jws.JsonWebSignature;

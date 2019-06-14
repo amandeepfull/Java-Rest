@@ -1,9 +1,9 @@
 package com.authserver.api.services;
 
 
-import com.authserver.api.exception.IllegalArgException;
-import com.authserver.api.response.CollectionResponse;
-import com.authserver.api.util.Preconditions;
+import com.commons.exception.IllegalArgException;
+import com.commons.response.CollectionResponse;
+import com.commons.utils.Preconditions;
 import com.google.appengine.api.datastore.Cursor;
 import com.google.appengine.api.datastore.QueryResultIterator;
 import com.google.common.collect.Lists;

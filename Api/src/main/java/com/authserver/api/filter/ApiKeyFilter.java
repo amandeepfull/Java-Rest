@@ -1,9 +1,9 @@
 package com.authserver.api.filter;
 
-import com.authserver.api.constants.CommonConstants;
-import com.authserver.api.exception.errorcode.ApiErrorCode;
-import com.authserver.api.model.ApiResponse;
-import com.authserver.api.util.ObjUtil;
+import com.authserver.api.constants.ApiConstants;
+import com.commons.Enum.ApiErrorCode;
+import com.commons.response.ApiResponse;
+import com.commons.utils.ObjUtil;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -25,7 +25,7 @@ public class ApiKeyFilter implements Filter {
                 HttpServletRequest servletRequest = (HttpServletRequest) request;
                  String apiKey =  extractApiKey(servletRequest.getHeader("Authorization"));
 
-                 if (ObjUtil.isBlank(apiKey) || !apiKey.equals(CommonConstants.AUTH_API_KEY)){
+                 if (ObjUtil.isBlank(apiKey) || !apiKey.equals(ApiConstants.AUTH_API_KEY)){
                      ApiResponse apiResp = new ApiResponse(false, ApiErrorCode.UNAUTHORIZED_REQUEST, "Invalid api key");
                      abort((HttpServletResponse)response, apiResp);
                      return;

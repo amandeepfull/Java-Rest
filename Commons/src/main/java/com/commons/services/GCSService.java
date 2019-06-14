@@ -2,7 +2,6 @@ package com.commons.services;
 
 import com.commons.constants.CommonConstants;
 import com.google.appengine.tools.cloudstorage.*;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;

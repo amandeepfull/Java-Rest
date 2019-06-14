@@ -1,10 +1,9 @@
 package com.authserver.api.endpoints.apis;
 
-import com.authserver.api.exception.NotFoundException;
-import com.authserver.api.model.ApiResponse;
-
+import com.commons.exception.NotFoundException;
 import com.commons.DaoImplServices.ContactDaoImpl;
 import com.commons.entity.Contact;
+import com.commons.response.ApiResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
