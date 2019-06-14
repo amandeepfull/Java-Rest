@@ -8,7 +8,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URLEncoder;
 
-@Slf4j
 public class AppUtils {
 
     public static String getPagesPath() {
@@ -36,7 +35,7 @@ public class AppUtils {
         try {
             return Response.status(status).location(new URI(url)).build();
         } catch (URISyntaxException e) {
-            log.error(e.getMessage(), e);
+            System.out.println(e.getMessage()+ e);
             return null;
         }
     }

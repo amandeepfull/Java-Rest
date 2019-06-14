@@ -1,12 +1,10 @@
 package com.authserver.app.endpoints;
 
 import com.commons.DaoImplServices.ContactDaoImpl;
-import com.commons.DaoImplServices.TokenDaoImpl;
 import com.commons.Enum.OauthCaterScopes;
 import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.constants.CommonConstants;
 import com.commons.entity.Contact;
-import com.commons.entity.Token;
 import com.commons.http.HttpMethod;
 import com.commons.http.HttpRequest;
 import com.commons.http.HttpResponse;

@@ -1,11 +1,9 @@
 package com.commons.services;
 
 
-import com.commons.DaoImplServices.TokenDaoImpl;
 import com.commons.Enum.ReservedClaims;
 import com.commons.constants.CommonConstants;
 import com.commons.entity.Token;
-import com.commons.utils.HashUtil;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +19,7 @@ import org.jose4j.lang.JoseException;
 
 import java.util.List;
 
-@Slf4j
+
 public class JWTService {
 
 
@@ -63,7 +61,7 @@ public class JWTService {
            return jws.getCompactSerialization();
 
         } catch (JoseException e) {
-            log.error("exception while creating access token : ", e.getMessage(), e);
+            System.out.println("exception while creating access token : "+ e.getMessage()+ e);
             return null;
         }
     }
@@ -101,7 +99,7 @@ public class JWTService {
 
             return jws.getCompactSerialization();
         } catch (JoseException e) {
-            log.error("exception while creating access token : ", e.getMessage(), e);
+            System.out.println("exception while creating access token : "+ e.getMessage()+ e);
             return null;
         }
     }
@@ -131,7 +129,7 @@ public class JWTService {
             return jwtConsumer.processToClaims(token);
 
         } catch (InvalidJwtException e) {
-            log.error("exception while getting claims from jwt:", e.getMessage(), e);
+            System.out.println("exception while getting claims from jwt:"+ e.getMessage()+ e);
             return null;
         }
     }

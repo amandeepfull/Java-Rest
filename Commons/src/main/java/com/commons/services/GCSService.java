@@ -1,21 +1,15 @@
 package com.commons.services;
 
 import com.commons.constants.CommonConstants;
-import com.commons.model.FileUploadInfo;
-import com.google.appengine.api.images.ImagesService;
-import com.google.appengine.api.images.ImagesServiceFactory;
-import com.google.appengine.api.images.ServingUrlOptions;
 import com.google.appengine.tools.cloudstorage.*;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.nio.ByteBuffer;
 import java.nio.channels.Channels;
 
-@Slf4j
 public class GCSService {
 
     public String uploadFile(byte[] bytes, String fileName, String contentType) throws IOException {

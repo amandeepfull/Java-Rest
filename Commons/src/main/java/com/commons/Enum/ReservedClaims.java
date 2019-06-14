@@ -3,8 +3,6 @@ package com.commons.Enum;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 public enum ReservedClaims {
 
      ISSUED_TO("issuedTo"), SCOPES("scopes");
@@ -31,7 +29,7 @@ public enum ReservedClaims {
                 return type;
         }
 
-        log.error("invalid Reserved claims : {}", value);
+        System.out.println("invalid Reserved claims : {}"+ value);
         return null;
     }
 }

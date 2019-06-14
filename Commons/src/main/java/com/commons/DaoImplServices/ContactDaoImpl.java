@@ -1,5 +1,6 @@
 package com.commons.DaoImplServices;
 
+
 import com.commons.Dao.ContactDao;
 import com.commons.constants.CommonConstants;
 import com.commons.entity.Contact;
@@ -10,13 +11,10 @@ import com.commons.http.UrlFetcher;
 import com.commons.objectify.OfyService;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
-import lombok.extern.slf4j.Slf4j;
 
-import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-@Slf4j
 public class ContactDaoImpl extends OfyService implements ContactDao {
 
 
@@ -52,7 +50,7 @@ public class ContactDaoImpl extends OfyService implements ContactDao {
 
             HttpResponse response = UrlFetcher.makeRequest(request);
             if (!response.wasSuccessful()) {
-                log.error("error response : " + response.getResponseContent());
+                System.out.println("error response : " + response.getResponseContent());
                 return null;
             }
 
@@ -60,7 +58,7 @@ public class ContactDaoImpl extends OfyService implements ContactDao {
 
             return ObjUtil.safeConvertMap((Map<String, Object>) ((Map<String, Object>) apiResponse.get("data")).get("contact"), Contact.class);
         } catch (Exception e) {
-            log.error("exception while fetching contact by Id from remote : ", e.getMessage(), e);
+            System.out.println("exception while fetching contact by Id from remote : "+ e.getMessage());
             return null;
         }
     }

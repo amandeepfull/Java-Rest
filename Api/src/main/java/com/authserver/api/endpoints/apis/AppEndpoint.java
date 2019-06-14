@@ -1,27 +1,24 @@
 package com.authserver.api.endpoints.apis;
 
-import com.commons.Enum.EntityErrorCode;
-import com.commons.annotations.ApiKeyCheck;
-import com.commons.baseEndpoints.AbstractBaseEndpoint;
-import com.commons.entity.App;
-import com.commons.exception.EntityException;
-import com.commons.response.ApiResponse;
-import com.commons.DaoImplServices.AppDaoImpl;
-import com.google.appengine.repackaged.com.google.protobuf.Api;
-import org.jose4j.http.Get;
 
-import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.Response;
+import com.authserver.api.exception.EntityException;
+import com.authserver.api.exception.UnauthorizedException;
+import com.authserver.api.exception.errorcode.EntityErrorCode;
+import com.authserver.api.model.ApiResponse;
+import com.commons.DaoImplServices.AppDaoImpl;
+import com.commons.entity.App;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-@ApiKeyCheck
-@Path("v1/app")
-public class AppEndpoint extends AbstractBaseEndpoint {
 
-    @POST
-    public Response registerApp(App app) throws EntityException {
+@RestController
+@RequestMapping("/v1/app")
+public class AppEndpoint extends BaseApiEndpoint{
+
+    @PostMapping("/")
+    public ResponseEntity<ApiResponse> registerApp(@RequestBody App app) throws EntityException {
 
         ApiResponse response = new ApiResponse();
 
@@ -33,13 +30,12 @@ public class AppEndpoint extends AbstractBaseEndpoint {
         response.add("app", app);
         response.setOk(true);
 
-        return Response.ok(response).build();
+        return ResponseEntity.ok(response);
     }
 
 
-    @PUT
-    @Path("/{appId}")
-    public Response updateApp(App app, @PathParam("appId") String appId) throws EntityException {
+    @PutMapping("/{appId}")
+    public ResponseEntity<ApiResponse> updateApp(@RequestBody App app, @PathVariable("appId") String appId) throws EntityException {
 
         ApiResponse response = new ApiResponse();
 
@@ -52,14 +48,16 @@ public class AppEndpoint extends AbstractBaseEndpoint {
         response.add("app", app);
         response.setOk(true);
 
-        return Response.ok(response).build();
+        return ResponseEntity.ok(response);
     }
 
-    @GET
-    @Path("/user/{userId}")
-    public Response getUserApp(@PathParam("userId") String userId) {
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<ApiResponse> getUserApp(@PathVariable("userId") String userId) throws UnauthorizedException {
 
         ApiResponse response = new ApiResponse();
+
+        if(response == null)
+            throw new UnauthorizedException("you are not ldjlfjsdjf");
 
         List<App> apps = new ArrayList<>();
 
@@ -67,7 +65,7 @@ public class AppEndpoint extends AbstractBaseEndpoint {
 
         response.setOk(true);
         response.add("apps", apps);
-        return Response.ok(response).build();
+        return ResponseEntity.ok(response);
 
     }
 }

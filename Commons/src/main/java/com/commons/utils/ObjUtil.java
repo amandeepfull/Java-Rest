@@ -12,7 +12,6 @@ import java.net.URLEncoder;
 import java.util.*;
 
 
-@Slf4j
 public final class ObjUtil {
 
     public static boolean isNullOrEmpty(String value) {

@@ -7,14 +7,11 @@ import com.authserver.auth.endpoints.TokenEndpoint;
 import com.authserver.auth.filters.ApiKeyFilter;
 import com.authserver.auth.filters.AuthApiRespFilter;
 import com.commons.config.JacksonObjectResolver;
-import com.commons.entity.App;
-import com.commons.entity.Contact;
 import com.commons.entity.Token;
 import com.commons.exception.mapper.*;
 import com.commons.objectify.OfyService;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.util.jackson.ObjectifyJacksonModule;
-import org.jboss.resteasy.plugins.interceptors.CorsFilter;
 
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -32,8 +29,7 @@ public class AppConfig extends Application {
     private void registringOfEntities() {
 
         /// registring the entities
-        OfyService.factory().register(Contact.class);
-        OfyService.factory().register(App.class);
+
         OfyService.factory().register(Token.class);
     }
 

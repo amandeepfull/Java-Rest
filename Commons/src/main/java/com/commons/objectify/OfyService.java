@@ -1,7 +1,6 @@
 package com.commons.objectify;
 
 
-import com.commons.entity.Contact;
 import com.commons.exception.runtime.IllegalArgException;
 import com.commons.response.CollectionResponse;
 import com.commons.utils.Preconditions;

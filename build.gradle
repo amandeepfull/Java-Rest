@@ -38,9 +38,8 @@ subprojects {
 
         compile libs.objectify
         compile libs.jackson
-        compile libs.slf4jLog4j12
 
-       compileOnly libs.lombok
+        compile libs.lombok
 
         testCompile libs.junit
 

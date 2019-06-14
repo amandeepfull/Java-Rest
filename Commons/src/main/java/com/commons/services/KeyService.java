@@ -11,7 +11,6 @@ import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
-@Slf4j
 public class KeyService {
 
 
@@ -42,7 +41,6 @@ public class KeyService {
 
         //  return   new Key(kp.getPrivate().g, kp.getPublic().getEncoded(), clientId, appId);
         }catch (Exception e){
-            log.error("exception while generating keys : ", e.getMessage(), e);
 
             return null;
         }

@@ -11,14 +11,14 @@ import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
 
-@Slf4j
+
 @Provider
 public class GenericExceptionMapper implements ExceptionMapper<Throwable> {
 
     @Override
     public Response toResponse(Throwable ex) {
 
-        log.error("Generic Exception : {}", ex.getMessage());
+        System.out.println("Generic Exception : {}"+ ex.getMessage());
 
         ex.printStackTrace();
 

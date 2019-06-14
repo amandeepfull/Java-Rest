@@ -1,6 +1,5 @@
 package com.commons.services;
 
-import com.commons.utils.AppUtils;
 import com.commons.utils.ObjUtil;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -14,7 +13,6 @@ import java.io.IOException;
 import java.io.StringWriter;
 
 
-@Slf4j
 public class FreeMarkerService {
 
     private static final Configuration fmConfig;
@@ -70,7 +68,7 @@ public class FreeMarkerService {
             return true;
 
         } catch (Exception e) {
-            log.warn("Error Writing Html Response : " + e.getMessage(), e);
+            System.out.println("Error Writing Html Response : " + e.getMessage()+  e);
             return false;
         }
     }

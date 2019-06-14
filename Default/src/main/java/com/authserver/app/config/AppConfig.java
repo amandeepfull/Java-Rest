@@ -2,8 +2,6 @@ package com.authserver.app.config;
 
 import com.authserver.app.endpoints.MainEndpoint;
 import com.commons.config.JacksonObjectResolver;
-import com.commons.entity.App;
-import com.commons.entity.Contact;
 import com.commons.entity.Token;
 import com.commons.exception.mapper.*;
 import com.commons.filters.CommonApiResponseFilter;
@@ -27,8 +25,6 @@ public class AppConfig extends Application {
     private void registringOfEntities() {
 
         /// registring the entities
-        OfyService.factory().register(Contact.class);
-        OfyService.factory().register(App.class);
         OfyService.factory().register(Token.class);
     }
 

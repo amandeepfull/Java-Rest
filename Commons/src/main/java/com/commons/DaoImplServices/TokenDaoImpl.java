@@ -3,7 +3,6 @@ package com.commons.DaoImplServices;
 import com.commons.Dao.TokenDao;
 import com.commons.Enum.TokenType;
 import com.commons.constants.CommonConstants;
-import com.commons.entity.Contact;
 import com.commons.entity.Token;
 import com.commons.http.HttpMethod;
 import com.commons.http.HttpRequest;
@@ -18,11 +17,9 @@ import com.commons.utils.RandomUtil;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.ws.rs.NotFoundException;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Slf4j
 public class TokenDaoImpl extends OfyService implements TokenDao {
 
     private final long oneDayMilli = 86400000;
@@ -96,7 +93,7 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
             request.addHeader("Authorization", "ApiKey="+CommonConstants.AUTH_API_KEY);
             HttpResponse response = UrlFetcher.makeRequest(request);
             if (!response.wasSuccessful()) {
-                log.error("error response : " + response.getResponseContent());
+                System.out.println("error response : " + response.getResponseContent());
                 return null;
             }
 
@@ -104,7 +101,7 @@ public class TokenDaoImpl extends OfyService implements TokenDao {
 
             return ObjUtil.safeConvertMap((Map<String, Object>) ((Map<String, Object>) apiResponse.get("data")).get("token"), Token.class);
         } catch (Exception e) {
-            log.error("exception while fetching contact by Id from remote : ", e.getMessage(), e);
+            System.out.println("exception while fetching contact by Id from remote : "+ e.getMessage()+ e);
             return null;
         }
 

@@ -1,5 +1,7 @@
 package com.commons.entity;
 
+
+
 import com.commons.Enum.AppType;
 import com.commons.utils.ObjUtil;
 import com.googlecode.objectify.annotation.Entity;
@@ -8,7 +10,6 @@ import com.googlecode.objectify.annotation.Serialize;
 import com.googlecode.objectify.annotation.Unindex;
 import lombok.Data;
 
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 

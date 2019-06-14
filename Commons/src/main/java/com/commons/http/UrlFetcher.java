@@ -6,7 +6,6 @@ import java.io.*;
 import java.net.HttpURLConnection;
 
 
-@Slf4j
 public class UrlFetcher {
 
     /**
@@ -30,7 +29,7 @@ public class UrlFetcher {
      */
     public static HttpResponse makeRequest(HttpRequest request) throws IOException {
 
-        log.info("Fetching url : " + request.getUrl());
+        System.out.println("Fetching url : " + request.getUrl());
 
         try {
             HttpURLConnection conn = (HttpURLConnection) request.getUrl().openConnection();
@@ -96,7 +95,7 @@ public class UrlFetcher {
             return httpResponse;
 
         } catch (Exception e) {
-            log.error(e.getMessage(), e);
+            System.out.println(e.getMessage()+ e);
             return null;
         }
     }
