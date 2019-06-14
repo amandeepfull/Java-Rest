@@ -29,7 +29,6 @@ public class AppConfig extends Application {
     private void registringOfEntities() {
 
         /// registring the entities
-
         OfyService.factory().register(Token.class);
     }
 

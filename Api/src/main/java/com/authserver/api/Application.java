@@ -17,7 +17,6 @@ public class Application {
     }
 
     private void registringOfEntities() {
-        System.out.println("coming here");
         OfyService.factory().register(Contact.class);
         OfyService.factory().register(App.class);
     }
