@@ -285,6 +285,8 @@ a:hover {
     display: none;
     border-radius: 5px;
     background-color: white;
+    height: 155px;
+    overflow-y: auto;
 
 }
 
@@ -421,7 +423,7 @@ input[type=text], select {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color:  rgba(44, 47, 62, 0.5);
     z-index: 2;
     cursor: pointer;
   }
@@ -429,17 +431,15 @@ input[type=text], select {
   .new-app-popup{
     display: none;
     position: absolute;
-    width: 500px;
-    height: 300px;
+    width: 650px;
+    height: 400;
     z-index: 2;
-    left: 50%;
-    top: 50%;
+    left: 750;
+    top: 200px;
     transform: translate(-50%, -50%);
-
     overflow-y: auto;
     background-color: rgb(0,0,0);
     background-color: white;
-    border: 1px solid black;
     border-radius: 4px;
     padding: 20px;
     overflow-wrap: break-word;
@@ -450,3 +450,15 @@ input[type=text], select {
     height: calc(100vh - 66px);
   }
 
+  .create-app-btn {
+    background-color: #5fcc80;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 460px;
+    color: #4e4b4b;
+    font-weight: bold;
+}
