@@ -368,6 +368,7 @@ a.app-in-view-icon-base {
     display: inline-flex;
     align-items: center;
     padding-right: 10px;
+    text-decoration: none;
 }
 
 .app-in-view-icon-title{
