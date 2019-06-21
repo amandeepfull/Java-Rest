@@ -8,11 +8,13 @@ export default class App extends React.Component {
 
   render() {
     return (
-     <div class="oauthcater">
+      <React.Fragment>
+      <div className="overlay"></div>
+     <div className="oauthcater">
      <TopNavBar/>
     <MainBottomView/>
-    
      </div>
+     </React.Fragment>
     )
   }
 }

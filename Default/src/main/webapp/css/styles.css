@@ -194,7 +194,7 @@ a:hover {
     margin-bottom: 5px;
     margin-left: 10px;
     width: calc(20% - 10px);
-    height: calc(100% - 78px);
+    height: calc(100% - 15px);
     background: #3b4a6b;
     box-shadow: 0 4px 8px 0 rgba(1, 1, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 15px;
@@ -255,9 +255,9 @@ a:hover {
 
  .app-in-view{
 
-    width: 930px;
     margin-left: 2%;
-    height: calc(100% - 150px);
+    margin-right: 40px;
+    height: calc(100% - 88px);
     box-shadow: 0 4px 8px 0 rgba(1, 1, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 15px;
     border: 2px solid #e4e0e3;
@@ -316,6 +316,7 @@ a:hover {
     margin-left: 10px;
     border-radius: 5px;
     outline: none;
+    margin-right: 42px;
 }
 .select-app-option > img{
     width: 10px;
@@ -353,6 +354,11 @@ a.app-in-view-icon-base {
     
 }
 
+.new-app-btn > img{
+    width: 15px;
+    margin-right: 6px;
+}
+
 .app-in-view-bar-icon-base{
     display: inline-flex;
     align-items: center;
@@ -366,5 +372,77 @@ a.app-in-view-icon-base {
 }
 
 .app-in-view-bar-icon-base:hover{
-    background: #d6e4d6;
+    background: #d6e4d6;  
 }
+
+.app-in-bottom-view {
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+.profile-info-view{
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 20px;
+    height: auto;
+}
+
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .new-app-btn{
+    background-color: #384f79;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+  }
+
+  .overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .new-app-popup{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow-y: auto;
+    background-color: rgb(0,0,0);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px;
+    overflow-wrap: break-word;
+  }
+
+  .main-bottom-view{
+    position: relative;
+    height: calc(100vh - 66px);
+  }
+

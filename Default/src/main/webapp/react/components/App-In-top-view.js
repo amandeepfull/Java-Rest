@@ -6,35 +6,41 @@ export default class AppInTopView extends React.Component {
         super(props);
     
         this.showAppList = this.showAppList.bind(this);
+        this.showNewAppPopup = this.showNewAppPopup.bind(this);
+
     }
 
     render() {
         
         return (
-            <div class="app-in-top-view">
-            <div class= "select-app">
-                <span class="app-text"> Select App</span>
-                <button onClick={this.showAppList} class="select-app-option">AnywhereWorks
+            <div className="app-in-top-view">
+            <div className= "select-app">
+                <span className="app-text"> Select App</span>
+                <button onClick={this.showAppList} className="select-app-option">AnywhereWorks
                 <img src="/images/down_arrow.jpg"/>
                 </button>
-                <div class="app-option-wrapper">
-                    <ul class="app-list">
-                        <li class="app-li">
+                <div className="app-option-wrapper">
+                    <ul className="app-list">
+                        <li className="app-li">
                             <a href="#">AnywhereWorks</a>
                         </li>
-                        <li class="app-li">
+                        <li className="app-li">
                             <a href="#">Setmore</a>
                         </li>
-                        <li class="app-li">
+                        <li className="app-li">
                             <a href="#">Answer</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="app-title">
-            <h2>Anywhereworks</h2>
 
+                <button className="new-app-btn" onClick={this.showNewAppPopup}>
+                <img src="/images/icons/plusIcon.png"/>New App
+                </button>
             </div>
+            <div className="app-title">
+            <h2>Anywhereworks</h2>
+            </div>
+                       
             </div>
 
         )
@@ -46,6 +52,11 @@ export default class AppInTopView extends React.Component {
         document.getElementsByClassName("app-option-wrapper")[0].style.display = "block"
          else
          document.getElementsByClassName("app-option-wrapper")[0].style.display = "";   
+    }
+
+    showNewAppPopup(){
+         document.getElementsByClassName("overlay")[0].style.display = "block";
+         document.getElementsByClassName("new-app-popup")[0].style.display = "block"
     }
     
     }

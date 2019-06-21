@@ -8,7 +8,7 @@ export default class RightSideBar extends React.Component {
         }
     render() {
         return (
-         <div class="right-side-bar">
+         <div className="right-side-bar">
         <AppInTopView/>
          <AppInView/>
          </div> 

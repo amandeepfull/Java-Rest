@@ -6,7 +6,7 @@ export default class TopNavBar extends React.Component {
 
 render() {
     return (
-     <div class="top-nav-bar"></div>    
+     <div className="top-nav-bar"></div>    
     )
   }
 }

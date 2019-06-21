@@ -6,11 +6,15 @@
       <change beforePath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/add_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/App-In-top-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/App-In-top-view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/AppInviewNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/MainBottomView.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/MainBottomView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/Top-Nav-Bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/Top-Nav-Bar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app_info_popup_view.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/appInView.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/appInView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/AppInViewIconBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/AppInViewIconBase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/Left-Side-Bar-Icon-Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/icons/Left-Side-Bar-Icon-Base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/left-side-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/left-side-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/login.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/right-side-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/webapp/react/components/right-side-bar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
@@ -155,7 +159,7 @@
         <entry file="file://$PROJECT_DIR$/gradle/dependencies.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -2740,7 +2744,7 @@
     <entry file="file://$PROJECT_DIR$/gradle/dependencies.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
         </state>
       </provider>
     </entry>
