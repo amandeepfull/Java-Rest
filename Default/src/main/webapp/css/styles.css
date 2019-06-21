@@ -312,7 +312,7 @@ a:hover {
 .select-app-option {
     width: 150px;
     border: 1px solid #80808087;
-    height: 30px;
+    height: 40px;
     margin-left: 10px;
     border-radius: 5px;
     outline: none;
@@ -324,7 +324,10 @@ a:hover {
 }
 
 .select-app{
+
     height: 40px;
+    width: 300px;
+    float: left;
 }
 
 .app-title{
@@ -406,6 +409,7 @@ input[type=text], select {
     width: 120px;
     height: 35px;
     border-radius: 5px;
+    /* float: right; */
   }
 
   .overlay{

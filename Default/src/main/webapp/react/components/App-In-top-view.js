@@ -30,13 +30,44 @@ export default class AppInTopView extends React.Component {
                         <li className="app-li">
                             <a href="#">Answer</a>
                         </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+                        <li className="app-li">
+                            <a href="#">Answer</a>
+                        </li>
+
                     </ul>
                 </div>
-
+                </div>
                 <button className="new-app-btn" onClick={this.showNewAppPopup}>
                 <img src="/images/icons/plusIcon.png"/>New App
                 </button>
-            </div>
+        
             <div className="app-title">
             <h2>Anywhereworks</h2>
             </div>
