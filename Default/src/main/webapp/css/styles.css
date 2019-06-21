@@ -209,7 +209,7 @@ a:hover {
     margin-left: 10px;
     margin-right: 10px;
     width: calc(80% - 20px);
-    height: calc(100% - 54px);
+    height: calc(100% - 20px);
     float: right;
 }
  
@@ -257,7 +257,7 @@ a:hover {
 
     margin-left: 2%;
     margin-right: 40px;
-    height: calc(100% - 88px);
+    height: calc(100% - 120px);
     box-shadow: 0 4px 8px 0 rgba(1, 1, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 15px;
     border: 2px solid #e4e0e3;
