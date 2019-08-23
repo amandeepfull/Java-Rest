@@ -1,6 +1,6 @@
 package com.app.utils;
 
-import com.commons.model.JacksonObjectMapper;
+import com.app.config.JacksonObjectMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.google.appengine.api.datastore.Text;

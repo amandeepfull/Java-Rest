@@ -2,8 +2,10 @@ package com.app.exception.mapper;
 
 
 
-import com.commons.Enum.EntityErrorCode;
-import com.commons.response.ApiResponse;
+
+
+import com.app.exception.EntityErrorCode;
+import com.app.response.ApiResponse;
 
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;

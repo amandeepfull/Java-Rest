@@ -1,8 +1,8 @@
 package com.app.exception.mapper;
 
 
-import com.commons.Enum.ApiErrorCode;
-import com.commons.response.ApiResponse;
+import com.app.exception.ApiErrorCode;
+import com.app.response.ApiResponse;
 
 import javax.ws.rs.ForbiddenException;
 import javax.ws.rs.core.MediaType;

@@ -1,9 +1,8 @@
 package com.app.utils;
 
 
-import com.commons.Enum.ErrorCode;
-import com.commons.exception.runtime.IllegalArgException;
-
+import com.app.exception.ErrorCode;
+import com.app.exception.IllegalArgException;
 
 public final class Preconditions {
 
