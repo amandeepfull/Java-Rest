@@ -1,7 +1,7 @@
 package com.app.objectify;
 
 
-import com.app.exception.runtime.IllegalArgException;
+import com.app.exception.IllegalArgException;
 import com.app.response.CollectionResponse;
 import com.app.utils.Preconditions;
 import com.google.appengine.api.datastore.Cursor;

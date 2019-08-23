@@ -2,7 +2,7 @@ package com.app.exception.mapper;
 
 
 import com.app.exception.ApiErrorCode;
-import com.app.exception.runtime.IllegalArgException;
+import com.app.exception.IllegalArgException;
 import com.app.response.ApiResponse;
 
 import javax.ws.rs.core.MediaType;

@@ -1,11 +1,10 @@
 package com.app.daoImpl;
 
 import com.app.dao.FoodDao;
-import com.app.model.Food;
+import com.app.entity.Food;
 import com.app.objectify.OfyService;
 import com.app.utils.ObjUtil;
 import com.app.utils.Preconditions;
-import com.app.utils.RandomUtil;
 
 import java.util.UUID;
 

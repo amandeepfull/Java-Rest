@@ -3,11 +3,9 @@ package com.app.config;
 
 import com.app.endpoints.FoodEndpoint;
 import com.app.endpoints.HotelEndpoint;
-import com.app.endpoints.RatingEndpoint;
-import com.app.endpoints.SearchEndpoint;
 import com.app.exception.mapper.*;
-import com.app.model.Food;
-import com.app.model.Hotel;
+import com.app.entity.Food;
+import com.app.entity.Hotel;
 import com.app.objectify.OfyService;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.util.jackson.ObjectifyJacksonModule;
@@ -37,10 +35,9 @@ public class AppConfig extends Application {
 
         // registring com.endpoints
 
-        classes.add(SearchEndpoint.class);
+
         classes.add(HotelEndpoint.class);
         classes.add(FoodEndpoint.class);
-        classes.add(RatingEndpoint.class);
 
         // json com.config
         classes.add(JacksonObjectResolver.class);
@@ -60,11 +57,6 @@ public class AppConfig extends Application {
 
         //exception mappers
         singletons.add(new IllegalArgExceptionMapper());
-        singletons.add(new ResourceNotFoundExceptionMapper());
-        singletons.add(new ForbiddenExceptionMapper());
-        singletons.add(new NotAllowedExceptionMapper());
-        singletons.add(new JaxRsForbiddenExceptionMapper());
-        singletons.add(new InvalidFormatExceptionMapper());
         singletons.add(new GenericExceptionMapper());
 
 

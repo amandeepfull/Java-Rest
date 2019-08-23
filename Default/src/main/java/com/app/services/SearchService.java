@@ -1,11 +1,10 @@
 package com.app.services;
 
-import com.app.model.Food;
-import com.app.model.Hotel;
+import com.app.entity.Food;
+import com.app.entity.Hotel;
 import com.app.objectify.OfyService;
 import com.app.utils.ObjUtil;
 import com.app.utils.Preconditions;
-import com.googlecode.objectify.cmd.Query;
 
 import java.util.ArrayList;
 import java.util.List;
