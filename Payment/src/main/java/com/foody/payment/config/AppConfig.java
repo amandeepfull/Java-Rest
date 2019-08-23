@@ -1,6 +1,9 @@
 package com.foody.payment.config;
 
 
+import com.foody.payment.baseEndpoints.objectify.OfyService;
+import com.foody.payment.endpoints.PaymentEndpoint;
+import com.foody.payment.entities.Payment;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.util.jackson.ObjectifyJacksonModule;
 
@@ -19,6 +22,7 @@ public class AppConfig extends Application {
 
     private void registringOfEntities() {
 
+        OfyService.factory().register(Payment.class);
     }
 
     @Override
@@ -28,6 +32,7 @@ public class AppConfig extends Application {
 
         // registring com.endpoints
 
+        classes.add(PaymentEndpoint.class);
 
         // json com.config
         classes.add(JacksonObjectResolver.class);
