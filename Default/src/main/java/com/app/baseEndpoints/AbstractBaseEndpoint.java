@@ -23,9 +23,6 @@ public class AbstractBaseEndpoint {
     @Context
     Request request;
 
-    public HttpSession getSession() {
-        return servletRequest.getSession(false);
-    }
 
     protected Response badRequest(Object obj) {
         return Response.status(Response.Status.BAD_REQUEST).entity(obj).build();

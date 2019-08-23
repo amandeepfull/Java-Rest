@@ -1,5 +1,6 @@
 package com.app.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import com.googlecode.objectify.annotation.Index;
@@ -16,5 +17,10 @@ public class Hotel {
     private String name;
 
     private String location;
+
+    private float rating;
+
+    @JsonIgnore
+    private long ratedUsers;
 
 }

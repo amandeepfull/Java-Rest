@@ -3,6 +3,7 @@ package com.app.config;
 
 import com.app.endpoints.FoodEndpoint;
 import com.app.endpoints.HotelEndpoint;
+import com.app.endpoints.RatingEndpoint;
 import com.app.endpoints.SearchEndpoint;
 import com.app.exception.mapper.*;
 import com.app.model.Food;
@@ -39,6 +40,7 @@ public class AppConfig extends Application {
         classes.add(SearchEndpoint.class);
         classes.add(HotelEndpoint.class);
         classes.add(FoodEndpoint.class);
+        classes.add(RatingEndpoint.class);
 
         // json com.config
         classes.add(JacksonObjectResolver.class);
