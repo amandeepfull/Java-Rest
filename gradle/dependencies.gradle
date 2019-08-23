@@ -37,6 +37,7 @@ ext {
                     port           : [
                             default: 8890,
                             order    : 8882,
+                            payment : 8883
                     ],
                     defaultJvmFlags: [
                             '-Dappengine.fullscan.seconds=3',

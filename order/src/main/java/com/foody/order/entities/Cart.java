@@ -5,16 +5,14 @@ import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Data
-public class Cart {
+public class Cart extends AbstractBaseEntity{
 
-    @Id
-    private String id;
-    private List<String> foodIds;
+    private Set<String> foodIds;
 
     public void addFood(String foodId) {
 
@@ -22,7 +20,7 @@ public class Cart {
             return;
 
         if(ObjUtil.isNullOrEmpty(this.foodIds))
-            this.foodIds = new ArrayList<>();
+            this.foodIds = new HashSet<>();
 
         this.foodIds.add(foodId);
     }

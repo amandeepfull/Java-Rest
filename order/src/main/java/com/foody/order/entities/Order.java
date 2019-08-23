@@ -1,16 +1,15 @@
 package com.foody.order.entities;
 
+import com.foody.order.enums.PaymentType;
 import com.googlecode.objectify.annotation.Entity;
-import com.googlecode.objectify.annotation.Id;
 import lombok.Data;
 
 @Entity
 @Data
-public class Order {
+public class Order extends AbstractBaseEntity{
 
-    @Id
-    private String id;
     private String cartId;
     private String address;
-    private Payment payment;
+    private double totalAmt;
+    private PaymentType paymentType;
 }

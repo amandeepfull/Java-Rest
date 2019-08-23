@@ -8,15 +8,14 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Food {
+public class Food extends AbstractBaseEntity{
 
-    @Id
-    private String id;
 
     @Index
     private String name;
 
-    private float price;
+    @Unindex
+    private double price;
 
     @Unindex
     private String hotelId;

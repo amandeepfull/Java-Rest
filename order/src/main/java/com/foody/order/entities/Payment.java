@@ -1,6 +1,6 @@
 package com.foody.order.entities;
 
-import com.foody.order.PaymentType;
+import com.foody.order.enums.PaymentType;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import lombok.Data;

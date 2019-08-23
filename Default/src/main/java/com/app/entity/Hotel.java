@@ -8,10 +8,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Hotel {
-
-    @Id
-    private String id;
+public class Hotel extends AbstractBaseEntity {
 
     @Index
     private String name;

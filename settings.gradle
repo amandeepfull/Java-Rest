@@ -1,5 +1,6 @@
 rootProject.name = 'foody'
 
 include 'Default'
-include 'order'
+include 'Order'
+include 'Payment'
 
