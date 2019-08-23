@@ -1,7 +1,6 @@
 package com.app.exception;
 
 
-import com.commons.Enum.ErrorCode;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

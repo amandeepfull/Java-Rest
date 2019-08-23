@@ -2,7 +2,6 @@ package com.app.exception;
 
 
 
-
 public class UnauthorizedException extends AbstractException {
 
     public UnauthorizedException() {

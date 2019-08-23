@@ -1,9 +1,8 @@
 package com.app.exception.mapper;
 
 
-import com.commons.Enum.ApiErrorCode;
-import com.commons.constants.CommonConstants;
-import com.commons.response.ApiResponse;
+import com.app.exception.ApiErrorCode;
+import com.app.response.ApiResponse;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
@@ -23,6 +22,6 @@ public class GenericExceptionMapper implements ExceptionMapper<Throwable> {
 
         ApiResponse response = new ApiResponse(false, ApiErrorCode.INTERNAL_SERVER_ERROR, "something went wrong on our end");
 
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(response).type(CommonConstants.JSON_CONTENTTYPE).build();
+        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(response).type("application/json").build();
     }
 }

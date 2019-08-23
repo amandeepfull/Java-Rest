@@ -1,15 +1,17 @@
 package com.app.exception.mapper;
 
+import com.app.exception.EntityErrorCode;
 import com.app.exception.EntityException;
-import com.commons.Enum.EntityErrorCode;
-import com.commons.Enum.ErrorCode;
-import com.commons.response.ApiResponse;
+import com.app.exception.ErrorCode;
+import com.app.response.ApiResponse;
+
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 
-import static com.commons.Enum.ApiErrorCode.INTERNAL_SERVER_ERROR;
+import static com.app.exception.ApiErrorCode.INTERNAL_SERVER_ERROR;
+
 
 public class EntityExceptionMapper implements ExceptionMapper<EntityException> {
 

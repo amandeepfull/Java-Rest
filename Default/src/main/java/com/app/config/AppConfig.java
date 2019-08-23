@@ -1,9 +1,13 @@
 package com.app.config;
 
-import com.app.endpoints.TestEndpoint;
 
+import com.app.endpoints.FoodEndpoint;
+import com.app.endpoints.HotelEndpoint;
+import com.app.endpoints.SearchEndpoint;
 import com.app.exception.mapper.*;
-import com.authserver.app.exception.mapper.*;
+import com.app.model.Food;
+import com.app.model.Hotel;
+import com.app.objectify.OfyService;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.util.jackson.ObjectifyJacksonModule;
 
@@ -19,10 +23,10 @@ public class AppConfig extends Application {
 
     }
 
-
     private void registringOfEntities() {
 
-
+        OfyService.factory().register(Hotel.class);
+        OfyService.factory().register(Food.class);
     }
 
     @Override
@@ -32,10 +36,12 @@ public class AppConfig extends Application {
 
         // registring com.endpoints
 
-        classes.add(TestEndpoint.class);
+        classes.add(SearchEndpoint.class);
+        classes.add(HotelEndpoint.class);
+        classes.add(FoodEndpoint.class);
 
         // json com.config
-
+        classes.add(JacksonObjectResolver.class);
         classes.add(ObjectifyJacksonModule.class);
 
         return classes;

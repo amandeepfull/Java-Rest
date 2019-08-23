@@ -1,7 +1,6 @@
 package com.app.exception;
 
 
-import com.commons.Enum.ErrorCode;
 
 public class IllegalArgException extends AbstractRuntimeException {
 

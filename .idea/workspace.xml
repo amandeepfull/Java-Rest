@@ -2,256 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744c01ac-5fce-4e82-b2b6-44b82bb1712f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/logging.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/baseEndpoints/AbstractBaseEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/JacksonObjectResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/TestEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/AbstractException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/AbstractRuntimeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/EntityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/ForbiddenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/IllegalArgException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/UnauthorizedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/EntityExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/ForbiddenExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/GenericExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/IllegalArgExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/InvalidFormatExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/JaxRsForbiddenExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/NotAllowedExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/OptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/ResourceNotFoundExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/runtime/AbstractRuntimeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/runtime/IllegalArgException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/model/FileUploadInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/model/JacksonObjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/objectify/OfyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/ApiErrorModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/CollectionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/TokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/AppUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/GaeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/HashUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/ObjUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/Preconditions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/RandomUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/dao/FoodDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/dao/HotelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl/FoodDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl/HotelDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/FoodEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/HotelEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/SearchEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/ApiErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/EntityErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/model/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/model/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/services/SearchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/appengine-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/Enum/ApiErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/Enum/EntityErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/Enum/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/config/JacksonObjectResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/constants/CommonConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/AbstractException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/EntityException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/ForbiddenException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/mapper/ForbiddenExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/mapper/GenericExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/mapper/IllegalArgExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/mapper/InvalidFormatExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/mapper/JaxRsForbiddenExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/mapper/NotAllowedExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/mapper/ResourceNotFoundExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/runtime/AbstractRuntimeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/exception/runtime/IllegalArgException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/model/JacksonObjectMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/objectify/OfyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/response/ApiErrorModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/response/ApiResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/response/CollectionResponse$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/response/CollectionResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/utils/HashUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/utils/ObjUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/utils/ObjUtil$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/utils/ObjUtil$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/utils/ObjUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/com/utils/Preconditions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/activation-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/appengine-api-1.0-sdk-1.9.63.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/commons-codec-1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/commons-io-2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/guava-20.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/httpclient-4.3.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/httpcore-4.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jackson-annotations-2.8.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jackson-core-2.8.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jackson-databind-2.8.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jackson-jaxrs-base-2.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jackson-jaxrs-json-provider-2.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jackson-module-jaxb-annotations-2.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jboss-annotations-api_1.2_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jboss-logging-3.1.4.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/jcip-annotations-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/objectify-5.1.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/resteasy-jackson2-provider-3.0.19.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/resteasy-jaxrs-3.0.19.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/exploded-Commons/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/libs/Commons-1.0.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/appengine-generated/app.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/appengine-generated/cron.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/appengine-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/Enum/ApiErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/Enum/EntityErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/Enum/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/config/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/config/JacksonObjectResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/constants/CommonConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/AbstractException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/EntityException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/ForbiddenException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/mapper/ForbiddenExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/mapper/GenericExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/mapper/IllegalArgExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/mapper/InvalidFormatExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/mapper/JaxRsForbiddenExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/mapper/NotAllowedExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/mapper/ResourceNotFoundExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/runtime/AbstractRuntimeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/exception/runtime/IllegalArgException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/model/JacksonObjectMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/objectify/OfyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/response/ApiErrorModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/response/ApiResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/response/CollectionResponse$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/response/CollectionResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/utils/HashUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/utils/ObjUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/utils/ObjUtil$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/utils/ObjUtil$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/utils/ObjUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/com/utils/Preconditions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/cron.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/activation-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/commons-codec-1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/commons-io-2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/guava-20.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/httpclient-4.3.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/httpcore-4.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jackson-annotations-2.8.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jackson-core-2.8.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jackson-databind-2.8.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jackson-jaxrs-base-2.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jackson-jaxrs-json-provider-2.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jackson-module-jaxb-annotations-2.6.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jboss-annotations-api_1.2_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jboss-logging-3.1.4.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/jcip-annotations-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/objectify-5.1.20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/resteasy-jackson2-provider-3.0.19.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/resteasy-jaxrs-3.0.19.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/__static__/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/staged-app/app.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/AppDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/ContactDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Dao/TokenDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl$AppRegistrationServiceInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/AppDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl$ContactDaoImplInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/ContactDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl$TokenDaoImplInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/DaoImplServices/TokenDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Enum/ApiErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Enum/AppType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Enum/EntityErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Enum/EntityStatusType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Enum/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/Enum/TokenType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/annotations/ApiKeyCheck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/baseEndpoints/AbstractBaseEndpoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/config/JacksonObjectResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/constants/CommonConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/AbstractBaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/entity/Token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/AbstractException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/EntityException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/ForbiddenException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/EntityExceptionMapper$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/EntityExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/ForbiddenExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/GenericExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/IllegalArgExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/InvalidFormatExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/JaxRsForbiddenExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/NotAllowedExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/mapper/ResourceNotFoundExceptionMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/runtime/AbstractRuntimeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/exception/runtime/IllegalArgException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/filters/ApiKeyFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/filters/CommonApiResponseFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/model/JacksonObjectMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/objectify/OfyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/requests/TokenRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/ApiErrorModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/ApiResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/CollectionResponse$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/CollectionResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/response/TokenResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService$AuthenticationServiceInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/AuthenticationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/FreeMarkerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService$JWTServiceInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/JWTService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/services/LoginSessionManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/AppUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/HashUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/ObjUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/out/production/classes/com/commons/utils/Preconditions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/lib/Commons-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/exploded-Default/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/Default/build/libs/Default-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/images/giphy.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/images/lagif-grande.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/images/load-spinner-small.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/images/untitled_180_3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/js/client.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/dashboard.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/pages/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/CommonContansts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/add_app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/app_info_popup_view.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/left-side-bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/webapp/WEB-INF/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/components/right-side-bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Default/src/main/webapp/react/services/Ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/config/JacksonObjectResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/config/JacksonObjectResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/TestEndpoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/AbstractException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/AbstractException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/AbstractRuntimeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/AbstractRuntimeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/EntityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/EntityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/ForbiddenException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/ForbiddenException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/IllegalArgException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/IllegalArgException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/UnauthorizedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/UnauthorizedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/EntityExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/EntityExceptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/ForbiddenExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/ForbiddenExceptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/GenericExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/GenericExceptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/IllegalArgExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/IllegalArgExceptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/runtime/AbstractRuntimeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/runtime/AbstractRuntimeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/runtime/IllegalArgException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/exception/runtime/IllegalArgException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/model/FileUploadInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Default/src/main/java/com/app/model/JacksonObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Default/src/main/java/com/app/config/JacksonObjectMapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/Commons/.gradle/" />
@@ -281,7 +63,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AuthServer$default_run.ic" NAME="default run Coverage Results" MODIFIED="1558284983580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/AuthServer$default_run.ic" NAME="default run Coverage Results" MODIFIED="1566541772414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -319,56 +101,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApiResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/ApiResponse.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="HotelEndpoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/HotelEndpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/CollectionResponse.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="SearchEndpoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/SearchEndpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="Preconditions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/Preconditions.java">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="SearchService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/services/SearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/Utils.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="AppUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/AppUtils.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="RandomUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/RandomUtil.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="HashUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/HashUtil.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="GaeUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/GaeUtil.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="ObjUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/ObjUtil.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java">
+      <file leaf-file-name="Food.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/model/Food.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="106">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoadIds.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.objectify/objectify/5.1.20/4124e19d7282f4315f02d003cd7214f0ab3b0034/objectify-5.1.20-sources.jar!/com/googlecode/objectify/cmd/LoadIds.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/config/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FoodEndpoint.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/FoodEndpoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FoodDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl/FoodDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OfyService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/objectify/OfyService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotelDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl/HotelDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -415,6 +257,7 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/Api/src/main/java</dir>
       <dir>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.20/ac76d9b956045631d1561a09289cbf472e077c01/lombok-1.16.20.jar!/lombok/extern/slf4j</dir>
+      <dir>$PROJECT_DIR$/Default/src/main/java/com/app/dao/FoodDao</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -2123,43 +1966,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/FreeMarkerService.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/services/OfyService.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/filter/ApiKeyFilter.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/EntityException.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/AbstractException.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/NotFoundException.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/AbstractRuntimeException.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/ForbiddenException.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/UnauthorizedException.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/constants/CommonConstants.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/IllegalArgException.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/ContactEndpoint.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/exception/mapper/ExceptionMapper.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/mapper/ExceptionMapper.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/constants/ApiCommConstants.java" />
-        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/AuthEndpoint.java" />
-        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/endpoints/ServiceEndpoint.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/services/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/endpoints/apis/AppEndpoint.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/constants/ApiConstants.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/constants/CommonConstants.java" />
-        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/constants/AuthConstants.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/TokenDaoImpl.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/UtilityServices.java" />
-        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/services/TokenDaoImpl.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/CommonConstants.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/CommonConstants/CommonConstants.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/GCSService.java" />
-        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/services/JWTService.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/services/UtilityServices.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/constants/CommonConstants.java" />
-        <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/services/JWTService.java" />
-        <option value="$PROJECT_DIR$/Auth/src/main/java/com/authserver/auth/filters/ApiKeyFilter.java" />
-        <option value="$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml" />
-        <option value="$PROJECT_DIR$/Auth/build.gradle" />
-        <option value="$PROJECT_DIR$/Default/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/Api/build.gradle" />
         <option value="$PROJECT_DIR$/Default/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/appengine-web.xml" />
@@ -2167,13 +1973,50 @@
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/test.java" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/MainEndpoint.java" />
-        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/TestEndpoint.java" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/JacksonObjectResolver.java" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/ForbiddenException.java" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/model/JacksonObjectMapper.java" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/CollectionResponse.java" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/ObjUtil.java" />
         <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/TestEndpoint.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/UnauthorizedException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/NotFoundException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/ErrorCode.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/objectify/OfyService.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/ApiErrorModel.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/ApiResponse.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/authserver/app/baseEndpoints/AbstractBaseEndpoint.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/baseEndpoints/AbstractBaseEndpoint.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/config/JacksonObjectMapper.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/model/Hotel.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/model/Food.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/UnauthorizedException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/AbstractException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/AbstractRuntimeException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/ApiErrorCode.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/EntityErrorCode.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/EntityExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/ForbiddenExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/GenericExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/IllegalArgExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/runtime/AbstractRuntimeException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/runtime/IllegalArgException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/ForbiddenException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/IllegalArgException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/exception/EntityException.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/dao/HotelDao.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/dao/FoodDao.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl/HotelDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/HotelEndpoint.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl/FoodDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/objectify/OfyService.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/SearchEndpoint.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/services/SearchService.java" />
+        <option value="$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/FoodEndpoint.java" />
       </list>
     </option>
   </component>
@@ -2230,6 +2073,76 @@
               <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="daoImpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="objectify" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Default" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2243,6 +2156,49 @@
             <path>
               <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.googlecode.objectify:objectify:5.1.20" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.googlecode.objectify:objectify:5.1.20" type="70bed36:NamedLibraryElementNode" />
+              <item name="objectify-5.1.20.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.googlecode.objectify:objectify:5.1.20" type="70bed36:NamedLibraryElementNode" />
+              <item name="objectify-5.1.20.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="objectify" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.googlecode.objectify:objectify:5.1.20" type="70bed36:NamedLibraryElementNode" />
+              <item name="objectify-5.1.20.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="objectify" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.googlecode.objectify:objectify:5.1.20" type="70bed36:NamedLibraryElementNode" />
+              <item name="objectify-5.1.20.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="objectify" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AuthServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: com.googlecode.objectify:objectify:5.1.20" type="70bed36:NamedLibraryElementNode" />
+              <item name="objectify-5.1.20.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="objectify" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="jackson" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2287,11 +2243,11 @@
       <recent name="$PROJECT_DIR$/Api/src/main/java/com/authserver/api/daoImpl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.app.exception" />
+      <recent name="com.authserver.app.exception" />
       <recent name="com.authserver.app.config" />
       <recent name="com.commons.exception.mapper" />
       <recent name="com.authserver.api.util" />
-      <recent name="com.authserver.api.response" />
-      <recent name="com.authserver.api.enums" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.commons.model" />
@@ -2639,13 +2595,15 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.3982808" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.4713467" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" weight="0.4713467" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295129" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" weight="0.3495702" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49921876" visible="true" weight="0.3495702" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49856734" visible="true" weight="0.34832317" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3295129" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
       <window_info anchor="right" id="Gradle" order="3" sideWeight="0.49856734" visible="true" weight="0.10442073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2660,8 +2618,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2683,121 +2639,29 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Default/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/util/logging/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2745">
-          <caret line="217" column="13" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.11/2a2f78be7ef674b6486f7b5463f05f40da5e163/logback-classic-1.1.11-sources.jar!/ch/qos/logback/classic/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar!/org/slf4j/LoggerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-534">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar!/org/slf4j/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/appengine-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="82" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/DaoImplServices/ContactDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="89" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/appengine-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Auth/src/main/webapp/WEB-INF/logging.properties">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/utils/AppUtils.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Auth/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/utils/HashUtil.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/build.gradle">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/utils/GaeUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/utils/ObjUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.7/1c4ce0c6d76f9fef808cc3c7b602219799a73d70/jackson-databind-2.8.7-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="106">
+          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/response/CollectionResponse.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.objectify/objectify/5.1.20/4124e19d7282f4315f02d003cd7214f0ab3b0034/objectify-5.1.20-sources.jar!/com/googlecode/objectify/util/jackson/ObjectifyJacksonModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/baseEndpoints/AbstractBaseEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/utils/AppUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/dependencies.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="55">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2808,125 +2672,377 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/endpoints/TestEndpoint.java">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/ErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/response/ApiErrorModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="210">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/commons/exception/mapper/GenericExceptionMapper.java">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/response/ApiResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="-596">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/runtime/AbstractRuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/AbstractRuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/ResourceNotFoundExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/NotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/AbstractException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/ForbiddenException.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/TokenResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/services/UtilityServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/IllegalArgExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="15">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/InvalidFormatExceptionMapper.java">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/response/CollectionResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/utils/RandomUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/TestEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/config/JacksonObjectResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/appengine-web.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/model/FileUploadInfo.java">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/EntityErrorCode.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/runtime/IllegalArgException.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/EntityExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="100" lean-forward="true" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/OptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/ForbiddenExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/ForbiddenExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/GenericExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/JacksonObjectResolver.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/mapper/IllegalArgExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/JaxRsForbiddenExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/runtime/AbstractRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/mapper/NotAllowedExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/runtime/IllegalArgException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/exception/IllegalArgException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/model/JacksonObjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/TokenResponse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/ApiErrorModel.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/ApiResponse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/response/CollectionResponse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/Preconditions.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/AppUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/RandomUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/HashUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/GaeUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/utils/ObjUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/authserver/app/config/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/AbstractException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/AbstractRuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/ApiErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/ForbiddenException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/IllegalArgException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/NotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/UnauthorizedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/exception/EntityException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/baseEndpoints/AbstractBaseEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/dao/FoodDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/dao/HotelDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/config/JacksonObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/model/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl/HotelDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/daoImpl/FoodDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.objectify/objectify/5.1.20/4124e19d7282f4315f02d003cd7214f0ab3b0034/objectify-5.1.20-sources.jar!/com/googlecode/objectify/cmd/LoadIds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/objectify/OfyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/SearchEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/model/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/services/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/HotelEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Default/src/main/java/com/app/endpoints/FoodEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
