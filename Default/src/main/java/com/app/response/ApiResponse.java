@@ -1,14 +1,18 @@
 package com.app.response;
 
-import com.app.exception.ErrorCode;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.app.exception.ApiErrorModel;
+import com.app.exception.ErrorCode;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 @Data
 @NoArgsConstructor
@@ -31,7 +35,7 @@ public class ApiResponse implements Serializable {
 
     /* helpers for errors */
     public void addError(ErrorCode code, String message){
-     this.addError(new ApiErrorModel(code, message));
+        this.addError(new ApiErrorModel(code, message));
     }
 
     public void addError(String code, String message) {

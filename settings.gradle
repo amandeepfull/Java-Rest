@@ -1,6 +1,5 @@
-rootProject.name = 'AuthServer'
+rootProject.name = 'foody'
 
-include 'Commons'
 include 'Default'
-include 'Api'
-include 'Auth'
+include 'order'
+

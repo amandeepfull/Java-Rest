@@ -23,7 +23,7 @@ dependencies {
     compile libs.gae
     compile libs.resteasy
     compile libs.resteasy_jackson_provider
-    compile project(":Commons")
+
 }
 
 appengine {

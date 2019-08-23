@@ -20,12 +20,12 @@ public class HotelDaoImpl extends OfyService implements HotelDao{
     }
 
     @Override
-    public boolean rateHotel(String hotelId, float rating) {
+    public Hotel rateHotel(String hotelId, float rating) {
 
         Hotel hotel = get(Hotel.class, hotelId);
         hotel.addRating(rating);
 
-        save(hotel);
-        return true;
+       return save(hotel) != null ? hotel : null;
+
     }
 }

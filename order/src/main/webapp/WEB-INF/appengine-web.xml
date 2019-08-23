@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+
+    <threadsafe>true</threadsafe>
+    <service>order</service>
+
+    <sessions-enabled>true</sessions-enabled>
+    <async-session-persistence enabled="true"/>
+
+    <system-properties>
+        <property name="java.util.logging.com.config.file" value="WEB-INF/classes/log4j.properties"/>
+    </system-properties>
+
+    <runtime>java8</runtime>
+
+
+    <static-files>
+        <include path="/**">
+        </include>
+        
+    </static-files>
+
+</appengine-web-app>

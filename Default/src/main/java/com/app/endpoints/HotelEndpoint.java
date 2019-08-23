@@ -31,8 +31,9 @@ public class HotelEndpoint extends AbstractBaseEndpoint {
 
         ApiResponse response = new ApiResponse();
 
-        response.setOk(new HotelDaoImpl().rateHotel(hotelId, rating));
 
+         response.add("hotel",new HotelDaoImpl().rateHotel(hotelId, rating));
+         response.setOk(true);
         return Response.ok(response).build();
     }
 

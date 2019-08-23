@@ -8,10 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Api" />
-            <option value="$PROJECT_DIR$/Auth" />
-            <option value="$PROJECT_DIR$/Commons" />
             <option value="$PROJECT_DIR$/Default" />
+            <option value="$PROJECT_DIR$/order" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

@@ -1,5 +1,6 @@
 package com.app.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import com.googlecode.objectify.annotation.Index;
@@ -17,18 +18,19 @@ public class Hotel {
 
     private String location;
 
-    private float rating;
+    private double rating;
 
     private long ratedUsers;
+
+    @JsonIgnore
+    private double totalRating;
 
     public void addRating(float rating) {
         long ratedUsers = this.getRatedUsers();
         ratedUsers += 1;
-        System.out.println("rated user : "+ratedUsers);
         this.setRatedUsers(ratedUsers);
-        System.out.println("old rating : "+this.getRating());
-        float rate = (this.getRating() + rating) / ratedUsers;
-        System.out.println("rating : "+rate);
+        this.totalRating = this.totalRating + rating;
+        double rate = (this.totalRating) / ratedUsers;
         this.setRating(rate);
     }
 }

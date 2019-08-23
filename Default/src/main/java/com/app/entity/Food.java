@@ -16,6 +16,8 @@ public class Food {
     @Index
     private String name;
 
+    private float price;
+
     @Unindex
     private String hotelId;
 
