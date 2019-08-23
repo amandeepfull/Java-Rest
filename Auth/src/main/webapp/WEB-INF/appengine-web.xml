@@ -8,7 +8,7 @@
     <async-session-persistence enabled="true"/>
 
     <system-properties>
-        <property name="java.util.logging.com.config.file" value="WEB-INF/classes/log4j.properties"/>
+        <property name="java.util.logging.com.config.file" value="WEB-INF/logging.properties"/>
     </system-properties>
 
     <runtime>java8</runtime>

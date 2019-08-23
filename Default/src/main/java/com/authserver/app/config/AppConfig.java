@@ -1,11 +1,8 @@
 package com.authserver.app.config;
 
-import com.authserver.app.endpoints.MainEndpoint;
-import com.commons.config.JacksonObjectResolver;
-import com.commons.entity.Token;
-import com.commons.exception.mapper.*;
-import com.commons.filters.CommonApiResponseFilter;
-import com.commons.objectify.OfyService;
+import com.authserver.app.endpoints.TestEndpoint;
+
+import com.authserver.app.exception.mapper.*;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.util.jackson.ObjectifyJacksonModule;
 
@@ -24,8 +21,7 @@ public class AppConfig extends Application {
 
     private void registringOfEntities() {
 
-        /// registring the entities
-        OfyService.factory().register(Token.class);
+
     }
 
     @Override
@@ -34,10 +30,11 @@ public class AppConfig extends Application {
         Set<Class<?>> classes = new HashSet<>();
 
         // registring com.endpoints
-        classes.add(MainEndpoint.class);
+
+        classes.add(TestEndpoint.class);
 
         // json com.config
-        classes.add(JacksonObjectResolver.class);
+
         classes.add(ObjectifyJacksonModule.class);
 
         return classes;
@@ -50,7 +47,7 @@ public class AppConfig extends Application {
 
         // filters
 
-        singletons.add(new CommonApiResponseFilter());
+      //  singletons.add(new CommonApiResponseFilter());
 
         //exception mappers
         singletons.add(new IllegalArgExceptionMapper());

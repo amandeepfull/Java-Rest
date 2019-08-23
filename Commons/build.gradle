@@ -25,6 +25,7 @@ dependencies {
     compile libs.resteasy
     compile libs.resteasy_jackson_provider
     compile 'org.freemarker:freemarker:2.3.23'
+   // compile libs.slf4jLog4j12
     // https://mvnrepository.com/artifact/org.bitbucket.b_c/jose4j
     compile group: 'org.bitbucket.b_c', name: 'jose4j', version: '0.4.1'
     compile 'com.google.appengine.tools:appengine-gcs-client:0.3'

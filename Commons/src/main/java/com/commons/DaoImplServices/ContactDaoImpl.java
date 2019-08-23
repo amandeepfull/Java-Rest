@@ -3,20 +3,16 @@ package com.commons.DaoImplServices;
 
 import com.commons.Dao.ContactDao;
 import com.commons.entity.Contact;
-import com.commons.http.HttpMethod;
-import com.commons.http.HttpRequest;
-import com.commons.http.HttpResponse;
-import com.commons.http.UrlFetcher;
 import com.commons.objectify.OfyService;
 import com.commons.utils.ObjUtil;
 import com.commons.utils.Preconditions;
 
-import java.util.Map;
 import java.util.UUID;
+import java.util.logging.Logger;
 
 public class ContactDaoImpl extends OfyService implements ContactDao {
 
-
+    private static final Logger LOGGER =  Logger.getLogger(ContactDaoImpl.class.getName());
     public Contact createContact(Contact contact) {
 
         validate(contact);
@@ -53,8 +49,9 @@ public class ContactDaoImpl extends OfyService implements ContactDao {
     @Override
     public Contact getByEmail(String email) {
 
+        LOGGER.info("lund lelo .....");
         Preconditions.checkArgument(ObjUtil.isBlank(email), "Invalid email");
-
+        System.out.println(OfyService.ofy().load().type(Contact.class).filter("email", email).list());
         return OfyService.ofy().load().type(Contact.class).filter("email", email).first().now();
 
     }
@@ -66,4 +63,5 @@ public class ContactDaoImpl extends OfyService implements ContactDao {
 
         return save(contact) != null ? contact : null;
     }
+
 }

@@ -10,6 +10,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.10.RELEASE")
+        classpath("org.slf4j:slf4j-api:1.7.25")
         classpath 'com.google.cloud.tools:appengine-gradle-plugin:+'
     }
 }
