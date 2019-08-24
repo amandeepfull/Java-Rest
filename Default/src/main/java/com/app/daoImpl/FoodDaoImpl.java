@@ -21,16 +21,10 @@ public class FoodDaoImpl extends OfyService implements FoodDao {
     }
 
     @Override
-    public double getTotalPrice(Set<String> foodIds) {
+    public List<Food> getFoods(Set<String> foodIds) {
         Preconditions.checkArgument(ObjUtil.isNullOrEmpty(foodIds), "Invalid foodIds");
         Preconditions.checkArgument(foodIds.size() > 50, "foodIds should not be more than 30");
-        List<Food> foods = get(Food.class, foodIds);
+        return get(Food.class, foodIds);
 
-        double totalAmt = 0;
-
-        for (Food food : foods)
-            totalAmt = totalAmt + food.getPrice();
-
-        return totalAmt;
     }
 }

@@ -7,8 +7,10 @@ import com.foody.order.entities.Order;
 import com.foody.order.enums.PaymentType;
 import com.foody.order.ext.FoodService;
 import com.foody.order.ext.PaymentService;
+import com.foody.order.model.Food;
 import com.foody.order.utils.ObjUtil;
 
+import java.util.List;
 import java.util.UUID;
 
 public class OrderDaoImpl extends OfyService implements OrderDao {
@@ -23,7 +25,8 @@ public class OrderDaoImpl extends OfyService implements OrderDao {
         if(cart == null)
             throw new IllegalArgumentException("Invalid cart");
 
-        double totalAmt =  new FoodService().getFoodsTotalAmt(cart.getFoodIds());
+        List<Food> foods =  new FoodService().getFoods(cart.getFoodIds());
+        double totalAmt =  Food.getFoodsTotalPrice(foods);
 
         order.setId(UUID.randomUUID().toString());
         new PaymentService().proceedForPayment(cart.getId(), order.getId(), totalAmt, order.getPaymentType());

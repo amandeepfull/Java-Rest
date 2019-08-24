@@ -29,12 +29,12 @@ public class FoodEndpoint extends AbstractBaseEndpoint {
     }
 
     @POST
-    @Path("/total/price")
-    public Response getTotalPrice(Set<String> foodIds) {
+    @Path("/batch")
+    public Response getFoods(Set<String> foodIds) {
 
         ApiResponse response = new ApiResponse();
 
-        response.add("foodsTotalAmt",new FoodDaoImpl().getTotalPrice(foodIds));
+        response.add("foods",new FoodDaoImpl().getFoods(foodIds));
         response.setOk(true);
 
         return Response.ok(response).build();

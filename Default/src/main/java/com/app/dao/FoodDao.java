@@ -7,5 +7,5 @@ import java.util.Set;
 
 public interface FoodDao {
     Food add(Food food);
-    double getTotalPrice(Set<String> foodIds);
+    List<Food> getFoods(Set<String> foodIds);
 }
