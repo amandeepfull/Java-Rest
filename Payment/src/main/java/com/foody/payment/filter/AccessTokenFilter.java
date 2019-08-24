@@ -28,6 +28,7 @@ public class AccessTokenFilter implements ContainerRequestFilter {
 
     private void checkForToken(String token) {
 
+        // we can validate the access token with key
     }
 
 
