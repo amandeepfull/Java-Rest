@@ -37,13 +37,13 @@ public class HotelEndpoint extends AbstractBaseEndpoint {
         return Response.ok(response).build();
     }
 
-    @Path("/search/food")
     @GET
-    public Response searchHotel(@QueryParam("searchStr") String searchStr) {
+    @Path("/search/food")
+    public Response searchHotel(@QueryParam("searchStr") String foodName) {
 
         ApiResponse response = new ApiResponse();
 
-        List<Hotel> hotels = new SearchService().searchHotelByFood(searchStr);
+        List<Hotel> hotels = new SearchService().searchHotelByFood(foodName);
         response.setOk(true);
         response.add("hotels", hotels);
         return Response.ok(response).build();

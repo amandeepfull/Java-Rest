@@ -3,6 +3,7 @@ package com.foody.payment.endpoints;
 import com.foody.payment.baseEndpoints.AbstractBaseEndpoint;
 import com.foody.payment.entities.Payment;
 import com.foody.payment.response.ApiResponse;
+import com.foody.payment.services.PaymentService;
 
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -15,7 +16,10 @@ public class PaymentEndpoint extends AbstractBaseEndpoint {
     public Response payForOrder(Payment payment){
         ApiResponse response = new ApiResponse();
 
-        /// payment has to process here..
+        payment = new PaymentService().proceedForPayment(payment);
+        response.add("payment", payment);
+        response.setOk(true);
+
         return Response.ok(response).build();
     }
 }
