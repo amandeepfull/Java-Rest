@@ -1,0 +1,58 @@
+apply plugin: 'war'
+apply plugin: 'com.google.cloud.tools.appengine' /// this will include all the task by the appengine like appengineRun, appenigenDeploy
+group 'com.authserver.default'
+version '1.0'
+
+buildscript {
+    repositories {
+
+        jcenter()  //A pre-configured repository that looks for dependencies in Bintray’s JCenter.
+        mavenCentral()
+        //  A pre-configured repository that looks for dependencies in Maven Central.
+    }
+    dependencies {
+        classpath 'com.google.cloud.tools:appengine-gradle-plugin:+'
+
+    }
+}
+
+dependencies {
+    providedCompile libs.servletApi
+    compile libs.gae
+    compile libs.resteasy
+    compile libs.resteasy_jackson_provider
+    compile group: 'org.bitbucket.b_c', name: 'jose4j', version: '0.4.1'
+}
+
+appengine {
+    run {
+        port = config.gae.port.payment // defined in dependencies.gre
+        jvmFlags = config.gae.defaultJvmFlags
+        //  serverVersion = '2-alpha'
+    }
+
+    deploy {
+        version = 1
+        projectId = "authserver-236711"
+        stopPreviousVersion = false
+        promote = false
+    }
+}
+
+task reloadApp(type: Copy) {
+    dependsOn war
+
+    project.afterEvaluate {
+        into project.tasks.explodeWar.explodedAppDirectory
+        with war
+    }
+
+}
+
+explodeWar {
+    with copySpec {
+        from "${projectDir}/../gaeConfigFiles"
+        include '*.xml'
+        into 'WEB-INF'
+    }
+}

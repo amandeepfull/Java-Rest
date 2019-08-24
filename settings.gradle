@@ -3,4 +3,5 @@ rootProject.name = 'foody'
 include 'Default'
 include 'Order'
 include 'Payment'
+include 'Auth'
 
