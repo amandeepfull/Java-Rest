@@ -19,10 +19,6 @@ apply plugin: 'eclipse'
 apply plugin: 'war'
 apply plugin: 'com.google.cloud.tools.appengine'
 
-jar {
-    baseName = 'gs-spring-boot'
-    version =  '0.1.0'
-}
 
 repositories {
     mavenCentral()
