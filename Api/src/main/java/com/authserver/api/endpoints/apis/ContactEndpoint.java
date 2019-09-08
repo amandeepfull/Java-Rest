@@ -1,19 +1,19 @@
 package com.authserver.api.endpoints.apis;
 
-import com.commons.exception.NotFoundException;
 import com.commons.DaoImplServices.ContactDaoImpl;
+import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.entity.Contact;
 import com.commons.response.ApiResponse;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import javax.ws.rs.*;
+import javax.ws.rs.core.Response;
 
 
-@RestController
-@RequestMapping("/v1/contact")
-public class ContactEndpoint extends BaseApiEndpoint {
+@Path("/v1/contact")
+public class ContactEndpoint extends AbstractBaseEndpoint {
 
-    @PostMapping("/")
-    public ResponseEntity<ApiResponse> createContact(@RequestBody Contact contact){
+    @POST
+    @Path("/")
+    public Response createContact(Contact contact){
 
         ApiResponse response = new ApiResponse();
 
@@ -21,11 +21,12 @@ public class ContactEndpoint extends BaseApiEndpoint {
 
         response.setOk(true);
         response.add("contact", contact);
-        return ResponseEntity.ok(response);
+        return Response.ok(response).build();
     }
 
-    @GetMapping("/uname/{uname}")
-    public ResponseEntity<ApiResponse> getContact (@PathVariable("uname") String uname){
+    @GET
+    @Path("/uname/{uname}")
+    public Response getContact (@PathParam("uname") String uname){
 
         ApiResponse response = new ApiResponse();
 
@@ -36,6 +37,6 @@ public class ContactEndpoint extends BaseApiEndpoint {
 
         response.setOk(true);
         response.add("contact", contact);
-        return ResponseEntity.ok(response);
+        return Response.ok(response).build();
     }
 }

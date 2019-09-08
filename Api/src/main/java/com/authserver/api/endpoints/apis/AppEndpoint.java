@@ -1,24 +1,26 @@
 package com.authserver.api.endpoints.apis;
 
 
+import com.commons.baseEndpoints.AbstractBaseEndpoint;
 import com.commons.exception.EntityException;
-import com.commons.exception.UnauthorizedException;
 import com.commons.DaoImplServices.AppDaoImpl;
 import com.commons.Enum.EntityErrorCode;
 import com.commons.entity.App;
+import com.commons.exception.ForbiddenException;
 import com.commons.response.ApiResponse;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController
-@RequestMapping("/v1/app")
-public class AppEndpoint extends BaseApiEndpoint{
+@Path("/v1/app")
+public class AppEndpoint extends AbstractBaseEndpoint {
 
-    @PostMapping("/")
-    public ResponseEntity<ApiResponse> registerApp(@RequestBody App app) throws EntityException {
+    @POST
+    @Path("/")
+    public Response registerApp(App app) throws EntityException {
 
         ApiResponse response = new ApiResponse();
 
@@ -30,12 +32,13 @@ public class AppEndpoint extends BaseApiEndpoint{
         response.add("app", app);
         response.setOk(true);
 
-        return ResponseEntity.ok(response);
+        return Response.ok(response).build();
     }
 
 
-    @PutMapping("/{appId}")
-    public ResponseEntity<ApiResponse> updateApp(@RequestBody App app, @PathVariable("appId") String appId) throws EntityException {
+    @PUT
+    @Path("/{appId}")
+    public Response updateApp( App app, @PathParam("appId") String appId) throws EntityException {
 
         ApiResponse response = new ApiResponse();
 
@@ -48,16 +51,17 @@ public class AppEndpoint extends BaseApiEndpoint{
         response.add("app", app);
         response.setOk(true);
 
-        return ResponseEntity.ok(response);
+        return Response.ok(response).build();
     }
 
-    @GetMapping("/user/{userId}")
-    public ResponseEntity<ApiResponse> getUserApp(@PathVariable("userId") String userId) throws UnauthorizedException {
+    @GET
+    @Path("/user/{userId}")
+    public Response getUserApp(@PathParam("userId") String userId) throws ForbiddenException {
 
         ApiResponse response = new ApiResponse();
 
         if(response == null)
-            throw new UnauthorizedException("you are not ldjlfjsdjf");
+            throw new ForbiddenException("you are not ldjlfjsdjf");
 
         List<App> apps = new ArrayList<>();
 
@@ -65,7 +69,7 @@ public class AppEndpoint extends BaseApiEndpoint{
 
         response.setOk(true);
         response.add("apps", apps);
-        return ResponseEntity.ok(response);
+        return Response.ok(response).build();
 
     }
 }
